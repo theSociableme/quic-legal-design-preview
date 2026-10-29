@@ -57,6 +57,13 @@
       background: var(--surface);
       border-bottom: 1px solid var(--border);
       padding: 14px 24px;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+      will-change: transform, opacity;
+    }
+    .hub-header.header-hidden {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
     }
     .hub-header-inner {
       max-width: 1360px;
@@ -1309,6 +1316,28 @@
     }
 
     loadPersistedBallot();
+
+    (function initScrollHideBanner() {
+      const topBanner = document.querySelector('.hub-header');
+      if (!topBanner) return;
+      let ticking = false;
+      function updateBannerVisibility() {
+        const currentY = window.scrollY || window.pageYOffset || 0;
+        if (currentY > 24) {
+          topBanner.classList.add('header-hidden');
+        } else {
+          topBanner.classList.remove('header-hidden');
+        }
+        ticking = false;
+      }
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateBannerVisibility);
+          ticking = true;
+        }
+      }, { passive: true });
+      updateBannerVisibility();
+    })();
   </script>
 </body>
 </html>
