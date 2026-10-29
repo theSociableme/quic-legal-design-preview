@@ -3,1136 +3,1312 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>quic.legal — Master Board Design &amp; Brand Explorer (15 Website Themes A–O &amp; 15 SVG Logos)</title>
-  <meta name="description" content="Interactive Board Design & Brand Explorer for quic.legal featuring 15 Website Theme Variations (A-O), 15 SVG Logo Concepts, 7-Specialist Review Gate Matrices, and External Reviewer Feedback Ballot.">
+  <title>quic.legal — Master "Kitchen Table" Website &amp; Logo Psychology Showcase Hub (Versions 01–10)</title>
+  <meta name="description" content="Clean Master Showcase Hub for quic.legal featuring 10 Real-World 'Kitchen Table' Commercial Website Mockup Versions (version-01 through version-10), 10 Psychology-Engineered SVG Logos, Behavioral Psychology + Conversion Scores, and Interactive Filtering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #FAF8F5; --surface: #FFFFFF; --surface-alt: #F3EFEA;
-      --text-primary: #1C1917; --text-secondary: #57534E; --border: #D6D0C4;
-      --accent: #2D5A47; --accent-hover: #214435; --accent-soft: #E6F1EC;
+      --bg: #FAF8F5;
+      --surface: #FFFFFF;
+      --surface-soft: #F3EFEA;
+      --text-main: #1C1917;
+      --text-muted: #57534E;
+      --accent: #0F766E;
+      --accent-hover: #115E59;
+      --accent-tint: #CCFBF1;
+      --warm: #C2410C;
+      --border: #DDD6CC;
+      --shadow: 0 14px 34px -10px rgba(28, 25, 23, 0.09);
       --font-heading: 'Newsreader', Georgia, serif;
-      --font-body: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+      --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
     }
     html[data-mode="dark"] {
-      --bg: #0F141C; --surface: #18202C; --surface-alt: #222D3D;
-      --text-primary: #F8FAFC; --text-secondary: #CBD5E1; --border: #334155;
-      --accent: #34D399; --accent-hover: #10B981; --accent-soft: #13382B;
+      --bg: #0F1419;
+      --surface: #182028;
+      --surface-soft: #212B36;
+      --text-main: #F8FAFC;
+      --text-muted: #CBD5E1;
+      --accent: #2DD4BF;
+      --accent-hover: #14B8A6;
+      --accent-tint: #133B36;
+      --warm: #FB923C;
+      --border: #2D3B4A;
+      --shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.55);
     }
     * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--text-primary); font-family:var(--font-body); font-size:15.5px; line-height:1.6; }
-    h1, h2, h3 { font-family:var(--font-heading); margin:0; line-height:1.25; }
-    .mono, code { font-family:var(--font-mono); }
-    .upl-banner { background:#FEF3C7; color:#78350F; border-bottom:2px solid #D97706; padding:9px 16px; font-size:13px; font-weight:700; text-align:center; }
-    .studio-bar { background:#0F172A; color:#F8FAFC; padding:10px 18px; border-bottom:1px solid #334155; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; font-size:12.5px; }
-    .studio-links { display:flex; flex-wrap:wrap; gap:5px; }
-    .studio-link { color:#CBD5E1; text-decoration:none; padding:4px 8px; border-radius:6px; border:1px solid #334155; font-size:11.5px; font-weight:600; }
-    .studio-link.active, .studio-link:hover { background:#2563EB; color:#FFFFFF; border-color:#3B82F6; }
-    .container { max-width:1380px; margin:0 auto; padding:24px 20px 64px; }
-    .card { background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:22px; }
-    .card-alt { background:var(--surface-alt); border:1px solid var(--border); border-radius:12px; padding:16px; }
-    .badge { display:inline-flex; align-items:center; padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700; }
-    .badge-aligned { background:#CCFBF1; color:#115E59; border:1px solid #5EEAD4; }
-    .badge-proposed { background:#FEF3C7; color:#78350F; border:1px solid #FCD34D; }
-    .badge-locked { background:#DBEAFE; color:#1E3A8A; border:1px solid #93C5FD; }
-    .btn-primary { background:#2D5A47; color:#FFFFFF; border:none; border-radius:8px; padding:9px 15px; font-weight:700; font-size:13px; cursor:pointer; display:inline-flex; align-items:center; gap:6px; }
-    .btn-outline { background:transparent; color:var(--text-primary); border:1.5px solid var(--border); border-radius:8px; padding:8px 13px; font-weight:600; font-size:12.5px; cursor:pointer; }
-    .grid-3 { display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:18px; }
-    table.ledger-table { width:100%; border-collapse:collapse; font-size:13px; }
-    table.ledger-table th, table.ledger-table td { padding:9px 10px; border-bottom:1px solid var(--border); text-align:left; }
-    table.ledger-table th { font-size:11px; text-transform:uppercase; background:var(--surface-alt); color:var(--text-secondary); }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.2; margin: 0; }
+    .mono, code { font-family: var(--font-mono); }
+
+    .hub-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+    }
+    .hub-header-inner {
+      max-width: 1360px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 36px 24px 80px;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #FFFFFF;
+      border: none;
+      border-radius: 10px;
+      padding: 11px 18px;
+      font-weight: 700;
+      font-size: 13.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    html[data-mode="dark"] .btn-primary { color: #0F172A; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-outline {
+      background: var(--surface);
+      color: var(--text-main);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      padding: 9px 14px;
+      font-weight: 600;
+      font-size: 13px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+    .btn-outline.active, .btn-outline:hover {
+      border-color: var(--accent);
+      background: var(--accent-tint);
+      color: var(--accent);
+    }
+
+    /* Gallery Cards */
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+      gap: 26px;
+    }
+    @media (max-width: 480px) {
+      .hub-grid { grid-template-columns: 1fr; }
+    }
+    .hub-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.18s ease;
+    }
+    .hub-card:hover { transform: translateY(-3px); }
+    .hub-card-photo {
+      height: 185px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      background-color: #1E293B;
+    }
+    .hub-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,23,42,0.8) 0%, rgba(15,23,42,0.15) 60%);
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .badge-pill {
+      background: rgba(255,255,255,0.92);
+      color: #0F172A;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .score-pill {
+      background: #0F766E;
+      color: #FFFFFF;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    .hub-card-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .paired-logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+    .paired-logo-svg svg {
+      width: 44px;
+      height: 44px;
+      display: block;
+      border-radius: 10px;
+    }
+    .metric-chip {
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 7px 6px;
+    }
+    .btn-pick-theme {
+      background: var(--surface-soft);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn-pick-theme.picked {
+      background: var(--accent);
+      color: #FFF;
+      border-color: var(--accent);
+    }
+
+    /* Logo Studio Spotlight */
+    .logo-spotlight {
+      background: linear-gradient(135deg, #1E1B4B 0%, #0F172A 60%, #134E4A 100%);
+      color: #F8FAFC;
+      border-radius: 22px;
+      padding: 32px;
+      margin: 44px 0;
+      box-shadow: var(--shadow);
+    }
+    .logo-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+    .logo-mini-card {
+      background: var(--surface);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+    }
   </style>
 </head>
 <body>
-  <div class="upl-banner">
-    ⚖️ Legal Information &amp; Collaborative MOU Preparation — Not Legal Advice or a Substitute for Independent Minnesota Legal Counsel (Minn. Stat. § 519.11 &amp; § 481.02)
-  </div>
 
-  <nav class="studio-bar" aria-label="Master Design Explorer Navigation">
-    <div><strong>quic.legal Master Board Design &amp; Brand Explorer (QUIAA-10)</strong></div>
-    <div class="studio-links"><a href="index.html" class="studio-link active">★ Board Hub &amp; Ballot</a>
-      <a href="logos.html" class="studio-link">✦ 15 Logo Concepts</a>
-      <a href="variation-a-nordic-calm.html" class="studio-link" title="Variation A: Nordic Calm & Collaborative">A: Nordic</a>
-      <a href="variation-b-modern-private-wealth.html" class="studio-link" title="Variation B: Modern Private Wealth">B: Modern</a>
-      <a href="variation-c-swiss-legal-precision.html" class="studio-link" title="Variation C: Swiss Legal Precision">C: Swiss</a>
-      <a href="variation-d-approachable-civic-tech.html" class="studio-link" title="Variation D: Approachable Civic Tech">D: Approachable</a>
-      <a href="variation-e-executive-dark-studio.html" class="studio-link" title="Variation E: Executive Dark / Dual-Mode Studio">E: Executive</a>
-      <a href="variation-f-architectural-editorial.html" class="studio-link" title="Variation F: Architectural Editorial">F: Architectural</a>
-      <a href="variation-g-biophilic-sanctuary.html" class="studio-link" title="Variation G: Biophilic Sanctuary">G: Biophilic</a>
-      <a href="variation-h-fintech-clarity.html" class="studio-link" title="Variation H: Fintech Clarity">H: Fintech</a>
-      <a href="variation-i-minnesota-north-star.html" class="studio-link" title="Variation I: Minnesota North Star Civic">I: Minnesota</a>
-      <a href="variation-j-boutique-mediation-studio.html" class="studio-link" title="Variation J: Boutique Mediation Studio">J: Boutique</a>
-      <a href="variation-k-cryptographic-vault.html" class="studio-link" title="Variation K: Cryptographic Zero-Knowledge Vault">K: Cryptographic</a>
-      <a href="variation-l-neo-brutalist-legal-grid.html" class="studio-link" title="Variation L: Neo-Brutalist Legal Grid">L: Neo-Brutalist</a>
-      <a href="variation-m-humanist-warm-saas.html" class="studio-link" title="Variation M: Humanist Warm SaaS">M: Humanist</a>
-      <a href="variation-n-sovereign-family-office.html" class="studio-link" title="Variation N: Sovereign Family Office">N: Sovereign</a>
-      <a href="variation-o-ultra-accessible-clarity.html" class="studio-link" title="Variation O: Ultra-Accessible High-Clarity">O: Ultra-Accessible</a></div>
-    <button type="button" onclick="toggleColorMode()" class="studio-link" style="cursor:pointer; background:#1E293B;">
-      🌗 Mode: <span id="mode-label">LIGHT</span>
-    </button>
-  </nav>
+  <!-- Clean Master Showcase Header -->
+  <header class="hub-header">
+    <div class="hub-header-inner">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="width:40px; height:40px;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="12" fill="#FAF8F5"/>
+          <path d="M8 14H22L26 20H20L18 28H26L22 34H8V14Z" fill="#451A03"/>
+          <path d="M40 14H26L30 20H22L20 28H28L26 34H40V14Z" fill="#C2410C" fill-opacity="0.9"/>
+          <line x1="8" y1="38" x2="40" y2="38" stroke="#451A03" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+        <div>
+          <strong style="font-family:var(--font-heading); font-size:21px;">quic.legal — Master "Kitchen Table" Showcase Hub</strong>
+          <span style="display:block; font-size:12px; color:var(--text-muted);">10 Real-World Commercial Website Experiences (<code class="mono">version-01</code>–<code class="mono">version-10</code>) + 10 Psychology-Engineered SVG Logos (<code class="mono">logos.html</code>)</span>
+        </div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+        <a href="#experiences-gallery" class="btn-outline">10 Website Versions</a>
+        <a href="logos.html" class="btn-primary" style="text-decoration:none;">✦ Open Logo Psychology Studio (<code class="mono">logos.html</code>) &rarr;</a>
+        <button type="button" class="btn-outline" onclick="toggleHubMode()">🌗 <span id="hub-mode-label">LIGHT</span></button>
+      </div>
+    </div>
+  </header>
 
   <main class="container">
     <!-- Hero Overview -->
-    <header class="card" style="margin-bottom:22px;">
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:18px;">
-        <div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
-            <span class="badge badge-locked">Public Preview Hub</span>
-            <span class="badge badge-aligned">15 Website Theme Variations (A–O)</span>
-            <span class="badge badge-proposed">15 SVG Logo Concepts (01–15)</span>
-          </div>
-          <h1 style="font-size:34px;">quic.legal — Board Design Studio &amp; Multi-Agent Review Gate</h1>
-          <p style="margin:8px 0 0; color:var(--text-secondary); max-width:860px;">
-            Prepared by <strong>Sandra Data O'Connor (CEO)</strong> and the <strong>7-Specialist Website Review Council</strong> + <strong>3-Reviewer Logo Panel</strong>. Explore all 15 interactive 4-screen website mockups (`Variations A–O`), inspect all 15 scalable vector logo designs (`logos.html`), and use the interactive External Reviewer Ballot below to record your Top 3 Website Themes and Top 3 Logos.
+    <section style="background:var(--surface); border:1px solid var(--border); border-radius:22px; padding:36px; margin-bottom:32px; box-shadow:var(--shadow);">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:24px;">
+        <div style="max-width:840px;">
+          <span style="display:inline-flex; align-items:center; gap:6px; background:var(--accent-tint); color:var(--accent); font-size:12px; font-weight:700; padding:5px 12px; border-radius:999px; margin-bottom:14px;">
+            🏆 QUIAA-12 / QUIAA-23 V2 VERIFIED • 100% COMMERCIAL CONSUMER WEBSITE EXPERIENCES
+          </span>
+          <h1 style="font-size:clamp(30px, 3.8vw, 44px); margin-bottom:14px;">
+            "Work out the hard parts of your agreement together at the kitchen table—with private AI guidance for each of you and an unbreakable receipt of every fair turn before you ever pay a lawyer's hourly rate."
+          </h1>
+          <p style="font-size:16.5px; color:var(--text-muted); margin:0 0 20px;">
+            Explore all <strong>10 distinct "Kitchen Table" commercial website mockups (<code class="mono">version-01</code> through <code class="mono">version-10</code>)</strong>. Every single version opens with zero top prototype bars, curated human photography, its own custom SVG logo lockup, and a <strong>complete 4-page multi-view experience</strong> (<em>1. Kitchen Table Homepage</em>, <em>2. Tailored Life-Moment Page &amp; Calculator</em>, <em>3. Interactive Technology Showcase</em>, and <em>4. Live Product Workspace</em>) plus a bottom-right floating inspector widget with a live 10-logo switcher.
           </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="version-02-the-kitchen-table.html" class="btn-primary" style="text-decoration:none;">Launch Flagship V02 ("The Kitchen Table") &rarr;</a>
+            <a href="version-06-quiet-harbor.html" class="btn-outline">Launch V06 ("Quiet Harbor")</a>
+            <a href="version-07-open-cards.html" class="btn-outline">Launch V07 ("Open Cards")</a>
+            <a href="version-09-steady-hand.html" class="btn-outline">Launch V09 ("Steady Hand")</a>
+            <a href="version-10-fireside-evening.html" class="btn-outline">Launch V10 ("Fireside Evening")</a>
+          </div>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
-          <a href="#themes-gallery" class="btn-primary" style="text-decoration:none;">Explore 15 Website Themes (A–O)</a>
-          <a href="logos.html" class="btn-outline" style="text-decoration:none;">Open 15 SVG Logos Showcase &rarr;</a>
+
+        <!-- Quick Architecture Summary Card -->
+        <div style="background:var(--surface-soft); border:1px solid var(--border); border-radius:16px; padding:20px; min-width:300px; flex:1;">
+          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--accent); margin-bottom:10px;">What's Inside Every Mockup (4 Full Pages)</div>
+          <ol style="margin:0; padding-left:18px; font-size:13.5px; color:var(--text-main); display:grid; gap:8px;">
+            <li><strong>Page 1 (<code class="mono">home</code>):</strong> Master "Kitchen Table" Homepage, 6 Everyday Life Moments, 3 Superpowers, $299–$399 Flat Pricing &amp; 4 Objection Busters.</li>
+            <li><strong>Page 2 (<code class="mono">vertical</code>):</strong> Interactive 6-Life-Moment Switcher (Prenup, Co-Buy, Divorce, Parenting, Cabin, Co-Founders) + State Statutory Countdown &amp; Fee Savings Calculator + Competitor Matrix.</li>
+            <li><strong>Page 3 (<code class="mono">how-it-works</code>):</strong> Interactive Turn-by-Turn Redlining Simulator, Split-Screen <code class="mono">crashoverride</code> Private AI &amp; SHA-256 Tamper Test.</li>
+            <li><strong>Page 4 (<code class="mono">workspace</code>):</strong> Live Product Walkthrough (Partner A View, Partner B View &amp; 3-Part Attorney Handoff Package).</li>
+          </ol>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Interactive External Reviewer Feedback Widget / Ballot Banner -->
-    <section id="reviewer-ballot" class="card" style="margin-bottom:24px; border:2px solid var(--accent); background:var(--accent-soft);">
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px;">
+    <!-- Interactive Reviewer Top-3 Ballot Bar -->
+    <section style="background:var(--accent-tint); border:2px solid var(--accent); border-radius:18px; padding:20px 24px; margin-bottom:32px;">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px;">
         <div>
-          <span class="badge badge-locked">Interactive External Reviewer Feedback Widget</span>
-          <h2 style="font-size:22px; margin-top:4px;">Vote Your Top 3 Website Themes (A–O) &amp; Top 3 Logos (01–15)</h2>
-          <p style="margin:2px 0 0; font-size:13.5px; color:var(--text-secondary);">
-            Click <strong>"☆ Top 3"</strong> on any card below (or select directly in the dropdowns) and click <strong>"Copy Formatted Review Ballot"</strong> to paste into GitHub, Slack, or Paperclip.
-          </p>
+          <strong style="font-size:18px; font-family:var(--font-heading);">🗳️ Interactive Board &amp; Reviewer Top-3 Selection Ballot</strong>
+          <div style="font-size:13.5px; color:var(--text-muted); margin-top:2px;">
+            Click <strong>"☆ Top 3"</strong> or <strong>"☆ Logo"</strong> on any card below, then copy your formatted ballot for Paperclip, GitHub, or Slack.
+          </div>
         </div>
         <div style="display:flex; gap:8px;">
-          <button type="button" class="btn-primary" onclick="copyReviewerBallot()">📋 Copy Formatted Review Ballot</button>
-          <button type="button" class="btn-outline" onclick="clearReviewerBallot()">Reset Picks</button>
+          <button type="button" class="btn-primary" onclick="copyBallot()">📋 Copy Formatted Top-3 Ballot</button>
+          <button type="button" class="btn-outline" onclick="resetBallot()">Reset</button>
         </div>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px;">
-        <div class="card" style="padding:12px 14px;">
-          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Top 3 Website Theme Picks (A–O)</div>
-          <div id="ballot-themes-display" class="mono" style="font-size:13.5px; font-weight:700; margin-top:6px;">None selected yet (Click ☆ Top 3 on any theme card)</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-top:12px;">
+        <div style="background:var(--surface); padding:10px 14px; border-radius:10px; border:1px solid var(--border);">
+          <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted);">Selected Top Website Versions (01–10):</span>
+          <div id="picked-themes-list" class="mono" style="font-size:13px; font-weight:700; margin-top:4px;">None selected yet</div>
         </div>
-        <div class="card" style="padding:12px 14px;">
-          <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-secondary);">Top 3 Logo &amp; Brandmark Picks (01–15)</div>
-          <div id="ballot-logos-display" class="mono" style="font-size:13.5px; font-weight:700; margin-top:6px;">None selected yet (Click ☆ Pick on any logo card)</div>
-        </div>
-        <div class="card" style="padding:12px 14px;">
-          <label for="ballot-notes" style="font-size:11.5px; font-weight:700; text-transform:uppercase; color:var(--text-secondary); display:block;">Optional Reviewer Notes / Synthesis Idea:</label>
-          <input id="ballot-notes" type="text" placeholder="e.g., Combine Variation A/I palette with Logo 01 or 09..." style="width:100%; margin-top:6px; padding:7px 10px; background:var(--surface); color:var(--text-primary); border:1px solid var(--border); border-radius:6px; font-family:var(--font-body); font-size:13px;">
+        <div style="background:var(--surface); padding:10px 14px; border-radius:10px; border:1px solid var(--border);">
+          <span style="font-size:11px; font-weight:700; text-transform:uppercase; color:var(--text-muted);">Selected Top SVG Logos (01–10):</span>
+          <div id="picked-logos-list" class="mono" style="font-size:13px; font-weight:700; margin-top:4px;">None selected yet</div>
         </div>
       </div>
-      <pre id="ballot-preview-box" class="mono" style="margin:12px 0 0; padding:12px; background:var(--surface); border:1px solid var(--border); border-radius:8px; font-size:12px; white-space:pre-wrap;"></pre>
     </section>
 
-    <!-- 15 Website Theme Variations Gallery -->
-    <section id="themes-gallery" style="margin-bottom:28px;">
-      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:14px;">
+    <!-- Interactive Category & Conversion Filter Bar -->
+    <section id="experiences-gallery">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:14px; margin-bottom:22px;">
         <div>
-          <h2 style="font-size:26px;">15 Website Theme Variations (`Variation A` through `Variation O`)</h2>
-          <p style="margin:2px 0 0; color:var(--text-secondary); font-size:14px;">
-            Every mockup includes all 4 interactive product views (Landing, Turn-Based Redline Studio, Schedule A/B Ledger, and Isolated `crashoverride` AI Drawer) + Light/Dark mode.
+          <h2 style="font-size:32px;">The 10 "Kitchen Table" Commercial Website Experiences</h2>
+          <p style="margin:4px 0 0; font-size:14.5px; color:var(--text-muted);">Filter by psychological persona or conversion score, or launch any experience directly.</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="btn-outline filter-btn active" onclick="filterCards('all', this)">All 10 Experiences</button>
+          <button type="button" class="btn-outline filter-btn" onclick="filterCards('morning', this)">☀️ Morning &amp; Daylight Warmth (01, 02, 08)</button>
+          <button type="button" class="btn-outline filter-btn" onclick="filterCards('fiduciary', this)">🏛️ Architectural &amp; Fiduciary Clarity (03, 05, 07, 09)</button>
+          <button type="button" class="btn-outline filter-btn" onclick="filterCards('sanctuary', this)">🌿 Sanctuary &amp; Evening Calm (04, 06, 10)</button>
+          <button type="button" class="btn-outline filter-btn" onclick="filterCards('top', this)">🏆 Top Conversion Score (9.70+)</button>
+        </div>
+      </div>
+
+      <div class="hub-grid">
+        
+        <article class="hub-card" data-category="morning" data-top="false" data-ver="version-01">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 01 • Morning & Daylight Warmth</span>
+              <span class="score-pill">★ 9.65 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-01-sunday-morning-coffee.html" style="text-decoration:none;">01. "Sunday Morning Coffee"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Engaged Prenups & First-Time Home Co-Buyers</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V01: Sunday Morning Coffee" onclick="toggleThemePick('V01: Sunday Morning Coffee', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Sunlit, zero-intimidation weekend morning table ritual for engaged couples & co-buyers.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#FFFBEB"/>
+          <circle cx="20" cy="25" r="11" stroke="#3E2723" stroke-width="3" fill="rgba(217,119,6,0.12)"/>
+          <circle cx="28" cy="25" r="11" stroke="#D97706" stroke-width="3" fill="rgba(62,39,35,0.06)"/>
+          <path d="M21 11C21 9 23 8 23 6M27 11C27 9 29 8 29 6" stroke="#D97706" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="25" r="3" fill="#3E2723"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-01: The Warm Cup & Ring</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#3E2723; border:1px solid rgba(0,0,0,0.18);" title="#3E2723"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#D97706; border:1px solid rgba(0,0,0,0.18);" title="#D97706"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#FFFBEB; border:1px solid rgba(0,0,0,0.18);" title="#FFFBEB"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Cortisol reduction, morning ritual safety, zero legal intimidation.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-01-sunday-morning-coffee.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 01: The Warm Cup & Ring', this)" title="Vote for Paired Logo 01">☆ Logo 01</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="morning" data-top="true" data-ver="version-02">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 02 • Morning & Daylight Warmth</span>
+              <span class="score-pill">★ 9.75 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-02-the-kitchen-table.html" style="text-decoration:none;">02. "The Kitchen Table"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: All 6 Everyday Life Agreements (Flagship Anchor)</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V02: The Kitchen Table" onclick="toggleThemePick('V02: The Kitchen Table', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Grounded domestic candor, tactile wood-and-linen warmth, and equal-voice turn taking.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="12" fill="#FAF8F5"/>
+          <path d="M8 14H22L26 20H20L18 28H26L22 34H8V14Z" fill="#451A03"/>
+          <path d="M40 14H26L30 20H22L20 28H28L26 34H40V14Z" fill="#C2410C" fill-opacity="0.9"/>
+          <line x1="8" y1="38" x2="40" y2="38" stroke="#451A03" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-02: The Kitchen Table Dovetail</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#451A03; border:1px solid rgba(0,0,0,0.18);" title="#451A03"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#C2410C; border:1px solid rgba(0,0,0,0.18);" title="#C2410C"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#FAF8F5; border:1px solid rgba(0,0,0,0.18);" title="#FAF8F5"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Equal voice, grounded domestic candor, mutual construction.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.8/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-02-the-kitchen-table.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 02: The Kitchen Table Dovetail', this)" title="Vote for Paired Logo 02">☆ Logo 02</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="fiduciary" data-top="false" data-ver="version-03">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 03 • Architectural & Fiduciary Clarity</span>
+              <span class="score-pill">★ 9.55 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-03-clear-horizon.html" style="text-decoration:none;">03. "Clear Horizon"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Property Co-Ownership & Startup Co-Founders</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V03: Clear Horizon" onclick="toggleThemePick('V03: Clear Horizon', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Optimistic coastal horizon aesthetic focused on forward momentum and shared future building.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#F8FAFC"/>
+          <path d="M8 31C13 21 25 18 38 26" stroke="#0284C7" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M10 26C18 15 30 15 40 24" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <line x1="7" y1="34" x2="41" y2="34" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="25" cy="22" r="3.5" fill="#0284C7"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-03: The Rising Horizon Arc</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#0F172A; border:1px solid rgba(0,0,0,0.18);" title="#0F172A"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#0284C7; border:1px solid rgba(0,0,0,0.18);" title="#0284C7"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#F8FAFC; border:1px solid rgba(0,0,0,0.18);" title="#F8FAFC"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Shared future optimism, forward momentum for engaged couples & co-buyers.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.5/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-03-clear-horizon.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 03: The Rising Horizon Arc', this)" title="Vote for Paired Logo 03">☆ Logo 03</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="sanctuary" data-top="false" data-ver="version-04">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 04 • Sanctuary & Evening Calm</span>
+              <span class="score-pill">★ 9.60 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-04-common-ground.html" style="text-decoration:none;">04. "Common Ground"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Amicable Uncontested Divorce & Co-Parenting Plans</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V04: Common Ground" onclick="toggleThemePick('V04: Common Ground', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Biophilic eucalyptus & sage de-escalation studio for two autonomous people building shared ground.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#F0FDF4"/>
+          <rect x="8" y="13" width="20" height="22" rx="7" stroke="#14532D" stroke-width="3" fill="rgba(46,111,64,0.12)"/>
+          <rect x="20" y="13" width="20" height="22" rx="7" stroke="#2E6F40" stroke-width="3" fill="rgba(20,83,45,0.12)"/>
+          <path d="M20 24H28" stroke="#14532D" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-04: The Interlocking Venn Bridge</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#2E6F40; border:1px solid rgba(0,0,0,0.18);" title="#2E6F40"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#14532D; border:1px solid rgba(0,0,0,0.18);" title="#14532D"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#F0FDF4; border:1px solid rgba(0,0,0,0.18);" title="#F0FDF4"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Conflict de-escalation, autonomic calming, two autonomous people creating shared ground.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.5/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-04-common-ground.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 04: The Interlocking Venn Bridge', this)" title="Vote for Paired Logo 04">☆ Logo 04</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="fiduciary" data-top="false" data-ver="version-05">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 05 • Architectural & Fiduciary Clarity</span>
+              <span class="score-pill">★ 9.65 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-05-fair-and-square.html" style="text-decoration:none;">05. "Fair & Square"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Skeptical Partners, Co-Founders & Financial Planners</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V05: Fair & Square" onclick="toggleThemePick('V05: Fair & Square', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Crisp carpenter-square precision, radical plain-English clarity, and zero hidden traps.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+          <path d="M11 33V11H33" stroke="#1E293B" stroke-width="3.5" stroke-linecap="square"/>
+          <path d="M37 15V37H15" stroke="#059669" stroke-width="3.5" stroke-linecap="square"/>
+          <path d="M19 24.5L22.5 28L30 20.5" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-05: The True Square & Check</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#1E293B; border:1px solid rgba(0,0,0,0.18);" title="#1E293B"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#059669; border:1px solid rgba(0,0,0,0.18);" title="#059669"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,0.18);" title="#FFFFFF"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Procedural fairness, plain-English transparency, zero hidden traps.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-05-fair-and-square.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 05: The True Square & Check', this)" title="Vote for Paired Logo 05">☆ Logo 05</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="sanctuary" data-top="true" data-ver="version-06">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 06 • Sanctuary & Evening Calm</span>
+              <span class="score-pill">★ 9.70 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-06-quiet-harbor.html" style="text-decoration:none;">06. "Quiet Harbor"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Amicable Divorce, Postnups & Sensitive Transitions</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V06: Quiet Harbor" onclick="toggleThemePick('V06: Quiet Harbor', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Calm, protective, low-stress maritime sanctuary for sensitive life transitions and family agreements.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="16" fill="#F0FDFA"/>
+          <path d="M9 28C9 17.5 16 10 25 10C33.5 10 39 16 39 24.5" stroke="#134E4A" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M14 29.5C17.5 26.5 21.5 26.5 25 29.5C28.5 32.5 32.5 32.5 36 29.5" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 35.5C19.5 33 23.5 33 27 35.5C30.5 38 34.5 38 37 35.5" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" opacity="0.75"/>
+          <circle cx="24" cy="20" r="3.2" fill="#0F766E"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-06: The Sheltering Cove</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#0F766E; border:1px solid rgba(0,0,0,0.18);" title="#0F766E"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#134E4A; border:1px solid rgba(0,0,0,0.18);" title="#134E4A"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#F0FDFA; border:1px solid rgba(0,0,0,0.18);" title="#F0FDFA"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Psychological sanctuary, emotional protection during sensitive transitions.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.8/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-06-quiet-harbor.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 06: The Sheltering Cove', this)" title="Vote for Paired Logo 06">☆ Logo 06</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="fiduciary" data-top="true" data-ver="version-07">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 07 • Architectural & Fiduciary Clarity</span>
+              <span class="score-pill">★ 9.75 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-07-open-cards.html" style="text-decoration:none;">07. "Open Cards"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Schedule A/B Net-Worth Clarity, Prenups & Co-Buying</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V07: Open Cards" onclick="toggleThemePick('V07: Open Cards', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              High-trust financial and life transparency without the stuffiness—putting all cards on the table.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="12" fill="#FDFBF7"/>
+          <rect x="9" y="12" width="19" height="26" rx="4" transform="rotate(-8 9 12)" fill="#FFFFFF" stroke="#312E81" stroke-width="2.8"/>
+          <rect x="20" y="10" width="19" height="26" rx="4" transform="rotate(8 20 10)" fill="#FFFBEB" fill-opacity="0.92" stroke="#B45309" stroke-width="2.8"/>
+          <line x1="14" y1="20" x2="21" y2="19" stroke="#312E81" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="25" y1="19" x2="33" y2="20" stroke="#B45309" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="2.8" fill="#312E81"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-07: Two Open Cards</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#312E81; border:1px solid rgba(0,0,0,0.18);" title="#312E81"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#B45309; border:1px solid rgba(0,0,0,0.18);" title="#B45309"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#FDFBF7; border:1px solid rgba(0,0,0,0.18);" title="#FDFBF7"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Radical financial candor, Schedule A & B full disclosure without stuffiness.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.8/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-07-open-cards.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 07: Two Open Cards', this)" title="Vote for Paired Logo 07">☆ Logo 07</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="morning" data-top="false" data-ver="version-08">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 08 • Morning & Daylight Warmth</span>
+              <span class="score-pill">★ 9.55 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-08-front-porch.html" style="text-decoration:none;">08. "Front Porch"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Shared Family Cabins, Blended Families & Co-Buyers</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V08: Front Porch" onclick="toggleThemePick('V08: Front Porch', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Friendly, neighborly, human-first conversational guided experience for families and couples.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#FEFCE8"/>
+          <path d="M7 22L24 10L41 22" stroke="#9A3412" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 22V35M35 22V35" stroke="#3F6212" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 29H22M26 29H30" stroke="#9A3412" stroke-width="2.8" stroke-linecap="round"/>
+          <line x1="9" y1="36" x2="39" y2="36" stroke="#3F6212" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-08: The Welcoming Gables</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#9A3412; border:1px solid rgba(0,0,0,0.18);" title="#9A3412"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#3F6212; border:1px solid rgba(0,0,0,0.18);" title="#3F6212"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#FEFCE8; border:1px solid rgba(0,0,0,0.18);" title="#FEFCE8"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Neighborly hospitality, human-first conversation, domestic belonging.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.5/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-08-front-porch.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 08: The Welcoming Gables', this)" title="Vote for Paired Logo 08">☆ Logo 08</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="fiduciary" data-top="true" data-ver="version-09">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 09 • Architectural & Fiduciary Clarity</span>
+              <span class="score-pill">★ 9.75 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-09-steady-hand.html" style="text-decoration:none;">09. "Steady Hand"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Attorney Referrals, High-Net-Worth Prenups & Estates</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V09: Steady Hand" onclick="toggleThemePick('V09: Steady Hand', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Confident, modern fiduciary warmth—bridging the kitchen table and the independent attorney's office.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="11" fill="#F5F5F4"/>
+          <path d="M8 36V24C8 17 13 13 19 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M40 36V24C40 17 35 13 29 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <polygon points="19,10 29,10 26.5,22 21.5,22" fill="#A16207"/>
+          <line x1="7" y1="36" x2="41" y2="36" stroke="#0F172A" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-09: The Balanced Keystone</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#0F172A; border:1px solid rgba(0,0,0,0.18);" title="#0F172A"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#A16207; border:1px solid rgba(0,0,0,0.18);" title="#A16207"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#F5F5F4; border:1px solid rgba(0,0,0,0.18);" title="#F5F5F4"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Institutional reliability, bridging the kitchen table and the attorney's office, the Unbreakable Receipt.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.7/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.8/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-09-steady-hand.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 09: The Balanced Keystone', this)" title="Vote for Paired Logo 09">☆ Logo 09</button>
+            </div>
+          </div>
+        </article>
+        
+        <article class="hub-card" data-category="sanctuary" data-top="true" data-ver="version-10">
+          <div class="hub-card-photo" style="background-image:url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80');">
+            <div class="hub-card-overlay">
+              <span class="badge-pill">Version 10 • Sanctuary & Evening Calm</span>
+              <span class="score-pill">★ 9.70 / 10</span>
+            </div>
+          </div>
+          <div class="hub-card-body">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:12px;">
+              <div>
+                <h3 style="font-size:22px; margin:0 0 4px;"><a href="version-10-fireside-evening.html" style="text-decoration:none;">10. "Fireside Evening"</a></h3>
+                <div style="font-size:12.5px; color:var(--text-muted); font-weight:600;">Best For: Working Parents, Evening Planners & Low-Eye-Strain</div>
+              </div>
+              <button type="button" class="btn-pick-theme" data-pick-theme="V10: Fireside Evening" onclick="toggleThemePick('V10: Fireside Evening', this)">☆ Top 3</button>
+            </div>
+
+            <p style="font-size:14px; color:var(--text-muted); margin:0 0 16px; line-height:1.55;">
+              Warm, low-eye-strain evening hearth aesthetic for couples working peacefully together after dinner.
+            </p>
+
+            <!-- Paired SVG Logo Preview Box -->
+            <div class="paired-logo-box">
+              <div class="paired-logo-svg"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#1C1917" stroke="#44403C" stroke-width="1.5"/>
+          <rect x="8" y="8" width="32" height="32" rx="9" stroke="#F59E0B" stroke-width="1.8" stroke-opacity="0.45"/>
+          <path d="M21 34C16.5 31 15 25 19 19C21 22 23 23 23 27C23 30 22 32 21 34Z" fill="#EA580C"/>
+          <path d="M26 34C31 30.5 32.5 23.5 26.5 15C24.5 19.5 21.5 22 22.5 27.5C23 30.5 24.5 32.5 26 34Z" fill="#F59E0B" fill-opacity="0.9"/>
+          <line x1="15" y1="36" x2="33" y2="36" stroke="#FDE68A" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+              <div style="flex:1; min-width:0;">
+                <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+                  <strong style="font-size:13px;">Paired LOGO-10: The Hearth & Ember</strong>
+                  <div style="display:flex; gap:4px;"><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#1C1917; border:1px solid rgba(0,0,0,0.18);" title="#1C1917"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#F59E0B; border:1px solid rgba(0,0,0,0.18);" title="#F59E0B"></span><span style="display:inline-block; width:16px; height:16px; border-radius:50%; background:#EA580C; border:1px solid rgba(0,0,0,0.18);" title="#EA580C"></span></div>
+                </div>
+                <div style="font-size:12px; color:var(--text-muted); margin-top:3px; line-height:1.4;">
+                  Low-eye-strain after-dinner calm, intimacy, working together peacefully at night.
+                </div>
+              </div>
+            </div>
+
+            <!-- Behavioral Psychology + Conversion Score Bar -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin:14px 0; font-size:12px; text-align:center;">
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Psych Safety</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.8/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">Conversion</span>
+                <strong class="mono" style="font-size:14px; color:var(--accent);">9.6/10</strong>
+              </div>
+              <div class="metric-chip">
+                <span style="color:var(--text-muted); display:block;">4-Page Views</span>
+                <strong class="mono" style="font-size:13px;">Live SPA ✓</strong>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:auto;">
+              <a href="version-10-fireside-evening.html" class="btn-primary" style="flex:1; justify-content:center; text-decoration:none;">Launch Real-World Experience &rarr;</a>
+              <button type="button" class="btn-outline" onclick="toggleLogoPick('Logo 10: The Hearth & Ember', this)" title="Vote for Paired Logo 10">☆ Logo 10</button>
+            </div>
+          </div>
+        </article>
+        
+      </div>
+    </section>
+
+    <!-- Spotlight Card for Logo Psychology Studio (logos.html) + All 10 Paired Logos -->
+    <section class="logo-spotlight">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+        <div style="max-width:780px;">
+          <span style="display:inline-block; background:rgba(45,212,191,0.2); color:#5EEAD4; border:1px solid rgba(94,234,212,0.4); font-size:12px; font-weight:700; padding:4px 12px; border-radius:999px; margin-bottom:10px;">
+            ✦ SPOTLIGHT • LOGO PSYCHOLOGY STUDIO (<code class="mono">logos.html</code>)
+          </span>
+          <h2 style="font-size:32px; color:#FFFFFF; margin-bottom:8px;">
+            Explore All 10 Psychology-Engineered SVG Brandmarks (<code class="mono">Logo 01</code>–<code class="mono">Logo 10</code>)
+          </h2>
+          <p style="margin:0; font-size:15.5px; color:#CBD5E1;">
+            Every <strong>quic.legal</strong> logo concept is engineered around specific behavioral, shape, and color psychology triggers—designed to lower cortisol, project bilateral fairness, and avoid Unauthorized Practice of Law (UPL) clichés like scales of justice or gavels. Open <code class="mono">logos.html</code> to inspect each mark on Light Canvas, Dark Studio, 64×64 App Icon, 32×32 Favicon, and Website Header Lockups.
           </p>
         </div>
-      </div>
-      <div class="grid-3">
-        
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#2D5A47; --logo-c2:#8F4722; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal The Collaborative Bridge brandmark">
-          <circle cx="26" cy="30" r="15" fill="none" stroke="var(--logo-c1)" stroke-width="5"/>
-          <circle cx="38" cy="30" r="15" fill="none" stroke="var(--logo-c2)" stroke-width="5" stroke-dasharray="75 20"/>
-          <path d="M35 37 L48 50" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-          <circle cx="32" cy="30" r="4" fill="var(--logo-c1)"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation A</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-a-nordic-calm.html" style="color:var(--text-primary); text-decoration:none;">Nordic Calm & Collaborative</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.46/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">CEO CO-WINNER • COUPLE EMOTIONAL SAFETY LEADER (9.46 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">De-escalates emotional tension with warm alabaster surfaces, Nordic sage accents, humanist serif headings, and restorative whitespace—paired with an asymmetric deep-slate Private AI Sanctuary Vault.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#FAF8F5; border:1px solid #94A3B8;" title="Canvas #FAF8F5"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#2D5A47;" title="Accent #2D5A47"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#8F4722;" title="Party A #8F4722"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#254E63;" title="Party B #254E63"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#161614; border:1px solid #94A3B8;" title="Dark #161614"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-01" style="color:var(--accent);">Logo 01: The Collaborative Bridge</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-a-nordic-calm.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="a" onclick="toggleThemeBallot('a')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#0F4C3A; --logo-c2:#92400E; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Fiduciary Crest & QL Ligature brandmark">
-          <polygon points="20,8 44,8 56,20 56,44 44,56 20,56 8,44 8,20" fill="none" stroke="var(--logo-c1)" stroke-width="3.5"/>
-          <circle cx="30" cy="30" r="12" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M34 35 L46 47 M24 22 L24 42 L38 42" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation B</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-b-modern-private-wealth.html" style="color:var(--text-primary); text-decoration:none;">Modern Private Wealth</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.31/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">FIDUCIARY LEDGER & ESTATE PRECISION BENCHMARK (9.31 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Projects institutional permanence for multi-asset schedules using parchment ivory, British racing emerald, sovereign navy, and high-contrast editorial serif typography.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F8F6F0; border:1px solid #94A3B8;" title="Canvas #F8F6F0"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0F4C3A;" title="Accent #0F4C3A"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#162A45;" title="Party A #162A45"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#92400E;" title="Party B #92400E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0B1320; border:1px solid #94A3B8;" title="Dark #0B1320"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-02" style="color:var(--accent);">Logo 02: Fiduciary Crest & QL Ligature</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-b-modern-private-wealth.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="b" onclick="toggleThemeBallot('b')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#1D4ED8; --logo-c2:#0E7490; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Swiss Precision Grid & Balance Node brandmark">
-          <rect x="8" y="8" width="48" height="48" rx="10" fill="none" stroke="var(--logo-c1)" stroke-width="3" stroke-dasharray="4 4" opacity="0.45"/>
-          <circle cx="31" cy="31" r="15" fill="none" stroke="var(--logo-c1)" stroke-width="6"/>
-          <path d="M38 38 L51 51" stroke="var(--logo-c2)" stroke-width="6" stroke-linecap="square"/>
-          <circle cx="25" cy="31" r="3.5" fill="var(--logo-c1)"/>
-          <circle cx="37" cy="31" r="3.5" fill="var(--logo-c2)"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation C</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-c-swiss-legal-precision.html" style="color:var(--text-primary); text-decoration:none;">Swiss Legal Precision</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.54/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">HIGHEST TECHNICAL & STATUTORY SCORE (9.54 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Zero-ambiguity structural grid with 1px zinc borders, crisp Cobalt/Violet/Teal turn state pills, and inspectable SHA-256 hash chain telemetry.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F8F8F6; border:1px solid #94A3B8;" title="Canvas #F8F8F6"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#1D4ED8;" title="Accent #1D4ED8"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#5B21B6;" title="Party A #5B21B6"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0E7490;" title="Party B #0E7490"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#09090B; border:1px solid #94A3B8;" title="Dark #09090B"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-03" style="color:var(--accent);">Logo 03: Swiss Precision Grid & Balance Node</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-c-swiss-legal-precision.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="c" onclick="toggleThemeBallot('c')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#0B5394; --logo-c2:#0F766E; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Civic Handshake & Open Accord brandmark">
-          <path d="M12 20 C20 18, 28 22, 32 28 C36 22, 44 18, 52 20 L52 44 C44 42, 36 46, 32 52 C28 46, 20 42, 12 44 Z" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linejoin="round"/>
-          <line x1="32" y1="26" x2="32" y2="50" stroke="var(--logo-c2)" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="32" cy="14" r="4" fill="var(--logo-c2)"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation D</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-d-approachable-civic-tech.html" style="color:var(--text-primary); text-decoration:none;">Approachable Civic Tech</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.39/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">PLAIN-ENGLISH & FIRST-TIME COUPLE CLARITY LEADER (9.39 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Demystifies Minnesota antenuptial law with step-by-step progress trackers, collapsible plain-English statutory translations, and supportive zero-balance disclosure chips.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F4F7FA; border:1px solid #94A3B8;" title="Canvas #F4F7FA"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0B5394;" title="Accent #0B5394"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#9A3412;" title="Party A #9A3412"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0F766E;" title="Party B #0F766E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0F1722; border:1px solid #94A3B8;" title="Dark #0F1722"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-04" style="color:var(--accent);">Logo 04: Civic Handshake & Open Book</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-d-approachable-civic-tech.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="d" onclick="toggleThemeBallot('d')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#0284C7; --logo-c2:#D97706; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Dual-Orbit Eclipse brandmark">
-          <ellipse cx="32" cy="30" rx="20" ry="11" transform="rotate(-28 32 30)" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <ellipse cx="32" cy="30" rx="20" ry="11" transform="rotate(28 32 30)" fill="none" stroke="var(--logo-c2)" stroke-width="4.5"/>
-          <circle cx="32" cy="30" r="5" fill="var(--logo-c1)"/>
-          <path d="M40 39 L53 52" stroke="var(--logo-c1)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation E</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-e-executive-dark-studio.html" style="color:var(--text-primary); text-decoration:none;">Executive Dark / Dual-Mode Studio</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.37/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">EVENING DARK-MODE & PRIVACY ISOLATION WINNER (9.37 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Built for couples reviewing clauses and entering Schedule A/B asset valuations together in the evening—featuring zero-halation slate surfaces and a daylight-forced attorney print preview.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F5F7FA; border:1px solid #94A3B8;" title="Canvas #F5F7FA"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0284C7;" title="Accent #0284C7"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#B45309;" title="Party A #B45309"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0369A1;" title="Party B #0369A1"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0B0F17; border:1px solid #94A3B8;" title="Dark #0B0F17"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-05" style="color:var(--accent);">Logo 05: Dual-Orbit Eclipse</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-e-executive-dark-studio.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="e" onclick="toggleThemeBallot('e')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#3B312B; --logo-c2:#7C3F23; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Editorial Masthead & Section Seal (§) brandmark">
-          <circle cx="31" cy="31" r="20" fill="none" stroke="var(--logo-c1)" stroke-width="4"/>
-          <path d="M36 20 C29 17, 25 22, 31 27 C37 31, 35 37, 28 35" fill="none" stroke="var(--logo-c2)" stroke-width="4" stroke-linecap="round"/>
-          <path d="M36 27 C29 25, 27 31, 33 35 C39 40, 35 45, 28 42" fill="none" stroke="var(--logo-c1)" stroke-width="4" stroke-linecap="round"/>
-          <line x1="43" y1="43" x2="54" y2="54" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation F</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-f-architectural-editorial.html" style="color:var(--text-primary); text-decoration:none;">Architectural Editorial</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.41/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • EDITORIAL TYPOGRAPHY & CALM LUXURY LEADER (9.41 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Warm unbleached linen surfaces, exposed hairline editorial rules, magazine-grade literary serif typography, and curated column spacing that transforms legal drafting into a thoughtful life-planning journal.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F6F3EC; border:1px solid #94A3B8;" title="Canvas #F6F3EC"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#3B312B;" title="Accent #3B312B"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#7C3F23;" title="Party A #7C3F23"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#2C4C3E;" title="Party B #2C4C3E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#171512; border:1px solid #94A3B8;" title="Dark #171512"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-06" style="color:var(--accent);">Logo 06: Editorial Masthead Ligature</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-f-architectural-editorial.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="f" onclick="toggleThemeBallot('f')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#285943; --logo-c2:#9C4A2D; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Eucalyptus Olive Branch & Sanctuary Arch brandmark">
-          <path d="M14 48 L14 28 A18 18 0 0 1 50 28 L50 48" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round"/>
-          <path d="M32 46 C22 40, 20 28, 32 20 C44 28, 42 40, 32 46 Z" fill="none" stroke="var(--logo-c2)" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M32 22 L32 48 L48 54" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation G</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-g-biophilic-sanctuary.html" style="color:var(--text-primary); text-decoration:none;">Biophilic Sanctuary</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.43/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • EMOTIONAL DE-ESCALATION & ANXIETY REDUCTION WINNER (9.43 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Deep eucalyptus greens, warm terracotta clay, sage mist backgrounds, and organic 24px soft-rounded cards engineered to lower cortisol and foster mutual empathy during financial disclosures.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F3F6F3; border:1px solid #94A3B8;" title="Canvas #F3F6F3"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#285943;" title="Accent #285943"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#9C4A2D;" title="Party A #9C4A2D"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#23576E;" title="Party B #23576E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#101713; border:1px solid #94A3B8;" title="Dark #101713"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-07" style="color:var(--accent);">Logo 07: Eucalyptus Olive Branch & Sanctuary Arch</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-g-biophilic-sanctuary.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="g" onclick="toggleThemeBallot('g')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#4F46E5; --logo-c2:#0284C7; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Fintech Ledger Prism brandmark">
-          <polygon points="32,8 52,20 52,44 32,56 12,44 12,20" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linejoin="round"/>
-          <path d="M23 32 L30 39 L43 25" fill="none" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M42 44 L55 55" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation H</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-h-fintech-clarity.html" style="color:var(--text-primary); text-decoration:none;">Fintech Clarity</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.54/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • SCHEDULE A/B FINANCIAL LEDGER & SAAS POLISH LEADER (9.54 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Modern financial SaaS precision with subtle glassmorphic depth, indigo-violet interactive controls, crisp tabular asset/liability alignment, and real-time net-worth parity telemetry.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F8FAFC; border:1px solid #94A3B8;" title="Canvas #F8FAFC"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#4F46E5;" title="Accent #4F46E5"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#6D28D9;" title="Party A #6D28D9"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0369A1;" title="Party B #0369A1"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0B0F19; border:1px solid #94A3B8;" title="Dark #0B0F19"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-08" style="color:var(--accent);">Logo 08: Fintech Ledger Prism</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-h-fintech-clarity.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="h" onclick="toggleThemeBallot('h')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#1E3A5F; --logo-c2:#B45309; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal L'Étoile du Nord (Minnesota North Star) brandmark">
-          <circle cx="31" cy="31" r="19" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <polygon points="31,13 35,26 48,31 35,36 31,49 27,36 14,31 27,26" fill="none" stroke="var(--logo-c2)" stroke-width="3.8" stroke-linejoin="round"/>
-          <path d="M43 43 L55 55" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation I</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-i-minnesota-north-star.html" style="color:var(--text-primary); text-decoration:none;">Minnesota North Star Civic</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.54/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • MINNESOTA STATUTORY AUTHENTICITY & LOCAL TRUST WINNER (9.54 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Rooted unmistakably in Minnesota's legal and natural landscape—combining Lake Superior slate blue, paper birch white, Northwoods pine, and warm harvest amber with explicit Minn. Stat. § 519.11 civic authority.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#FAF9F5; border:1px solid #94A3B8;" title="Canvas #FAF9F5"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#1E3A5F;" title="Accent #1E3A5F"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#1F4E3D;" title="Party A #1F4E3D"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#9A4B16;" title="Party B #9A4B16"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0C1520; border:1px solid #94A3B8;" title="Dark #0C1520"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-09" style="color:var(--accent);">Logo 09: L'Étoile du Nord (8-Point Compass)</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-i-minnesota-north-star.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="i" onclick="toggleThemeBallot('i')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#7C5836; --logo-c2:#2E5A52; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal The Concierge Knot (Ribbon of Accord) brandmark">
-          <path d="M22 20 C10 20, 10 44, 22 44 C30 44, 34 20, 42 20 C54 20, 54 44, 42 44 C34 44, 30 20, 22 20 Z" fill="none" stroke="var(--logo-c1)" stroke-width="5" stroke-linecap="round"/>
-          <path d="M40 40 L54 53" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation J</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-j-boutique-mediation-studio.html" style="color:var(--text-primary); text-decoration:none;">Boutique Mediation Studio</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.34/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • CONCIERGE HOSPITALITY & PARTNER EMPATHY LEADER (9.34 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Replaces cold software chrome with a warm cashmere, champagne stone, and burnished bronze palette—guiding couples through each section like a private family mediation concierge.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#FBF8F3; border:1px solid #94A3B8;" title="Canvas #FBF8F3"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#7C5836;" title="Accent #7C5836"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#8A3B2E;" title="Party A #8A3B2E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#2E5A52;" title="Party B #2E5A52"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#191512; border:1px solid #94A3B8;" title="Dark #191512"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-10" style="color:var(--accent);">Logo 10: The Concierge Knot (Ribbon of Accord)</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-j-boutique-mediation-studio.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="j" onclick="toggleThemeBallot('j')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#047857; --logo-c2:#0F52BA; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Zero-Knowledge Hex Lock & Merkle Node brandmark">
-          <path d="M22 26 L22 18 A10 10 0 0 1 42 18 L42 26" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="round"/>
-          <rect x="14" y="26" width="36" height="26" rx="7" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <circle cx="32" cy="37" r="4" fill="var(--logo-c1)"/>
-          <path d="M32 41 L32 47 M44 46 L55 56" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation K</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-k-cryptographic-vault.html" style="color:var(--text-primary); text-decoration:none;">Cryptographic Zero-Knowledge Vault</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.47/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • CRYPTOGRAPHIC AUDIT & CRASHOVERRIDE ISOLATION WINNER (9.47 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Engineered for privacy-maximalist couples, founders, and security auditors—foregrounding the append-only SHA-256 audit chain, ActiveRecord Encryption envelopes, and zero-cloud `crashoverride` GPU telemetry.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F3F6F9; border:1px solid #94A3B8;" title="Canvas #F3F6F9"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#047857;" title="Accent #047857"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0F52BA;" title="Party A #0F52BA"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0E7490;" title="Party B #0E7490"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#070B10; border:1px solid #94A3B8;" title="Dark #070B10"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-11" style="color:var(--accent);">Logo 11: Zero-Knowledge Hex Lock & Merkle Node</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-k-cryptographic-vault.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="k" onclick="toggleThemeBallot('k')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#111111; --logo-c2:#1D4ED8; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Brutalist Stamp & Docket Block brandmark">
-          <rect x="12" y="12" width="42" height="42" fill="none" stroke="var(--logo-c2)" stroke-width="4"/>
-          <rect x="8" y="8" width="42" height="42" fill="var(--logo-bg, transparent)" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <circle cx="25" cy="29" r="9" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M29 33 L36 40 M40 19 L40 39 L46 39" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="square"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation L</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-l-neo-brutalist-legal-grid.html" style="color:var(--text-primary); text-decoration:none;">Neo-Brutalist Legal Grid</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.33/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • UNMISTAKABLE STATE BOUNDARIES & VISUAL IMPACT (9.33 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Tactile cream legal-pad paper paired with bold 2px solid ink borders, hard 4px offset architectural shadows, exposed section dockets, and zero-ambiguity turn ownership blocks.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#FFFDF7; border:1px solid #94A3B8;" title="Canvas #FFFDF7"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#1D4ED8;" title="Accent #1D4ED8"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#B91C1C;" title="Party A #B91C1C"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#047857;" title="Party B #047857"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#121210; border:1px solid #94A3B8;" title="Dark #121210"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-12" style="color:var(--accent);">Logo 12: Brutalist Stamp & Docket Block</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-l-neo-brutalist-legal-grid.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="l" onclick="toggleThemeBallot('l')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#C2410C; --logo-c2:#0F766E; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Humanist Document Tab & Spark brandmark">
-          <rect x="12" y="8" width="36" height="48" rx="8" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M48 18 L55 18 M48 30 L55 30" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-          <circle cx="30" cy="31" r="9" fill="none" stroke="var(--logo-c2)" stroke-width="4"/>
-          <path d="M35 36 L43 44" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation M</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-m-humanist-warm-saas.html" style="color:var(--text-primary); text-decoration:none;">Humanist Warm SaaS</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.44/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • FRICTIONLESS DOCUMENT COLLABORATION WINNER (9.44 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Feels like a beloved collaborative notebook—combining warm stone-gray surfaces, friendly callout blocks, intuitive slash-style statutory helpers, and effortless turn-based document review.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F7F6F3; border:1px solid #94A3B8;" title="Canvas #F7F6F3"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#C2410C;" title="Accent #C2410C"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#9A3412;" title="Party A #9A3412"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#0F766E;" title="Party B #0F766E"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#191919; border:1px solid #94A3B8;" title="Dark #191919"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-13" style="color:var(--accent);">Logo 13: Humanist Document Tab & Spark</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-m-humanist-warm-saas.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="m" onclick="toggleThemeBallot('m')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#6B1D2F; --logo-c2:#1E3A5F; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Sovereign Family Cipher (Heritage Pillars) brandmark">
-          <circle cx="31" cy="31" r="20" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M21 21 L41 21 M21 41 L41 41" stroke="var(--logo-c1)" stroke-width="4" stroke-linecap="round"/>
-          <line x1="25" y1="21" x2="25" y2="41" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <line x1="37" y1="21" x2="37" y2="41" stroke="var(--logo-c2)" stroke-width="4.5"/>
-          <path d="M42 42 L54 54" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation N</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-n-sovereign-family-office.html" style="color:var(--text-primary); text-decoration:none;">Sovereign Family Office</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.34/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • GENERATIONAL WEALTH, LLC EQUITY & CH. 524 PROBATE LEADER (9.34 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Deep oxblood burgundy, warm limestone, antique gold accents, and classical engraving typography tailored for founders, second marriages, and complex multi-entity Schedule A/B disclosures.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#F9F6F0; border:1px solid #94A3B8;" title="Canvas #F9F6F0"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#6B1D2F;" title="Accent #6B1D2F"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#6B1D2F;" title="Party A #6B1D2F"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#1E3A5F;" title="Party B #1E3A5F"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#161012; border:1px solid #94A3B8;" title="Dark #161012"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-14" style="color:var(--accent);">Logo 14: Sovereign Family Cipher (Heritage Pillars)</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-n-sovereign-family-office.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="n" onclick="toggleThemeBallot('n')">☆ Top 3</button>
-          </div>
-        </div>
-        <div class="card" style="display:flex; flex-direction:column; justify-content:space-between; gap:14px;">
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;">
-              <div style="display:flex; align-items:center; gap:10px;">
-                <svg viewBox="0 0 64 64" width="42" height="42" style="--logo-c1:#003366; --logo-c2:#064E3B; --logo-bg:#FFFFFF; width:42px; height:42px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal AAA High-Clarity Equality Beacon brandmark">
-          <circle cx="30" cy="30" r="19" fill="none" stroke="var(--logo-c1)" stroke-width="6.5"/>
-          <line x1="22" y1="26" x2="38" y2="26" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-          <line x1="22" y1="34" x2="38" y2="34" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-          <path d="M41 41 L55 55" stroke="var(--logo-c1)" stroke-width="7" stroke-linecap="round"/>
-        </svg>
-                <div>
-                  <span class="badge badge-locked">Variation O</span>
-                  <h3 style="font-size:19px; margin-top:3px;"><a href="variation-o-ultra-accessible-clarity.html" style="color:var(--text-primary); text-decoration:none;">Ultra-Accessible High-Clarity</a></h3>
-                </div>
-              </div>
-              <span class="mono" style="font-size:15px; font-weight:800; color:var(--accent);">9.59/10</span>
-            </div>
-            <div style="font-size:12px; font-weight:700; color:var(--accent); margin-bottom:6px;">NEW • #1 WCAG AAA+ ACCESSIBILITY & COGNITIVE EASE WINNER (9.59 / 10)</div>
-            <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 10px;">Zero visual clutter, 19:1 contrast ratios, generous 18px legal prose, oversized 48px+ interactive buttons, and unmistakable triple-coded redline diff boxes for effortless comprehension by all users and attorneys.</p>
-            <div style="display:flex; gap:6px; align-items:center; margin-bottom:8px;">
-              <span style="width:22px; height:22px; border-radius:50%; background:#FFFFFA; border:1px solid #94A3B8;" title="Canvas #FFFFFA"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#003366;" title="Accent #003366"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#7C2D12;" title="Party A #7C2D12"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#064E3B;" title="Party B #064E3B"></span>
-              <span style="width:22px; height:22px; border-radius:50%; background:#05070A; border:1px solid #94A3B8;" title="Dark #05070A"></span>
-              <span class="mono" style="font-size:11px; color:var(--text-secondary); margin-left:4px;">Paired: <a href="logos.html#logo-15" style="color:var(--accent);">Logo 15: AAA High-Clarity Beacon</a></span>
-            </div>
-          </div>
-          <div style="display:flex; gap:8px; flex-wrap:wrap;">
-            <a href="variation-o-ultra-accessible-clarity.html" class="btn-primary" style="text-decoration:none; flex:1; justify-content:center;">Launch Interactive Prototype &rarr;</a>
-            <button type="button" class="btn-outline" data-theme-pick="o" onclick="toggleThemeBallot('o')">☆ Top 3</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 15 SVG Logo Concepts Quick-Picker -->
-    <section class="card" style="margin-bottom:28px;">
-      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:14px;">
         <div>
-          <h2 style="font-size:24px;">15 SVG Logo &amp; Brandmark Concepts (`Logo 01` – `Logo 15`)</h2>
-          <p style="margin:2px 0 0; color:var(--text-secondary); font-size:13.5px;">
-            Click any logo to inspect full Light, Dark, 64×64 App Icon, 32×32 Favicon, and Header Lockup renders in <code>logos.html</code>, or click <strong>"☆ Pick"</strong> to add to your Top 3 Logo Ballot.
-          </p>
-        </div>
-        <a href="logos.html" class="btn-primary" style="text-decoration:none;">Open Full 15-Logo Interactive Showcase (`logos.html`) &rarr;</a>
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(290px, 1fr)); gap:12px;">
-        
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-01" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#2D5A47; --logo-c2:#8F4722; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal The Collaborative Bridge brandmark">
-          <circle cx="26" cy="30" r="15" fill="none" stroke="var(--logo-c1)" stroke-width="5"/>
-          <circle cx="38" cy="30" r="15" fill="none" stroke="var(--logo-c2)" stroke-width="5" stroke-dasharray="75 20"/>
-          <path d="M35 37 L48 50" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-          <circle cx="32" cy="30" r="4" fill="var(--logo-c1)"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 01: The Collaborative Bridge</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.7/10 • Variation A</div>
-            </div>
+          <a href="logos.html" class="btn-primary" style="background:#2DD4BF; color:#0F172A; padding:14px 24px; font-size:15px; text-decoration:none;">
+            Open Interactive Logo Psychology Studio (<code class="mono">logos.html</code>) &rarr;
           </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="01" onclick="toggleLogoBallot('01')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-02" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#0F4C3A; --logo-c2:#92400E; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Fiduciary Crest & QL Ligature brandmark">
-          <polygon points="20,8 44,8 56,20 56,44 44,56 20,56 8,44 8,20" fill="none" stroke="var(--logo-c1)" stroke-width="3.5"/>
-          <circle cx="30" cy="30" r="12" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M34 35 L46 47 M24 22 L24 42 L38 42" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 02: Fiduciary Crest & QL Ligature</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.4/10 • Variation B</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="02" onclick="toggleLogoBallot('02')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-03" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#1D4ED8; --logo-c2:#0E7490; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Swiss Precision Grid & Balance Node brandmark">
-          <rect x="8" y="8" width="48" height="48" rx="10" fill="none" stroke="var(--logo-c1)" stroke-width="3" stroke-dasharray="4 4" opacity="0.45"/>
-          <circle cx="31" cy="31" r="15" fill="none" stroke="var(--logo-c1)" stroke-width="6"/>
-          <path d="M38 38 L51 51" stroke="var(--logo-c2)" stroke-width="6" stroke-linecap="square"/>
-          <circle cx="25" cy="31" r="3.5" fill="var(--logo-c1)"/>
-          <circle cx="37" cy="31" r="3.5" fill="var(--logo-c2)"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 03: Swiss Precision Grid & Balance Node</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.7/10 • Variation C</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="03" onclick="toggleLogoBallot('03')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-04" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#0B5394; --logo-c2:#0F766E; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Civic Handshake & Open Accord brandmark">
-          <path d="M12 20 C20 18, 28 22, 32 28 C36 22, 44 18, 52 20 L52 44 C44 42, 36 46, 32 52 C28 46, 20 42, 12 44 Z" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linejoin="round"/>
-          <line x1="32" y1="26" x2="32" y2="50" stroke="var(--logo-c2)" stroke-width="4" stroke-linecap="round"/>
-          <circle cx="32" cy="14" r="4" fill="var(--logo-c2)"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 04: Civic Handshake & Open Accord</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.43/10 • Variation D</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="04" onclick="toggleLogoBallot('04')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-05" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#0284C7; --logo-c2:#D97706; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Dual-Orbit Eclipse brandmark">
-          <ellipse cx="32" cy="30" rx="20" ry="11" transform="rotate(-28 32 30)" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <ellipse cx="32" cy="30" rx="20" ry="11" transform="rotate(28 32 30)" fill="none" stroke="var(--logo-c2)" stroke-width="4.5"/>
-          <circle cx="32" cy="30" r="5" fill="var(--logo-c1)"/>
-          <path d="M40 39 L53 52" stroke="var(--logo-c1)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 05: Dual-Orbit Eclipse</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.6/10 • Variation E</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="05" onclick="toggleLogoBallot('05')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-06" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#3B312B; --logo-c2:#7C3F23; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Editorial Masthead & Section Seal (§) brandmark">
-          <circle cx="31" cy="31" r="20" fill="none" stroke="var(--logo-c1)" stroke-width="4"/>
-          <path d="M36 20 C29 17, 25 22, 31 27 C37 31, 35 37, 28 35" fill="none" stroke="var(--logo-c2)" stroke-width="4" stroke-linecap="round"/>
-          <path d="M36 27 C29 25, 27 31, 33 35 C39 40, 35 45, 28 42" fill="none" stroke="var(--logo-c1)" stroke-width="4" stroke-linecap="round"/>
-          <line x1="43" y1="43" x2="54" y2="54" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 06: Editorial Masthead & Section Seal (§)</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.47/10 • Variation F</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="06" onclick="toggleLogoBallot('06')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-07" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#285943; --logo-c2:#9C4A2D; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Eucalyptus Olive Branch & Sanctuary Arch brandmark">
-          <path d="M14 48 L14 28 A18 18 0 0 1 50 28 L50 48" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round"/>
-          <path d="M32 46 C22 40, 20 28, 32 20 C44 28, 42 40, 32 46 Z" fill="none" stroke="var(--logo-c2)" stroke-width="4" stroke-linejoin="round"/>
-          <path d="M32 22 L32 48 L48 54" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 07: Eucalyptus Olive Branch & Sanctuary Arch</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.67/10 • Variation G</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="07" onclick="toggleLogoBallot('07')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-08" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#4F46E5; --logo-c2:#0284C7; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Fintech Ledger Prism brandmark">
-          <polygon points="32,8 52,20 52,44 32,56 12,44 12,20" fill="none" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linejoin="round"/>
-          <path d="M23 32 L30 39 L43 25" fill="none" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M42 44 L55 55" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 08: Fintech Ledger Prism</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.67/10 • Variation H</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="08" onclick="toggleLogoBallot('08')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-09" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#1E3A5F; --logo-c2:#B45309; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal L'Étoile du Nord (Minnesota North Star) brandmark">
-          <circle cx="31" cy="31" r="19" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <polygon points="31,13 35,26 48,31 35,36 31,49 27,36 14,31 27,26" fill="none" stroke="var(--logo-c2)" stroke-width="3.8" stroke-linejoin="round"/>
-          <path d="M43 43 L55 55" stroke="var(--logo-c1)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 09: L'Étoile du Nord (Minnesota North Star)</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.6/10 • Variation I</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="09" onclick="toggleLogoBallot('09')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-10" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#7C5836; --logo-c2:#2E5A52; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal The Concierge Knot (Ribbon of Accord) brandmark">
-          <path d="M22 20 C10 20, 10 44, 22 44 C30 44, 34 20, 42 20 C54 20, 54 44, 42 44 C34 44, 30 20, 22 20 Z" fill="none" stroke="var(--logo-c1)" stroke-width="5" stroke-linecap="round"/>
-          <path d="M40 40 L54 53" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 10: The Concierge Knot (Ribbon of Accord)</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.53/10 • Variation J</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="10" onclick="toggleLogoBallot('10')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-11" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#047857; --logo-c2:#0F52BA; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Zero-Knowledge Hex Lock & Merkle Node brandmark">
-          <path d="M22 26 L22 18 A10 10 0 0 1 42 18 L42 26" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="round"/>
-          <rect x="14" y="26" width="36" height="26" rx="7" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <circle cx="32" cy="37" r="4" fill="var(--logo-c1)"/>
-          <path d="M32 41 L32 47 M44 46 L55 56" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 11: Zero-Knowledge Hex Lock & Merkle Node</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.63/10 • Variation K</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="11" onclick="toggleLogoBallot('11')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-12" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#111111; --logo-c2:#1D4ED8; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Brutalist Stamp & Docket Block brandmark">
-          <rect x="12" y="12" width="42" height="42" fill="none" stroke="var(--logo-c2)" stroke-width="4"/>
-          <rect x="8" y="8" width="42" height="42" fill="var(--logo-bg, transparent)" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <circle cx="25" cy="29" r="9" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M29 33 L36 40 M40 19 L40 39 L46 39" fill="none" stroke="var(--logo-c2)" stroke-width="4.5" stroke-linecap="square"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 12: Brutalist Stamp & Docket Block</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.43/10 • Variation L</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="12" onclick="toggleLogoBallot('12')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-13" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#C2410C; --logo-c2:#0F766E; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Humanist Document Tab & Spark brandmark">
-          <rect x="12" y="8" width="36" height="48" rx="8" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M48 18 L55 18 M48 30 L55 30" stroke="var(--logo-c2)" stroke-width="5" stroke-linecap="round"/>
-          <circle cx="30" cy="31" r="9" fill="none" stroke="var(--logo-c2)" stroke-width="4"/>
-          <path d="M35 36 L43 44" stroke="var(--logo-c1)" stroke-width="4.5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 13: Humanist Document Tab & Spark</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.57/10 • Variation M</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="13" onclick="toggleLogoBallot('13')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-14" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#6B1D2F; --logo-c2:#1E3A5F; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal Sovereign Family Cipher (Heritage Pillars) brandmark">
-          <circle cx="31" cy="31" r="20" fill="none" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <path d="M21 21 L41 21 M21 41 L41 41" stroke="var(--logo-c1)" stroke-width="4" stroke-linecap="round"/>
-          <line x1="25" y1="21" x2="25" y2="41" stroke="var(--logo-c1)" stroke-width="4.5"/>
-          <line x1="37" y1="21" x2="37" y2="41" stroke="var(--logo-c2)" stroke-width="4.5"/>
-          <path d="M42 42 L54 54" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 14: Sovereign Family Cipher (Heritage Pillars)</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.4/10 • Variation N</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="14" onclick="toggleLogoBallot('14')">☆ Pick</button>
-        </div>
-        <div class="card-alt" style="display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px;">
-          <a href="logos.html#logo-15" style="display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text-primary);">
-            <svg viewBox="0 0 64 64" width="38" height="38" style="--logo-c1:#003366; --logo-c2:#064E3B; --logo-bg:#FFFFFF; width:38px; height:38px; display:block; flex-shrink:0;" role="img" aria-label="quic.legal AAA High-Clarity Equality Beacon brandmark">
-          <circle cx="30" cy="30" r="19" fill="none" stroke="var(--logo-c1)" stroke-width="6.5"/>
-          <line x1="22" y1="26" x2="38" y2="26" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-          <line x1="22" y1="34" x2="38" y2="34" stroke="var(--logo-c2)" stroke-width="5.5" stroke-linecap="round"/>
-          <path d="M41 41 L55 55" stroke="var(--logo-c1)" stroke-width="7" stroke-linecap="round"/>
-        </svg>
-            <div>
-              <div style="font-weight:700; font-size:13.5px;">Logo 15: AAA High-Clarity Equality Beacon</div>
-              <div class="mono" style="font-size:11px; color:var(--text-secondary);">Score: 9.67/10 • Variation O</div>
-            </div>
-          </a>
-          <button type="button" class="btn-outline" style="padding:5px 10px; font-size:11.5px;" data-logo-pick="15" onclick="toggleLogoBallot('15')">☆ Pick</button>
         </div>
       </div>
-    </section>
 
-    <!-- Consolidated 7-Specialist Review Gate Matrix -->
-    <section class="card">
-      <h2 style="font-size:24px; margin-bottom:6px;">Mandatory 7-Specialist Review Gate Matrix across All 15 Website Themes (V1 &rarr; V2)</h2>
-      <p style="font-size:13.5px; color:var(--text-secondary); margin:0 0 14px;">
-        Evaluated and remediated by: (1) UI/UX &amp; Mediation Designer, (2) SEO &amp; Growth Strategist [CMO], (3) Marketing &amp; Brand Reviewer [CMO/PM], (4) Lead Engineer [Rails 8], (5) MN Marital &amp; Prenup Domain Expert, (6) UPL &amp; Legal Ethics Officer, and (7) Security &amp; Cryptographic Audit Engineer.
-      </p>
-      <div style="overflow-x:auto;">
-        <table class="ledger-table">
-          <thead>
-            <tr>
-              <th>Variation (A–O)</th>
-              <th>1. UI/UX</th>
-              <th>2. SEO (CMO)</th>
-              <th>3. Brand/PM</th>
-              <th>4. Rails 8 Eng</th>
-              <th>5. MN § 519.11</th>
-              <th>6. Zero-UPL</th>
-              <th>7. Sec/Crypto</th>
-              <th>Composite (V1 &rarr; V2)</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          <tr>
-            <td><strong><a href="variation-a-nordic-calm.html" style="color:var(--accent);">Variation A: Nordic Calm & Collaborative</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Warm Minimalist Relationship Planning Studio</span></td>
-            <td class="mono">8.6 &rarr; <strong>9.7</strong></td>
-            <td class="mono">8.2 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.5</strong></td>
-            <td class="mono">7.8 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.6</strong></td>
-            <td class="mono">6.8 &rarr; <strong>9.0</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.07 &rarr; 9.46</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-b-modern-private-wealth.html" style="color:var(--accent);">Variation B: Modern Private Wealth</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Editorial & Institutional Fiduciary Studio</span></td>
-            <td class="mono">7.8 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.2</strong></td>
-            <td class="mono">8.4 &rarr; <strong>9.6</strong></td>
-            <td class="mono">7.9 &rarr; <strong>9.3</strong></td>
-            <td class="mono">7.9 &rarr; <strong>9.2</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.14 &rarr; 9.31</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-c-swiss-legal-precision.html" style="color:var(--accent);">Variation C: Swiss Legal Precision</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Clean SaaS & Linear-Inspired Structural Grid</span></td>
-            <td class="mono">7.4 &rarr; <strong>9.0</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.2 &rarr; <strong>9.2</strong></td>
-            <td class="mono">9.1 &rarr; <strong>9.9</strong></td>
-            <td class="mono">9.0 &rarr; <strong>9.9</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.7</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.6</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.53 &rarr; 9.54</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-d-approachable-civic-tech.html" style="color:var(--accent);">Variation D: Approachable Civic Tech</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Guided Step-by-Step Public Service & Plain-English Studio</span></td>
-            <td class="mono">8.5 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.7 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.2 &rarr; <strong>9.5</strong></td>
-            <td class="mono">7.4 &rarr; <strong>9.0</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.29 &rarr; 9.39</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-e-executive-dark-studio.html" style="color:var(--accent);">Variation E: Executive Dark / Dual-Mode Studio</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Low-Eye-Strain Evening Collaborative Workspace</span></td>
-            <td class="mono">7.4 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.4 &rarr; <strong>9.6</strong></td>
-            <td class="mono">7.5 &rarr; <strong>9.3</strong></td>
-            <td class="mono">7.8 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.4 &rarr; <strong>9.7</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.0 &rarr; 9.37</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-f-architectural-editorial.html" style="color:var(--accent);">Variation F: Architectural Editorial</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Kinfolk & Monocle Inspired Literary MOU Journal</span></td>
-            <td class="mono">8.4 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.4</strong></td>
-            <td class="mono">9.1 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.2 &rarr; <strong>9.3</strong></td>
-            <td class="mono">7.9 &rarr; <strong>9.4</strong></td>
-            <td class="mono">7.7 &rarr; <strong>9.4</strong></td>
-            <td class="mono">7.5 &rarr; <strong>9.1</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.19 &rarr; 9.41</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-g-biophilic-sanctuary.html" style="color:var(--accent);">Variation G: Biophilic Sanctuary</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Botanical & Restorative Emotional De-Escalation Studio</span></td>
-            <td class="mono">8.9 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.2</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.7</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.3</strong></td>
-            <td class="mono">7.6 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.5</strong></td>
-            <td class="mono">7.2 &rarr; <strong>9.1</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.1 &rarr; 9.43</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-h-fintech-clarity.html" style="color:var(--accent);">Variation H: Fintech Clarity</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Stripe & Mercury Inspired High-Trust Financial SaaS</span></td>
-            <td class="mono">8.3 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.5</strong></td>
-            <td class="mono">9.0 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.5</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.57 &rarr; 9.54</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-i-minnesota-north-star.html" style="color:var(--accent);">Variation I: Minnesota North Star Civic</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Regional Heritage, Lake Superior Slate & Statutory Authenticity</span></td>
-            <td class="mono">8.4 &rarr; <strong>9.4</strong></td>
-            <td class="mono">9.0 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.4 &rarr; <strong>9.4</strong></td>
-            <td class="mono">9.2 &rarr; <strong>9.9</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.2</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.57 &rarr; 9.54</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-j-boutique-mediation-studio.html" style="color:var(--accent);">Variation J: Boutique Mediation Studio</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Hospitality, Cashmere Warmth & Concierge Family Advisory</span></td>
-            <td class="mono">8.7 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.2</strong></td>
-            <td class="mono">7.7 &rarr; <strong>9.3</strong></td>
-            <td class="mono">7.9 &rarr; <strong>9.4</strong></td>
-            <td class="mono">7.1 &rarr; <strong>9.2</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.06 &rarr; 9.34</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-k-cryptographic-vault.html" style="color:var(--accent);">Variation K: Cryptographic Zero-Knowledge Vault</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Security-First Transparency, SHA-256 Hash Chains & Local AI Sovereignty</span></td>
-            <td class="mono">7.5 &rarr; <strong>9.0</strong></td>
-            <td class="mono">8.2 &rarr; <strong>9.2</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.7</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.6</strong></td>
-            <td class="mono">9.4 &rarr; <strong>9.9</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.53 &rarr; 9.47</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-l-neo-brutalist-legal-grid.html" style="color:var(--accent);">Variation L: Neo-Brutalist Legal Grid</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">High-Contrast Structured Paper, Exposed Borders & Unmistakable State Badges</span></td>
-            <td class="mono">7.6 &rarr; <strong>8.9</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.2</strong></td>
-            <td class="mono">8.7 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.7 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.6 &rarr; <strong>9.4</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.46 &rarr; 9.33</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-m-humanist-warm-saas.html" style="color:var(--accent);">Variation M: Humanist Warm SaaS</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Notion & Craft Inspired Collaborative Document Studio</span></td>
-            <td class="mono">8.8 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.5 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.7 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.6</strong></td>
-            <td class="mono">7.9 &rarr; <strong>9.4</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.4</strong></td>
-            <td class="mono">7.6 &rarr; <strong>9.2</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.33 &rarr; 9.44</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-n-sovereign-family-office.html" style="color:var(--accent);">Variation N: Sovereign Family Office</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">Heritage, Generational Planning & Multi-Entity Estate Stewardship</span></td>
-            <td class="mono">7.9 &rarr; <strong>9.1</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.8 &rarr; <strong>9.5</strong></td>
-            <td class="mono">8.3 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.7</strong></td>
-            <td class="mono">7.8 &rarr; <strong>9.3</strong></td>
-            <td class="mono">8.1 &rarr; <strong>9.2</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.3 &rarr; 9.34</td>
-          </tr>
-          <tr>
-            <td><strong><a href="variation-o-ultra-accessible-clarity.html" style="color:var(--accent);">Variation O: Ultra-Accessible High-Clarity</a></strong><br><span style="font-size:11px; color:var(--text-secondary);">WCAG AAA+ Cognitive Ease, 18px Prose & Maximum Legibility</span></td>
-            <td class="mono">8.7 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.6</strong></td>
-            <td class="mono">8.0 &rarr; <strong>9.0</strong></td>
-            <td class="mono">9.0 &rarr; <strong>9.7</strong></td>
-            <td class="mono">8.9 &rarr; <strong>9.7</strong></td>
-            <td class="mono">9.1 &rarr; <strong>9.8</strong></td>
-            <td class="mono">8.7 &rarr; <strong>9.5</strong></td>
-            <td class="mono" style="font-weight:800; color:var(--accent);">8.76 &rarr; 9.59</td>
-          </tr>
-          </tbody>
-        </table>
+      <div class="logo-mini-grid">
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#FFFBEB"/>
+          <circle cx="20" cy="25" r="11" stroke="#3E2723" stroke-width="3" fill="rgba(217,119,6,0.12)"/>
+          <circle cx="28" cy="25" r="11" stroke="#D97706" stroke-width="3" fill="rgba(62,39,35,0.06)"/>
+          <path d="M21 11C21 9 23 8 23 6M27 11C27 9 29 8 29 6" stroke="#D97706" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="25" r="3" fill="#3E2723"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 01 • PAIRED WITH V01</div>
+              <strong style="font-size:15px;">The Warm Cup & Ring</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Cortisol reduction, morning ritual safety, zero legal intimidation.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#3E2723; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#D97706; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FFFBEB; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#3E2723</span></div>
+            <a href="version-01-sunday-morning-coffee.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V01 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="12" fill="#FAF8F5"/>
+          <path d="M8 14H22L26 20H20L18 28H26L22 34H8V14Z" fill="#451A03"/>
+          <path d="M40 14H26L30 20H22L20 28H28L26 34H40V14Z" fill="#C2410C" fill-opacity="0.9"/>
+          <line x1="8" y1="38" x2="40" y2="38" stroke="#451A03" stroke-width="2.5" stroke-linecap="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 02 • PAIRED WITH V02</div>
+              <strong style="font-size:15px;">The Kitchen Table Dovetail</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Equal voice, grounded domestic candor, mutual construction.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#451A03; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#C2410C; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FAF8F5; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#451A03</span></div>
+            <a href="version-02-the-kitchen-table.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V02 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#F8FAFC"/>
+          <path d="M8 31C13 21 25 18 38 26" stroke="#0284C7" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M10 26C18 15 30 15 40 24" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <line x1="7" y1="34" x2="41" y2="34" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="25" cy="22" r="3.5" fill="#0284C7"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 03 • PAIRED WITH V03</div>
+              <strong style="font-size:15px;">The Rising Horizon Arc</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Shared future optimism, forward momentum for engaged couples & co-buyers.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#0F172A; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#0284C7; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#F8FAFC; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#0F172A</span></div>
+            <a href="version-03-clear-horizon.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V03 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#F0FDF4"/>
+          <rect x="8" y="13" width="20" height="22" rx="7" stroke="#14532D" stroke-width="3" fill="rgba(46,111,64,0.12)"/>
+          <rect x="20" y="13" width="20" height="22" rx="7" stroke="#2E6F40" stroke-width="3" fill="rgba(20,83,45,0.12)"/>
+          <path d="M20 24H28" stroke="#14532D" stroke-width="3" stroke-linecap="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 04 • PAIRED WITH V04</div>
+              <strong style="font-size:15px;">The Interlocking Venn Bridge</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Conflict de-escalation, autonomic calming, two autonomous people creating shared ground.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#2E6F40; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#14532D; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#F0FDF4; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#2E6F40</span></div>
+            <a href="version-04-common-ground.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V04 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+          <path d="M11 33V11H33" stroke="#1E293B" stroke-width="3.5" stroke-linecap="square"/>
+          <path d="M37 15V37H15" stroke="#059669" stroke-width="3.5" stroke-linecap="square"/>
+          <path d="M19 24.5L22.5 28L30 20.5" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 05 • PAIRED WITH V05</div>
+              <strong style="font-size:15px;">The True Square & Check</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Procedural fairness, plain-English transparency, zero hidden traps.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#1E293B; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#059669; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FFFFFF; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#1E293B</span></div>
+            <a href="version-05-fair-and-square.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V05 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="16" fill="#F0FDFA"/>
+          <path d="M9 28C9 17.5 16 10 25 10C33.5 10 39 16 39 24.5" stroke="#134E4A" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M14 29.5C17.5 26.5 21.5 26.5 25 29.5C28.5 32.5 32.5 32.5 36 29.5" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 35.5C19.5 33 23.5 33 27 35.5C30.5 38 34.5 38 37 35.5" stroke="#0F766E" stroke-width="2.6" stroke-linecap="round" opacity="0.75"/>
+          <circle cx="24" cy="20" r="3.2" fill="#0F766E"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 06 • PAIRED WITH V06</div>
+              <strong style="font-size:15px;">The Sheltering Cove</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Psychological sanctuary, emotional protection during sensitive transitions.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#0F766E; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#134E4A; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#F0FDFA; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#0F766E</span></div>
+            <a href="version-06-quiet-harbor.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V06 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="12" fill="#FDFBF7"/>
+          <rect x="9" y="12" width="19" height="26" rx="4" transform="rotate(-8 9 12)" fill="#FFFFFF" stroke="#312E81" stroke-width="2.8"/>
+          <rect x="20" y="10" width="19" height="26" rx="4" transform="rotate(8 20 10)" fill="#FFFBEB" fill-opacity="0.92" stroke="#B45309" stroke-width="2.8"/>
+          <line x1="14" y1="20" x2="21" y2="19" stroke="#312E81" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="25" y1="19" x2="33" y2="20" stroke="#B45309" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="26" r="2.8" fill="#312E81"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 07 • PAIRED WITH V07</div>
+              <strong style="font-size:15px;">Two Open Cards</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Radical financial candor, Schedule A & B full disclosure without stuffiness.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#312E81; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#B45309; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FDFBF7; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#312E81</span></div>
+            <a href="version-07-open-cards.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V07 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#FEFCE8"/>
+          <path d="M7 22L24 10L41 22" stroke="#9A3412" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 22V35M35 22V35" stroke="#3F6212" stroke-width="3" stroke-linecap="round"/>
+          <path d="M18 29H22M26 29H30" stroke="#9A3412" stroke-width="2.8" stroke-linecap="round"/>
+          <line x1="9" y1="36" x2="39" y2="36" stroke="#3F6212" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 08 • PAIRED WITH V08</div>
+              <strong style="font-size:15px;">The Welcoming Gables</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Neighborly hospitality, human-first conversation, domestic belonging.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#9A3412; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#3F6212; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#FEFCE8; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#9A3412</span></div>
+            <a href="version-08-front-porch.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V08 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="11" fill="#F5F5F4"/>
+          <path d="M8 36V24C8 17 13 13 19 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M40 36V24C40 17 35 13 29 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <polygon points="19,10 29,10 26.5,22 21.5,22" fill="#A16207"/>
+          <line x1="7" y1="36" x2="41" y2="36" stroke="#0F172A" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 09 • PAIRED WITH V09</div>
+              <strong style="font-size:15px;">The Balanced Keystone</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Institutional reliability, bridging the kitchen table and the attorney's office, the Unbreakable Receipt.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#0F172A; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#A16207; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#F5F5F4; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#0F172A</span></div>
+            <a href="version-09-steady-hand.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V09 &rarr;</a>
+          </div>
+        </div>
+        
+        <div class="logo-mini-card">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:8px;">
+            <div style="width:46px; height:46px; flex-shrink:0;"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="14" fill="#1C1917" stroke="#44403C" stroke-width="1.5"/>
+          <rect x="8" y="8" width="32" height="32" rx="9" stroke="#F59E0B" stroke-width="1.8" stroke-opacity="0.45"/>
+          <path d="M21 34C16.5 31 15 25 19 19C21 22 23 23 23 27C23 30 22 32 21 34Z" fill="#EA580C"/>
+          <path d="M26 34C31 30.5 32.5 23.5 26.5 15C24.5 19.5 21.5 22 22.5 27.5C23 30.5 24.5 32.5 26 34Z" fill="#F59E0B" fill-opacity="0.9"/>
+          <line x1="15" y1="36" x2="33" y2="36" stroke="#FDE68A" stroke-width="2.4" stroke-linecap="round"/>
+        </svg></div>
+            <div>
+              <div class="mono" style="font-size:11px; font-weight:700; color:var(--accent);">LOGO 10 • PAIRED WITH V10</div>
+              <strong style="font-size:15px;">The Hearth & Ember</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 10px; line-height:1.45;">Low-eye-strain after-dinner calm, intimacy, working together peacefully at night.</p>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div style="display:flex; gap:5px; align-items:center;"><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#1C1917; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#F59E0B; border:1px solid rgba(0,0,0,0.2);"></span><span style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#EA580C; border:1px solid rgba(0,0,0,0.2);"></span> <span class="mono" style="font-size:11px; color:var(--text-muted);">#1C1917</span></div>
+            <a href="version-10-fireside-evening.html" style="font-size:12px; font-weight:700; color:var(--accent); text-decoration:none;">View in V10 &rarr;</a>
+          </div>
+        </div>
+        
       </div>
     </section>
   </main>
 
-  <script>
-    function toggleColorMode() {
-      var html = document.documentElement;
-      var next = html.getAttribute('data-mode') === 'dark' ? 'light' : 'dark';
+    <script>
+    const LOGO_BALLOT_KEY = "quic_legal_kitchen_table_logo_ballot_v1";
+    const THEME_BALLOT_KEY = "quic_legal_kitchen_table_theme_ballot_v1";
+    const pickedThemes = [];
+    const pickedLogos = [];
+
+    function loadPersistedBallot() {
+      try {
+        const savedThemes = JSON.parse(localStorage.getItem(THEME_BALLOT_KEY) || "[]");
+        const savedLogos = JSON.parse(localStorage.getItem(LOGO_BALLOT_KEY) || "[]");
+        savedThemes.forEach(t => { if (!pickedThemes.includes(t)) pickedThemes.push(t); });
+        savedLogos.forEach(l => { if (!pickedLogos.includes(l)) pickedLogos.push(l); });
+      } catch (e) {}
+      syncBallotButtons();
+    }
+
+    function savePersistedBallot() {
+      try {
+        localStorage.setItem(THEME_BALLOT_KEY, JSON.stringify(pickedThemes));
+        localStorage.setItem(LOGO_BALLOT_KEY, JSON.stringify(pickedLogos));
+      } catch (e) {}
+    }
+
+    function syncBallotButtons() {
+      document.querySelectorAll('.btn-pick-theme').forEach(btn => {
+        const label = btn.getAttribute('data-pick-theme');
+        const idx = pickedThemes.indexOf(label);
+        if (idx >= 0) {
+          btn.classList.add('picked');
+          btn.textContent = '★ Picked #' + (idx + 1);
+        } else {
+          btn.classList.remove('picked');
+          btn.textContent = '☆ Top 3';
+        }
+      });
+      document.getElementById('picked-themes-list').textContent = pickedThemes.length ? pickedThemes.join('  |  ') : 'None selected yet';
+      document.getElementById('picked-logos-list').textContent = pickedLogos.length ? pickedLogos.join('  |  ') : 'None selected yet';
+    }
+
+    function filterCards(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.hub-card').forEach(card => {
+        if (cat === 'all') {
+          card.style.display = 'flex';
+        } else if (cat === 'top') {
+          card.style.display = card.getAttribute('data-top') === 'true' ? 'flex' : 'none';
+        } else {
+          card.style.display = card.getAttribute('data-category') === cat ? 'flex' : 'none';
+        }
+      });
+    }
+
+    function toggleThemePick(label, btn) {
+      const idx = pickedThemes.indexOf(label);
+      if (idx >= 0) {
+        pickedThemes.splice(idx, 1);
+      } else {
+        if (pickedThemes.length >= 3) {
+          alert('You already picked 3 Website Versions. Click one to deselect first or click Reset.');
+          return;
+        }
+        pickedThemes.push(label);
+      }
+      savePersistedBallot();
+      syncBallotButtons();
+    }
+
+    function toggleLogoPick(label, btn) {
+      const idx = pickedLogos.indexOf(label);
+      if (idx >= 0) {
+        pickedLogos.splice(idx, 1);
+        btn.classList.remove('active');
+      } else {
+        if (pickedLogos.length >= 3) {
+          alert('You already picked 3 Logos. Deselect one first or click Reset.');
+          return;
+        }
+        pickedLogos.push(label);
+        btn.classList.add('active');
+      }
+      savePersistedBallot();
+      syncBallotButtons();
+    }
+
+    function copyBallot() {
+      const t = pickedThemes.length ? pickedThemes.join(', ') : 'No website versions selected';
+      const l = pickedLogos.length ? pickedLogos.join(', ') : 'No logos selected';
+      const summary = `### quic.legal Kitchen Table Showcase Ballot (V2 Verified)\n- **Top Website Versions:** ${t}\n- **Top SVG Logos:** ${l}`;
+      if (navigator.clipboard) navigator.clipboard.writeText(summary);
+      alert('Copied formatted Top-3 Review Ballot to clipboard!\n\n' + summary);
+    }
+
+    function resetBallot() {
+      pickedThemes.length = 0;
+      pickedLogos.length = 0;
+      document.querySelectorAll('[onclick^="toggleLogoPick"]').forEach(b => b.classList.remove('active'));
+      savePersistedBallot();
+      syncBallotButtons();
+    }
+
+    function toggleHubMode() {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-mode') === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-mode', next);
-      document.getElementById('mode-label').textContent = next.toUpperCase();
+      document.getElementById('hub-mode-label').textContent = next.toUpperCase();
     }
-    function getList(k) {
-      try { return JSON.parse(localStorage.getItem(k) || '[]'); } catch (e) { return []; }
-    }
-    function toggleThemeBallot(id) {
-      var list = getList('quic_top_themes');
-      var idx = list.indexOf(id);
-      if (idx !== -1) list.splice(idx, 1);
-      else { if (list.length >= 3) list.shift(); list.push(id); }
-      localStorage.setItem('quic_top_themes', JSON.stringify(list));
-      refreshBallotUI();
-    }
-    function toggleLogoBallot(num) {
-      var list = getList('quic_top_logos');
-      var idx = list.indexOf(num);
-      if (idx !== -1) list.splice(idx, 1);
-      else { if (list.length >= 3) list.shift(); list.push(num); }
-      localStorage.setItem('quic_top_logos', JSON.stringify(list));
-      refreshBallotUI();
-    }
-    function clearReviewerBallot() {
-      localStorage.removeItem('quic_top_themes');
-      localStorage.removeItem('quic_top_logos');
-      document.getElementById('ballot-notes').value = '';
-      refreshBallotUI();
-    }
-    function refreshBallotUI() {
-      var themes = getList('quic_top_themes');
-      var logos = getList('quic_top_logos');
-      var notes = (document.getElementById('ballot-notes') || {value:''}).value;
-      document.getElementById('ballot-themes-display').textContent = themes.length
-        ? themes.map(function(x) { return 'Variation ' + x.toUpperCase(); }).join(', ')
-        : 'None selected yet (Pick up to 3)';
-      document.getElementById('ballot-logos-display').textContent = logos.length
-        ? logos.map(function(x) { return 'Logo ' + x; }).join(', ')
-        : 'None selected yet (Pick up to 3)';
 
-      document.querySelectorAll('[data-theme-pick]').forEach(function(btn) {
-        var id = btn.getAttribute('data-theme-pick');
-        var on = themes.indexOf(id) !== -1;
-        btn.textContent = on ? '★ Picked' : '☆ Top 3';
-        btn.style.background = on ? '#D97706' : 'transparent';
-        btn.style.color = on ? '#FFFFFF' : 'var(--text-primary)';
-      });
-      document.querySelectorAll('[data-logo-pick]').forEach(function(btn) {
-        var num = btn.getAttribute('data-logo-pick');
-        var on = logos.indexOf(num) !== -1;
-        btn.textContent = on ? '★ Picked' : '☆ Pick';
-        btn.style.background = on ? '#D97706' : 'transparent';
-        btn.style.color = on ? '#FFFFFF' : 'var(--text-primary)';
-      });
-
-      var md = '### quic.legal External Reviewer Ballot\n'
-        + '- **Top 3 Website Themes (A–O):** ' + (themes.length ? themes.map(function(x){return 'Variation ' + x.toUpperCase();}).join(', ') : '(None selected)') + '\n'
-        + '- **Top 3 Logo Concepts (01–15):** ' + (logos.length ? logos.map(function(x){return 'Logo ' + x;}).join(', ') : '(None selected)') + '\n'
-        + '- **Reviewer Notes:** ' + (notes || 'N/A');
-      document.getElementById('ballot-preview-box').textContent = md;
-    }
-    function copyReviewerBallot() {
-      refreshBallotUI();
-      var text = document.getElementById('ballot-preview-box').textContent;
-      if (navigator.clipboard) navigator.clipboard.writeText(text);
-      alert('Copied formatted Reviewer Ballot to clipboard!\n\n' + text);
-    }
-    document.getElementById('ballot-notes').addEventListener('input', refreshBallotUI);
-    refreshBallotUI();
+    loadPersistedBallot();
   </script>
 </body>
 </html>

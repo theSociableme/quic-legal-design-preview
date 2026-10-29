@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light" data-version="version-09" data-logo="logo-09">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quic.legal — Steady Hand | Agree at Your Kitchen Table Before Paying Two Lawyers $5,000 to Argue</title>
+  <meta name="description" content="Work out the hard parts of your agreement together at the kitchen table — with private AI guidance for each of you and an unbreakable receipt of every fair turn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      
+          --bg: #F5F5F4;
+          --bg-elevated: #FFFFFF;
+          --bg-soft: #E7E5E4;
+          --bg-accent-tint: #FEF3C7;
+          --text-main: #0F172A;
+          --text-muted: #475569;
+          --primary: #0F172A;
+          --primary-hover: #1E293B;
+          --secondary: #A16207;
+          --accent-warm: #B45309;
+          --border: #D6D3D1;
+          --card-radius: 12px;
+          --btn-radius: 8px;
+          --shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.10);
+          --hero-grad: linear-gradient(135deg, #FAFAF9 0%, #F5F5F4 55%, #FEF3C7 100%);
+        
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+    html[data-mode="dark"] {
+      
+          --bg: #0B0F19;
+          --bg-elevated: #131B2E;
+          --bg-soft: #1E293B;
+          --bg-accent-tint: #3B2810;
+          --text-main: #F8FAFC;
+          --text-muted: #94A3B8;
+          --primary: #F59E0B;
+          --primary-hover: #D97706;
+          --secondary: #E2E8F0;
+          --accent-warm: #FBBF24;
+          --border: #283548;
+          --shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.65);
+          --hero-grad: linear-gradient(135deg, #0B0F19 0%, #131B2E 60%, #1F1D24 100%);
+        
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      line-height: 1.2;
+      margin: 0;
+    }
+    .mono, code { font-family: var(--font-mono); }
+    a { color: inherit; }
+
+    /* Authentic Commercial Header (ZERO Prototype Top Bar) */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: var(--bg-elevated);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .brand-logo-slot svg {
+      width: 44px;
+      height: 44px;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .brand-wordmark {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .brand-tagline-micro {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      display: block;
+      font-family: var(--font-body);
+      font-weight: 500;
+    }
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .nav-tab {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: var(--btn-radius);
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .nav-tab:hover {
+      color: var(--text-main);
+      background: var(--bg-soft);
+    }
+    .nav-tab.active {
+      color: var(--primary);
+      background: var(--bg-accent-tint);
+      border-color: var(--border);
+      font-weight: 700;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Buttons & Badges */
+    .btn-primary {
+      background: var(--primary);
+      color: #FFFFFF;
+      border: none;
+      border-radius: var(--btn-radius);
+      padding: 12px 22px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform 0.15s ease, background 0.15s ease;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    html[data-version="version-10"][data-mode="dark"] .btn-primary,
+    html[data-version="version-06"][data-mode="dark"] .btn-primary,
+    html[data-version="version-08"][data-mode="dark"] .btn-primary,
+    html[data-version="version-09"][data-mode="dark"] .btn-primary {
+      color: #0F172A;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: var(--bg-elevated);
+      color: var(--text-main);
+      border: 1.5px solid var(--border);
+      border-radius: var(--btn-radius);
+      padding: 11px 18px;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: var(--bg-soft);
+    }
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--bg-accent-tint);
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    /* Layout & Cards */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .section {
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .card {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--card-radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .card-soft {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--card-radius);
+      padding: 22px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    /* Multi-Page View Visibility */
+    .page-view {
+      display: none;
+      animation: fadeIn 0.25s ease;
+    }
+    .page-view.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hero Section */
+    .hero-wrap {
+      background: var(--hero-grad);
+      padding: 56px 0 64px;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Comparison Table */
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: var(--bg-elevated);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    table.comp-table th, table.comp-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    table.comp-table th {
+      background: var(--bg-soft);
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    table.comp-table tr.highlight-row {
+      background: var(--bg-accent-tint);
+      font-weight: 600;
+    }
+
+    /* Life-Moment Switcher Bar */
+    .moment-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      padding: 10px;
+      background: var(--bg-soft);
+      border-radius: var(--card-radius);
+      border: 1px solid var(--border);
+    }
+    .moment-btn {
+      flex: 1;
+      min-width: 170px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s ease;
+    }
+    .moment-btn.active {
+      background: var(--bg-elevated);
+      color: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    /* Footer */
+    .site-footer {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      padding: 56px 0 96px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    /* Bottom-Right Corner Floating Inspector Widget (z-index: 9999) */
+    .floating-inspector {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 9999;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .inspector-toggle-pill {
+      background: #0F172A;
+      color: #F8FAFC;
+      border: 1.5px solid #334155;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+    .inspector-panel {
+      display: none;
+      width: 370px;
+      max-height: 82vh;
+      overflow-y: auto;
+      background: #0F172A;
+      color: #F8FAFC;
+      border: 1.5px solid #334155;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 10px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      font-size: 12.5px;
+    }
+    .floating-inspector.open .inspector-panel {
+      display: block;
+    }
+    .inspector-group {
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #1E293B;
+    }
+    .inspector-label {
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #94A3B8;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .inspector-page-btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .inspector-btn {
+      background: #1E293B;
+      color: #E2E8F0;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+    }
+    .inspector-btn.active, .inspector-btn:hover {
+      background: #2563EB;
+      color: #FFFFFF;
+      border-color: #3B82F6;
+    }
+    .inspector-ver-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    .inspector-ver-link {
+      color: #CBD5E1;
+      text-decoration: none;
+      padding: 5px 8px;
+      border-radius: 6px;
+      background: #1E293B;
+      font-size: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .inspector-ver-link.active, .inspector-ver-link:hover {
+      background: #0D9488;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Authentic Commercial Website Header (No Top Prototype Bar) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand-lockup" onclick="switchPage('home'); return false;">
+        <span class="brand-logo-slot" id="header-logo-slot"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="11" fill="#F5F5F4"/>
+          <path d="M8 36V24C8 17 13 13 19 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M40 36V24C40 17 35 13 29 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <polygon points="19,10 29,10 26.5,22 21.5,22" fill="#A16207"/>
+          <line x1="7" y1="36" x2="41" y2="36" stroke="#0F172A" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></span>
+        <div>
+          <span class="brand-wordmark">quic.legal <span style="font-size:12px; font-weight:600; color:var(--primary); font-family:var(--font-body);">Steady Hand</span></span>
+          <span class="brand-tagline-micro">The Pre-Lawyer Kitchen Table Agreement Studio</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Main Website Navigation">
+        <button type="button" class="nav-tab active" data-nav-target="home" onclick="switchPage('home')">1. Kitchen Table Home</button>
+        <button type="button" class="nav-tab" data-nav-target="vertical" onclick="switchPage('vertical')">2. Life-Moment Studio</button>
+        <button type="button" class="nav-tab" data-nav-target="how-it-works" onclick="switchPage('how-it-works')">3. How It Protects Both of You</button>
+        <button type="button" class="nav-tab" data-nav-target="workspace" onclick="switchPage('workspace')">4. Live Interactive Workspace</button>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-outline" style="padding:8px 14px; font-size:13px;" onclick="switchPage('workspace')">Try Live Demo</button>
+        <button type="button" class="btn-primary" style="padding:9px 16px; font-size:13.5px;" onclick="switchPage('vertical')">Start Your Table — $299</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       PAGE 1: MASTER "KITCHEN TABLE" HOMEPAGE (data-page="home")
+       ===================================================================== -->
+  <main id="page-home" class="page-view active" data-page="home">
+    <section class="hero-wrap">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="pill-badge" style="margin-bottom:16px;">🏛️ STEADY HAND EDITION • BRIDGING THE KITCHEN TABLE & YOUR ATTORNEY'S OFFICE</span>
+            <h1 style="font-size:clamp(32px, 4.2vw, 48px); margin-bottom:18px; letter-spacing:-0.02em;">
+              Work out the hard parts of your agreement together at the kitchen table—with private AI guidance for each of you and an unbreakable receipt of every fair turn before you ever pay a lawyer's hourly rate.
+            </h1>
+            <p style="font-size:18px; color:var(--text-muted); margin:0 0 24px; max-width:640px;">
+              Real family and corporate attorneys hate flimsy online fill-in-the-blank templates—and you hate paying $500/hour for twenty hours of preliminary bickering. Do 90% of the preparation together in a structured, state-aware workspace, then hand your lawyers our 3-Part Certified Counsel Package for a fast 2-hour final review.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:24px;">
+              <button type="button" class="btn-primary" onclick="switchPage('workspace')">
+                Enter the Interactive Kitchen Table Studio &rarr;
+              </button>
+              <button type="button" class="btn-outline" onclick="switchPage('how-it-works')">
+                See How Private AI &amp; Turn-Locks Work
+              </button>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; padding-top:18px; border-top:1px solid var(--border); font-size:13px;">
+              <div>
+                <strong style="display:block; font-size:18px; color:var(--primary);">$299–$399 Flat</strong>
+                <span style="color:var(--text-muted);">Per couple/pair (vs. $7,500+ retainers)</span>
+              </div>
+              <div>
+                <strong style="display:block; font-size:18px; color:var(--primary);">2 Private AI Rooms</strong>
+                <span style="color:var(--text-muted);">100% isolated <code class="mono">crashoverride</code> vault</span>
+              </div>
+              <div>
+                <strong style="display:block; font-size:18px; color:var(--primary);">90% Done</strong>
+                <span style="color:var(--text-muted);">Walk into your lawyer's office ready</span>
+              </div>
+            </div>
+          </div>
+
+          
+        <div class="hero-visual-stack">
+          <div class="card" style="margin-bottom:14px; border-top:4px solid var(--secondary);">
+            <div style="font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; color:var(--secondary); margin-bottom:10px;">🏛️ THE BALANCED KEYSTONE BRIDGE: KITCHEN TABLE &rarr; LAWYER'S OFFICE</div>
+            <div style="display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:center;">
+              <div style="background:var(--bg-soft); padding:12px; border-radius:10px;">
+                <div style="font-weight:700; font-size:14px;">1. At Your Kitchen Table (90%)</div>
+                <div style="font-size:12.5px; color:var(--text-muted); margin-top:4px;">Schedule A/B disclosures, private AI coaching, &amp; turn-by-turn clause locks.</div>
+                <div class="mono" style="margin-top:6px; font-size:12px; font-weight:700; color:var(--secondary);">$299 Flat Studio Pass</div>
+              </div>
+              <div style="font-weight:800; font-size:20px; color:var(--secondary);">&rarr;</div>
+              <div style="background:var(--bg-soft); padding:12px; border-radius:10px;">
+                <div style="font-weight:700; font-size:14px;">2. At Counsel's Office (10%)</div>
+                <div style="font-size:12.5px; color:var(--text-muted); margin-top:4px;">Hand over your 3-Part Certified Package for fast 2-hour final sign-off.</div>
+                <div class="mono" style="margin-top:6px; font-size:12px; font-weight:700; color:#15803D;">Save $5,000–$12,000+</div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-frame" style="border-radius:14px; overflow:hidden; position:relative; box-shadow:var(--shadow); border:1px solid var(--border);">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=85" alt="Steady Hand confident modern couple and fiduciary clarity" style="width:100%; height:250px; object-fit:cover; display:block;" onerror="this.style.display='none'">
+            <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.12) 65%); display:flex; align-items:flex-end; padding:18px; color:#F8FAFC;">
+              <p style="margin:0; font-size:13.5px;">"The Keystone Bridge: 90% calm kitchen-table preparation + 10% independent attorney finish line = courtroom-grade peace of mind."</p>
+            </div>
+          </div>
+                  <div class="card" style="margin-top:12px; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; border-left:4px solid var(--primary);">
+            <div style="font-size:12.5px;"><strong>How to Invite Your Partner Warmly:</strong> <em>"Blame the state's default contract—not each other."</em></div>
+            <button type="button" class="btn-outline" style="padding:6px 12px; font-size:12px;" onclick="copyInviteScript(this)">📋 Copy Warm Text Script</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Persona Psychology Callout Strip -->
+    <section style="background:var(--bg-soft); padding:22px 0; border-bottom:1px solid var(--border);">
+      <div class="container" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+        <div style="max-width:820px;">
+          <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--primary); letter-spacing:0.05em;">✦ Why 'Steady Hand' Earns Both Partner & Attorney Respect</div>
+          <p style="margin:4px 0 0; font-size:14px; color:var(--text-muted);">Anchored by Logo 09 (The Balanced Keystone) in Fiduciary Slate (#0F172A), Burnished Bronze (#A16207), and Stone (#F5F5F4). Gives skeptical spouses, co-founders, and referring attorneys immediate confidence in our SHA-256 Procedural Fairness Receipt.</p>
+        </div>
+        <button type="button" class="btn-outline" onclick="switchPage('vertical')">Explore Tailored Life Moments &rarr;</button>
+      </div>
+    </section>
+
+    <!-- The 6 Everyday Life Moments -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center; max-width:780px; margin:0 auto 40px;">
+          <span class="pill-badge">6 Everyday Life Moments • One Calm Kitchen Table</span>
+          <h2 style="font-size:36px; margin-top:12px;">Which conversation is sitting on your kitchen table right now?</h2>
+          <p style="color:var(--text-muted); margin-top:10px; font-size:17px;">
+            Click any life moment below to open its tailored studio calculator, state guardrail checklist, and sample private AI prompts.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">💍 Engaged &amp; Married</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$299 / couple</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">1. Prenup &amp; Postnup Agreements</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                Protect pre-marital savings, home down payments, and family businesses without turning wedding planning into a $10,000 lawyer fight—or gambling on a flimsy $599 quiz.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment('prenup')">Open Prenup &amp; Postnup Studio &rarr;</button>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">🔑 Unmarried Co-Buyers</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$299 / property</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">2. Buying a Home or Cabin Together</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                A 30-year mortgage binds you to the bank, not to fair buyout rules. Lock in unequal down-payment credits, monthly splits, sweat equity, and exit formulas before closing day.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment('cobuy')">Open Co-Buyer Protection Studio &rarr;</button>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">🚀 2–4 Co-Founders</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$299–$599 flat</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">3. Starting a Business Together</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                Don't incorporate on a handshake. Negotiate equity splits, 4-year vesting cliffs, pre-existing IP carve-outs, and good-leaver rules before spending $5,000 on corporate counsel.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment('cofounder')">Open Co-Founder Equity Studio &rarr;</button>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">🕊️ Amicable Split</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$349 / couple</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">4. Uncontested Divorce &amp; Separation</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                Parting ways peacefully? Don't donate $25,000 of your home equity to two warring retainers. Map out your marital balance sheet, 401(k) offsets, and house buyout calmly from home.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment('divorce')">Open Amicable Settlement Studio &rarr;</button>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">🏡 Partners &amp; Co-Parents</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$249 / pair</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">5. Living Together &amp; Parenting Plans</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                Whether moving in together without marriage or building a drama-free 2-2-3 custody &amp; holiday schedule, design clear rules up front so kids and finances stay protected.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment(\'parenting\')">Open Co-Living &amp; Parenting Studio &rarr;</button>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                <span class="pill-badge">🌲 Families &amp; Siblings</span>
+                <span class="mono" style="font-size:13px; font-weight:700; color:var(--primary);">$299–$599 flat</span>
+              </div>
+              <h3 style="font-size:22px; margin-bottom:8px;">6. Blending Families, Cabins &amp; Inheritance</h3>
+              <p style="color:var(--text-muted); font-size:14.5px;">
+                Protect children's inheritance in a second marriage, or help adult siblings agree on shared lake cabin expenses, heirloom rotations, and aging-parent caregiving compensation.
+              </p>
+            </div>
+            <button type="button" class="btn-outline" style="width:100%; justify-content:center; margin-top:16px;" onclick="openVerticalMoment('cabin')">Open Family Cabin &amp; Estate Studio &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The 3 Plain-English Superpowers -->
+    <section class="section" style="background:var(--bg-soft);">
+      <div class="container">
+        <div style="text-align:center; max-width:780px; margin:0 auto 40px;">
+          <span class="pill-badge">Why Couples &amp; Attorneys Trust quic.legal</span>
+          <h2 style="font-size:36px; margin-top:12px;">Three Plain-English Superpowers a Fill-in-the-Blank Template Can Never Give You</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="mono" style="font-size:12px; font-weight:700; color:var(--primary); margin-bottom:8px;">SUPERPOWER 01 • BILATERAL STATE MACHINE</div>
+            <h3 style="font-size:23px; margin-bottom:10px;">Agree at Your Kitchen Table, Not at $500/Hour</h3>
+            <p style="color:var(--text-muted); font-size:14.5px;">
+              On static quiz sites like HelloPrenup, one person fills out a form and the other clicks "Approve"—which a divorce litigator can later attack as a one-sided ambush. Here, you take structured turns proposing, tweaking, and accepting every clause in plain English. Nothing changes unless you both say yes.
+            </p>
+            <div style="margin-top:14px; padding:10px 12px; background:var(--bg-soft); border-radius:10px; font-size:12.5px;">
+              <strong>In-App Guardrail:</strong> <em>"Your turn to review Section 4: Accept as written, counter-propose, or suggest a fair alternative."</em>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mono" style="font-size:12px; font-weight:700; color:var(--primary); margin-bottom:8px;">SUPERPOWER 02 • ISOLATED <code class="mono">CRASHOVERRIDE</code> AI</div>
+            <h3 style="font-size:23px; margin-bottom:10px;">A Private AI Sounding Board for Each of You</h3>
+            <p style="color:var(--text-muted); font-size:14.5px;">
+              Each partner gets a <strong>100% private, vaulted AI room</strong> running on our dedicated self-hosted hardware (<code class="mono">crashoverride</code>). Ask blunt, protective, or awkward "what-if" questions in complete secrecy. Your partner, their lawyer, and Big Tech cloud servers can never see what you ask.
+            </p>
+            <div style="margin-top:14px; padding:10px 12px; background:var(--bg-soft); border-radius:10px; font-size:12.5px;">
+              <strong>Zero-Leakage Guarantee:</strong> Private AI threads are cryptographically isolated from the shared agreement ledger.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="mono" style="font-size:12px; font-weight:700; color:var(--primary); margin-bottom:8px;">SUPERPOWER 03 • SCHEDULE A/B + SHA-256 RECEIPT</div>
+            <h3 style="font-size:23px; margin-bottom:10px;">All Cards on the Table + The Unbreakable Receipt</h3>
+            <p style="color:var(--text-muted); font-size:14.5px;">
+              Guided checklists put every account, debt, down payment, or IP contribution out in the open before a single clause is locked. Every turn is sealed into a tamper-proof SHA-256 timeline proving nobody was rushed, pressured, or kept in the dark—backed by our 15-Year Evidentiary Vault.
+            </p>
+            <div style="margin-top:14px; padding:10px 12px; background:var(--bg-soft); border-radius:10px; font-size:12.5px;">
+              <strong>Finish Line Ready:</strong> Export your 3-Part Attorney Handoff Package so final legal review takes 2 hours, not 20.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent Flat Pricing + 4 Objection Busters -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2" style="align-items:start;">
+          <div class="card" style="border:2px solid var(--primary);">
+            <span class="pill-badge">Transparent Flat Pricing • Per Couple or Pair</span>
+            <h2 style="font-size:32px; margin-top:12px;">Do 90% of the heavy lifting together for $299–$399 flat.</h2>
+            <p style="color:var(--text-muted); font-size:15px; margin-top:8px;">
+              One flat workspace pass covers <strong>both of you</strong>—no hourly meters, no per-seat surprises, and no $700/year recurring chat subscriptions.
+            </p>
+            <div style="margin:20px 0; display:grid; gap:12px;">
+              <div class="card-soft" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:16px;">Prenup, Postnup, Co-Buying or 2-Founder MOU</strong>
+                  <div style="font-size:13px; color:var(--text-muted);">Includes 2 Private AI Advisors + Schedule A/B + 3-Part Counsel Package</div>
+                </div>
+                <span class="mono" style="font-size:22px; font-weight:800; color:var(--primary);">$299</span>
+              </div>
+              <div class="card-soft" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:16px;">Amicable Uncontested Divorce Settlement Studio</strong>
+                  <div style="font-size:13px; color:var(--text-muted);">Marital Balance Sheet + Equalization Modeler + Mediator/Counsel Export</div>
+                </div>
+                <span class="mono" style="font-size:22px; font-weight:800; color:var(--primary);">$349</span>
+              </div>
+              <div class="card-soft" style="display:flex; justify-content:space-between; align-items:center;">
+                <div>
+                  <strong style="font-size:16px;">Optional: 15-Year Permanent Evidentiary Vault</strong>
+                  <div style="font-size:13px; color:var(--text-muted);">Court-ready cryptographic preservation of your entire negotiation history</div>
+                </div>
+                <span class="mono" style="font-size:16px; font-weight:700; color:var(--secondary);">$49/yr or $199 Forever</span>
+              </div>
+            </div>
+            <button type="button" class="btn-primary" style="width:100%; justify-content:center;" onclick="switchPage('workspace')">
+              Launch Live Interactive Workspace &rarr;
+            </button>
+          </div>
+
+          <div>
+            <span class="pill-badge">The 4 Big Questions • Skeptic &amp; Lawyer Verified</span>
+            <h2 style="font-size:30px; margin:12px 0 18px;">Straight Answers to the Questions on Your Mind</h2>
+
+            <div style="display:grid; gap:12px;">
+              <details class="card" open>
+                <summary style="font-weight:700; cursor:pointer; font-size:15.5px;">1. "Why don't I just use a free template or ask ChatGPT to write it?"</summary>
+                <p style="margin:10px 0 0; font-size:14px; color:var(--text-muted);">
+                  A free template or ChatGPT printout only gives you words on a page—it gives you <strong>zero proof</strong> that both of you disclosed your finances and genuinely negotiated the deal together. If a dispute lands in court 10 years later, a judge looks at <em>how</em> the agreement was made. <strong>quic.legal</strong> enforces timestamped Schedule A/B disclosures and an immutable SHA-256 turn history proving real bilateral negotiation.
+                </p>
+              </details>
+
+              <details class="card">
+                <summary style="font-weight:700; cursor:pointer; font-size:15.5px;">2. "Why do we still use a lawyer at the end if we pay you $299–$349?"</summary>
+                <p style="margin:10px 0 0; font-size:14px; color:var(--text-muted);">
+                  Any website that claims a $599 web form replaces independent legal advice on a prenup or divorce is handing you a ticking time bomb. Paying us $299 to do 90% of the preparation at your kitchen table saves you <strong>$3,000 to $10,000+</strong> in billable lawyer hours—turning a stressful 20-hour legal battle into an affordable 2-hour final attorney review.
+                </p>
+              </details>
+
+              <details class="card">
+                <summary style="font-weight:700; cursor:pointer; font-size:15.5px;">3. "Can my partner (or their lawyer) EVER see what I ask my private AI advisor?"</summary>
+                <p style="margin:10px 0 0; font-size:14px; color:var(--text-muted);">
+                  <strong>Never—not now, not during your negotiation, and not in a courtroom 10 years from now.</strong> Your <code class="mono">crashoverride</code> AI advisor lives in an encrypted, strictly isolated vault locked solely to your account, so you can ask blunt or protective questions in total privacy and only share polished proposals when you click "Send."
+                </p>
+              </details>
+
+              <details class="card">
+                <summary style="font-weight:700; cursor:pointer; font-size:15.5px;">4. "How do I bring this up to my partner or sibling without sounding distrustful?"</summary>
+                <p style="margin:10px 0 0; font-size:14px; color:var(--text-muted);">
+                  Blame the state's one-size-fits-all default laws, not each other! Tell them: <em>"Right now politicians have written a default contract for us—I'd rather we design our own fair rules together at the kitchen table while we're on the same team."</em> Our workspace gives both of you equal power from Turn 1.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       PAGE 2: SPECIFIC LIFE-MOMENT LANDING PAGE (data-page="vertical")
+       ===================================================================== -->
+  <section id="page-vertical" class="page-view" data-page="vertical">
+    <div class="section">
+      <div class="container">
+        <div style="margin-bottom:16px;">
+          <span class="pill-badge">Page 2 of 4 • Tailored Life-Moment Landing Experience</span>
+          <h1 style="font-size:36px; margin-top:10px;">Select a Life Moment to Preview Its Tailored Landing Page &amp; Savings Calculator</h1>
+        </div>
+
+        <!-- Interactive 5-Life-Moment Selector -->
+        <div class="moment-bar" role="tablist">
+          <button type="button" class="moment-btn" data-moment="divorce" onclick="selectLifeMoment('divorce')">
+            🕊️ 1. Amicable Uncontested Divorce ($349)
+          </button>
+          <button type="button" class="moment-btn" data-moment="parenting" onclick="selectLifeMoment(\'parenting\')">
+            🏡 Parenting Plans &amp; Custody ($249)
+          </button>
+          <button type="button" class="moment-btn" data-moment="cobuy" onclick="selectLifeMoment('cobuy')">
+            🔑 2. Co-Buying a Home or Cabin ($299)
+          </button>
+          <button type="button" class="moment-btn" data-moment="prenup" onclick="selectLifeMoment('prenup')">
+            💍 3. Prenup &amp; Postnup Studio ($299)
+          </button>
+          <button type="button" class="moment-btn" data-moment="cabin" onclick="selectLifeMoment('cabin')">
+            🌲 4. Blended Family &amp; Cabin Estate ($299)
+          </button>
+          <button type="button" class="moment-btn" data-moment="cofounder" onclick="selectLifeMoment('cofounder')">
+            🚀 5. Startup Co-Founder Split ($299)
+          </button>
+        </div>
+
+        <!-- Dynamic Life-Moment Hero & Story -->
+        <div class="grid-2" style="align-items:center; margin-bottom:48px;">
+          <div class="card">
+            <span class="pill-badge" id="vm-eyebrow">FOR AMICABLE COUPLES PARTING WAYS • PRE-FILING SETTLEMENT STUDIO</span>
+            <h2 id="vm-headline" style="font-size:32px; margin:14px 0;">Split Your Assets, Not Your Sanity—Agree on Your Divorce Terms Before Paying $25,000 in Retainers.</h2>
+            <p id="vm-sub" style="color:var(--text-muted); font-size:15.5px; margin-bottom:20px;">
+              If you and your spouse agree you want a fair, peaceful split, don't fund two lawyers' billable quotas to negotiate what you can hash out calmly from home. Map out your house equity, retirement accounts, and debts turn by turn—with a 100% private AI sounding board in your corner.
+            </p>
+            <div class="card-soft" style="margin-bottom:18px;">
+              <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--primary); margin-bottom:8px;">Sample Private AI Prompts You Can Ask in Secret:</div>
+              <ul id="vm-prompts" style="margin:0; padding-left:18px; font-size:13.5px; color:var(--text-main);">
+                <li>"We have $140k in home equity and $110k in my 401(k). How can I propose keeping my full 401(k) while giving my spouse a fair buyout on the house?"</li>
+                <li>"Help me rewrite my counter-offer into calm, neutral language proposing 24 months of step-down transitional support."</li>
+              </ul>
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button type="button" class="btn-primary" id="vm-cta" onclick="switchPage('workspace')">Start Your Settlement Workspace — $349 Flat</button>
+              <button type="button" class="btn-outline" onclick="switchPage('how-it-works')">See How Turn-Locks Work &rarr;</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="border-radius:var(--card-radius); overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--border); margin-bottom:16px;">
+              <img id="vm-photo" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80" alt="Life moment photography" style="width:100%; height:260px; object-fit:cover; display:block;" onerror="this.style.display='none'">
+            </div>
+            <div class="card">
+              <h3 style="font-size:20px; margin-bottom:10px;">How <strong>quic.legal</strong> Solves This in 3 Calm Steps</h3>
+              <ol id="vm-steps" style="margin:0; padding-left:20px; font-size:14px; color:var(--text-muted); display:grid; gap:8px;">
+                <li><strong>Build a Verified Balance Sheet:</strong> Log bank accounts, home equity, 401(k)s, and debts with cryptographic timestamps.</li>
+                <li><strong>Model Trade-Offs Privately:</strong> Use your isolated <code class="mono">crashoverride</code> AI advisor to test fair equalization options and strip emotion out of counter-proposals.</li>
+                <li><strong>Freeze &amp; Fast-Track Filing:</strong> Export your clean MOU, redline history, and fairness certificate so your attorney or mediator finishes in hours, not months.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Readiness, Statutory Countdown & Legal Fee Savings Calculator -->
+        <div class="card" style="margin-bottom:48px; border:2px solid var(--primary);">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px;">
+            <div>
+              <span class="pill-badge">🧮 Interactive Readiness, Statutory Buffer &amp; Fee Savings Calculator</span>
+              <h2 style="font-size:28px; margin-top:8px;">Calculate Your Statutory Timeline &amp; Lawyer Billable Savings</h2>
+            </div>
+            <span class="mono" id="calc-statute-badge" style="font-size:12.5px; padding:6px 12px; background:var(--bg-soft); border-radius:8px; font-weight:700;">Guardrail: Minn. Stat. § 519.11 / UPMAA Ready</span>
+          </div>
+
+          <div class="grid-2">
+            <div style="display:grid; gap:16px;">
+              <div>
+                <label style="display:block; font-weight:700; font-size:13.5px; margin-bottom:6px;">1. Select Your State Jurisdiction:</label>
+                <select id="calc-state" onchange="updateCalculator()" style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text-main); font-size:14px;">
+                  <option value="MN">Minnesota (Minn. Stat. § 519.11 — Strict Procedural Fairness &amp; 7-Day Buffer)</option>
+                  <option value="CA">California (Fam. Code § 1615 — Mandatory 7-Day Final Review Window)</option>
+                  <option value="NY">New York (DRL § 236B — Full Financial Disclosure &amp; Notary Acknowledgment)</option>
+                  <option value="TX">Texas (Fam. Code Ch. 4 — Clear &amp; Voluntarily Executed Disclosure Standard)</option>
+                  <option value="WA">Washington / Illinois / Florida / Other UPMAA States</option>
+                </select>
+              </div>
+
+              <div>
+                <label style="display:block; font-weight:700; font-size:13.5px; margin-bottom:6px;">2. Days Until Wedding, Home Closing, or Target Filing Date: <strong id="calc-days-val" style="color:var(--primary);">45 Days</strong></label>
+                <input type="range" id="calc-days" min="5" max="180" value="45" oninput="updateCalculator()" style="width:100%;">
+                <div id="calc-timing-alert" style="font-size:13px; margin-top:6px; padding:8px 12px; border-radius:8px; background:var(--bg-soft);">
+                  ✅ <strong>Safe Statutory Window (45 days):</strong> Plenty of time for calm multi-day turn-taking and the mandatory 7-day pre-signing counsel review buffer.
+                </div>
+              </div>
+
+              <div>
+                <label style="display:block; font-weight:700; font-size:13.5px; margin-bottom:6px;">3. Estimated Combined Assets / Property Value at Stake: <strong id="calc-assets-val" style="color:var(--primary);">$650,000</strong></label>
+                <input type="range" id="calc-assets" min="100" max="3000" step="50" value="650" oninput="updateCalculator()" style="width:100%;">
+              </div>
+            </div>
+
+            <div class="card-soft" style="display:flex; flex-direction:column; justify-content:space-between;">
+              <div>
+                <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--text-muted);">Projected Cost Comparison</div>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;">
+                  <div style="padding:14px; background:var(--bg-elevated); border-radius:10px; border:1px solid var(--border);">
+                    <div style="font-size:12px; color:var(--text-muted);">Traditional Two-Lawyer Retainers</div>
+                    <div id="calc-trad-cost" class="mono" style="font-size:24px; font-weight:800; color:#DC2626; margin-top:4px;">$9,200</div>
+                    <div style="font-size:11.5px; color:var(--text-muted);">~22 billable hrs at $425/hr arguing from scratch</div>
+                  </div>
+                  <div style="padding:14px; background:var(--bg-elevated); border-radius:10px; border:2px solid var(--primary);">
+                    <div style="font-size:12px; color:var(--primary); font-weight:700;">quic.legal + 2-Hr Final Counsel</div>
+                    <div id="calc-quic-cost" class="mono" style="font-size:24px; font-weight:800; color:var(--primary); margin-top:4px;">$1,499</div>
+                    <div style="font-size:11.5px; color:var(--text-muted);">$299 Studio Pass + ~$1,200 flat 2-hr review</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top:18px; padding:14px; background:var(--bg-accent-tint); border-radius:10px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                  <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--primary);">Your Estimated Kitchen Table Savings</div>
+                  <div id="calc-net-savings" class="mono" style="font-size:28px; font-weight:800; color:var(--primary);">$7,701 Saved (84% Less)</div>
+                </div>
+                <button type="button" class="btn-primary" onclick="switchPage('workspace')">Lock In $299 Pass &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side-by-Side Comparison Matrix -->
+        <div>
+          <span class="pill-badge">Competitive Landscape</span>
+          <h2 style="font-size:30px; margin:10px 0 20px;">How <strong>quic.legal</strong> Compares Side-by-Side</h2>
+          <div style="overflow-x:auto;">
+            <table class="comp-table">
+              <thead>
+                <tr>
+                  <th>Feature / Protection Standard</th>
+                  <th>🏆 quic.legal Studio</th>
+                  <th>HelloPrenup</th>
+                  <th>Neptune</th>
+                  <th>Traditional Two Lawyers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>Total Platform / Retainer Cost</strong></td>
+                  <td><strong style="color:var(--primary);">$299–$399 Flat per Couple</strong></td>
+                  <td>$599 Base ($2,197 w/ lawyers)</td>
+                  <td>$4,000–$5,000+ Flat</td>
+                  <td>$7,500–$25,000+ Retainers</td>
+                </tr>
+                <tr>
+                  <td><strong>Negotiation Architecture</strong></td>
+                  <td><strong>True Turn-by-Turn Clause Redlining</strong> (No secret edits)</td>
+                  <td>❌ Static fill-in-the-blank quiz</td>
+                  <td>❌ Shared intake bot -> handed to lawyers</td>
+                  <td>⚠️ Adversarial hourly billing letters</td>
+                </tr>
+                <tr>
+                  <td><strong>Private AI Advisor per Partner</strong></td>
+                  <td><strong>✅ 2 Isolated Private <code class="mono">crashoverride</code> Vaults</strong></td>
+                  <td>❌ None</td>
+                  <td>❌ Shared chatbot (partner sees prompts)</td>
+                  <td>❌ $450/hr per phone call</td>
+                </tr>
+                <tr>
+                  <td><strong>Cryptographic Proof of Fairness</strong></td>
+                  <td><strong>✅ SHA-256 Append-Only Turn &amp; Disclosure Ledger</strong></td>
+                  <td>❌ Last-second PDF e-signature only</td>
+                  <td>⚠️ Standard law firm file</td>
+                  <td>⚠️ Manual email trail</td>
+                </tr>
+                <tr>
+                  <td><strong>Covers All 6 Major Life Agreements</strong></td>
+                  <td><strong>✅ Prenup, Divorce, Co-Buy, Co-Founders, Parenting, Cabin</strong></td>
+                  <td>❌ Prenup/Postnup only</td>
+                  <td>❌ Prenup &amp; high-fee estate only</td>
+                  <td>⚠️ Separate specialized firms required</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       PAGE 3: "HOW IT WORKS FOR BOTH OF YOU" TECH SHOWCASE (data-page="how-it-works")
+       ===================================================================== -->
+  <section id="page-how-it-works" class="page-view" data-page="how-it-works">
+    <div class="section">
+      <div class="container">
+        <div style="max-width:820px; margin-bottom:40px;">
+          <span class="pill-badge">Page 3 of 4 • Plain-English Technology &amp; Fairness Architecture</span>
+          <h1 style="font-size:38px; margin-top:10px;">How Our Technology Protects Partner A and Partner B Equally</h1>
+          <p style="color:var(--text-muted); font-size:17px; margin-top:10px;">
+            You don't need to care about "state machines" or "cryptographic hash chains." You just need to know that <strong>neither of you can be tricked, rushed, or spied on</strong>—and that your agreement will stand up when it matters most.
+          </p>
+        </div>
+
+        <!-- Interactive Step 1: Turn-by-Turn Redlining (No Silent Edits) -->
+        <div class="card" style="margin-bottom:32px;">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px;">
+            <div>
+              <span class="mono" style="font-size:12px; font-weight:700; color:var(--primary);">INTERACTIVE STEP 1 • TURN-BY-TURN REDLINING (ZERO SILENT EDITS)</span>
+              <h2 style="font-size:26px; margin-top:4px;">Why Neither Partner Can Ever Overwrite the Master Agreement in Secret</h2>
+            </div>
+            <span class="pill-badge" id="sim-turn-indicator">Current Turn: Partner B (Sam) to Respond</span>
+          </div>
+
+          <p style="color:var(--text-muted); font-size:14.5px; margin-bottom:18px;">
+            In Google Docs or Word, one person can quietly delete a sentence and hope the other doesn't notice. On <strong>quic.legal</strong>, every clause is governed by a strict <strong>Turn-Based Fairness Lock</strong>. Click the buttons below to test how a clause moves from proposal to mutual lock:
+          </p>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
+            <button type="button" class="btn-outline" onclick="runRedlineStep('propose')">1. Partner A Proposes Down-Payment Shield</button>
+            <button type="button" class="btn-outline" onclick="runRedlineStep('counter')">2. Partner B Counter-Proposes 50/50 Appreciation</button>
+            <button type="button" class="btn-outline" onclick="runRedlineStep('reject')">3. Test "Reject with Friendly Suggestion"</button>
+            <button type="button" class="btn-primary" onclick="runRedlineStep('accept')">4. Both Partners Click "Accept &amp; Lock Clause"</button>
+          </div>
+
+          <div class="card-soft" id="sim-redline-box">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <strong>Section 4.2: Primary Residence Down Payment &amp; Appreciation Split</strong>
+              <span class="mono" id="sim-status-pill" style="font-size:12px; font-weight:700; color:var(--secondary);">STATUS: COUNTER-PROPOSED BY PARTNER B</span>
+            </div>
+            <p id="sim-clause-text" style="font-size:14.5px; margin:0 0 10px;">
+              "Upon sale or dissolution, Partner A shall first recover their verified $120,000 down-payment contribution from net proceeds. <ins style='background:rgba(16,185,129,0.2); padding:2px 5px; border-radius:4px;'>Any remaining net appreciation above the original purchase price shall be divided 50% to Partner A and 50% to Partner B, including credit for Partner B's documented kitchen renovation labor.</ins>"
+            </p>
+            <div class="mono" id="sim-audit-line" style="font-size:11.5px; color:var(--text-muted);">
+              Audit Event #104 • Recorded to Immutable Ledger • Master Text Locked Until Both Parties Confirm
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Step 2: 100% Private crashoverride AI Sounding Board -->
+        <div class="card" style="margin-bottom:32px;">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px;">
+            <div>
+              <span class="mono" style="font-size:12px; font-weight:700; color:var(--primary);">INTERACTIVE STEP 2 • DUAL ISOLATED <code class="mono">CRASHOVERRIDE</code> AI SOUNDING BOARDS</span>
+              <h2 style="font-size:26px; margin-top:4px;">Two Completely Separate Encrypted Rooms—Zero Cross-Party Leakage</h2>
+            </div>
+            <span class="pill-badge">🔒 Self-Hosted on <code class="mono">crashoverride</code> • Zero OpenAI/Cloud Training</span>
+          </div>
+
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
+            <button type="button" class="btn-outline" onclick="switchAiScenario('spousal')">Scenario A: Spousal Support &amp; State Statutory Guardrail</button>
+            <button type="button" class="btn-outline" onclick="switchAiScenario('house')">Scenario B: Unequal House Down Payment vs. Sweat Equity</button>
+            <button type="button" class="btn-outline" onclick="switchAiScenario('cabin')">Scenario C: Sibling Lake Cabin Buyout &amp; Caregiver Credit</button>
+          </div>
+
+          <div class="grid-2">
+            <!-- Partner A Private Room -->
+            <div class="card-soft" style="border-top:4px solid var(--primary);">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <strong>🔐 Partner A's Private AI Vault (Alex)</strong>
+                <span class="mono" style="font-size:11px; color:var(--primary);">VISIBLE ONLY TO ALEX</span>
+              </div>
+              <div style="background:var(--bg-elevated); padding:12px; border-radius:10px; border:1px solid var(--border); margin-bottom:10px; font-size:13.5px;">
+                <div style="font-size:11px; font-weight:700; color:var(--text-muted);">ALEX'S RAW BLUNT QUESTION (NEVER SHARED):</div>
+                <p id="ai-a-raw" style="margin:4px 0 0; font-style:italic;">"I earn 3x what Sam makes. If I ask for a 100% permanent waiver of spousal support even if we have kids, will that hold up or am I creating a trap?"</p>
+              </div>
+              <div style="background:var(--bg-accent-tint); padding:12px; border-radius:10px; font-size:13.5px;">
+                <div style="font-size:11px; font-weight:700; color:var(--primary);"><code class="mono">CRASHOVERRIDE</code> PRIVATE COACHING &amp; STATUTORY ALERT:</div>
+                <p id="ai-a-reply" style="margin:4px 0 0;">"⚠️ <strong>Statutory Risk (<code class="mono">Minn. Stat. § 519.11</code>):</strong> A total waiver of support when one spouse pauses their career for children is the #1 reason courts invalidate prenups for 'unconscionability' at enforcement. Instead, propose a fair <strong>tiered durational cap</strong> based on years married so your core assets stay protected AND the contract holds up in court."</p>
+              </div>
+            </div>
+
+            <!-- Partner B Private Room -->
+            <div class="card-soft" style="border-top:4px solid var(--secondary);">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <strong>🔐 Partner B's Private AI Vault (Sam)</strong>
+                <span class="mono" style="font-size:11px; color:var(--secondary);">VISIBLE ONLY TO SAM</span>
+              </div>
+              <div style="background:var(--bg-elevated); padding:12px; border-radius:10px; border:1px solid var(--border); margin-bottom:10px; font-size:13.5px;">
+                <div style="font-size:11px; font-weight:700; color:var(--text-muted);">SAM'S RAW BLUNT QUESTION (NEVER SHARED):</div>
+                <p id="ai-b-raw" style="margin:4px 0 0; font-style:italic;">"I'm terrified that if I step back from my career when we have kids, a support waiver leaves me with nothing. How do I push back without sounding like I'm planning a divorce?"</p>
+              </div>
+              <div style="background:var(--bg-elevated); padding:12px; border-radius:10px; border:1px solid var(--border); font-size:13.5px;">
+                <div style="font-size:11px; font-weight:700; color:var(--secondary);"><code class="mono">CRASHOVERRIDE</code> PRIVATE COACHING &amp; CALM DRAFT:</div>
+                <p id="ai-b-reply" style="margin:4px 0 0;">"Here is a warm, team-first counter-proposal you can send: <em>'If neither of us pauses our career for caregiving, we waive support. If either partner steps back for children, we include a transitional cushion capped at 24 months.'</em> This protects both of you fairly."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Step 3: All Cards on the Table (Schedule A & B) + The Unbreakable Receipt -->
+        <div class="card">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px;">
+            <div>
+              <span class="mono" style="font-size:12px; font-weight:700; color:var(--primary);">INTERACTIVE STEP 3 • SCHEDULE A &amp; B + SHA-256 UNBREAKABLE RECEIPT</span>
+              <h2 style="font-size:26px; margin-top:4px;">Test the Tamper-Proof Fairness Timeline &amp; 15-Year Vault</h2>
+            </div>
+            <button type="button" class="btn-outline" onclick="toggleTamperTest()">🧪 Simulate a Later "Backdated Asset" Tamper Attempt</button>
+          </div>
+
+          <div class="grid-2">
+            <div class="card-soft">
+              <h3 style="font-size:19px; margin-bottom:10px;">📋 Guided Schedule A &amp; B Net-Worth Parity</h3>
+              <p style="font-size:13.5px; color:var(--text-muted); margin-bottom:12px;">
+                Both partners complete guided checklists of bank accounts, real estate, business equity, retirement funds, and debts. The system blocks final MOU lock until both schedules are acknowledged.
+              </p>
+              <div class="mono" style="font-size:12.5px; background:var(--bg-elevated); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                <div>✓ Schedule A (Alex): $327,500 Assets / $0 Debt — <strong>Verified Oct 12</strong></div>
+                <div style="margin-top:6px;">✓ Schedule B (Sam): $110,000 Assets / $62,000 Debt — <strong>Verified Oct 13</strong></div>
+                <div style="margin-top:6px; color:var(--primary); font-weight:700;">✓ Statutory Waiting Period: 14 Days Elapsed Before Lock</div>
+              </div>
+            </div>
+
+            <div class="card-soft" id="tamper-box">
+              <h3 style="font-size:19px; margin-bottom:10px;">🛡️ The SHA-256 Cryptographic Fairness Receipt</h3>
+              <p id="tamper-desc" style="font-size:13.5px; color:var(--text-muted); margin-bottom:12px;">
+                Every disclosure and turn is chained mathematically. Even 15 years from now, your Permanent Evidentiary Vault proves neither partner was ambushed the night before signing.
+              </p>
+              <div class="mono" id="tamper-hash-display" style="font-size:12px; background:var(--bg-elevated); padding:12px; border-radius:8px; border:1px solid var(--border);">
+                <div>GENESIS DISCLOSURE HASH: 0x94a8f1...c03e</div>
+                <div>TURN 01–14 MERKLE ROOT:  0x71d2b9...88a1</div>
+                <div style="color:#059669; font-weight:700; margin-top:4px;">✓ STATUS: AUTHENTIC &amp; UNALTERED (COURT-VERIFIABLE)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       PAGE 4: INTERACTIVE PRODUCT EXPERIENCE WORKSPACE (data-page="workspace")
+       ===================================================================== -->
+  <section id="page-workspace" class="page-view" data-page="workspace">
+    <div class="section">
+      <div class="container">
+        <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:16px; margin-bottom:24px;">
+          <div>
+            <span class="pill-badge">Page 4 of 4 • Live Interactive Product Walkthrough</span>
+            <h1 style="font-size:34px; margin-top:8px;">Inside Your Shared Kitchen Table Workspace</h1>
+          </div>
+          <!-- Workspace Mode Switcher -->
+          <div style="display:flex; gap:8px; flex-wrap:wrap; background:var(--bg-soft); padding:6px; border-radius:12px; border:1px solid var(--border);">
+            <button type="button" class="btn-outline ws-tab active" data-ws="partner-a" onclick="switchWorkspaceMode('partner-a')" style="padding:8px 14px; font-size:13px;">
+              👤 1. Partner A's View &amp; Private AI
+            </button>
+            <button type="button" class="btn-outline ws-tab" data-ws="partner-b" onclick="switchWorkspaceMode('partner-b')" style="padding:8px 14px; font-size:13px;">
+              👤 2. Partner B's View &amp; Private AI
+            </button>
+            <button type="button" class="btn-primary ws-tab" data-ws="handoff" onclick="switchWorkspaceMode('handoff')" style="padding:8px 14px; font-size:13px;">
+              📦 3. 3-Part Attorney Handoff Package
+            </button>
+          </div>
+        </div>
+
+        <!-- WORKSPACE MODE 1 & 2: PARTNER A / PARTNER B NEGOTIATION STUDIO -->
+        <div id="ws-negotiation-view" class="grid-2" style="grid-template-columns: 1.25fr 0.75fr; align-items:start;">
+          <!-- Left Column: Shared Clause Ledger -->
+          <div class="card">
+            <div style="display:flex; justify-content:space-between; align-items:center; padding-bottom:14px; border-bottom:1px solid var(--border); margin-bottom:16px;">
+              <div>
+                <span class="mono" id="ws-role-badge" style="font-size:11.5px; font-weight:700; color:var(--primary);">VIEWING AS: PARTNER A (ALEX RIVERA)</span>
+                <h2 style="font-size:22px; margin-top:2px;">Shared Agreement Blueprint (7 of 8 Sections Aligned)</h2>
+              </div>
+              <span class="pill-badge">88% Ready for Counsel</span>
+            </div>
+
+            <div style="display:grid; gap:10px; margin-bottom:18px;">
+              <div class="card-soft" style="padding:12px 16px; display:flex; justify-content:space-between; align-items:center;">
+                <span><strong>§ 1–3:</strong> Schedule A &amp; B Financial Disclosures, Separate Property &amp; Student Debt Shield</span>
+                <span class="pill-badge" style="font-size:11px;">✓ Mutually Locked</span>
+              </div>
+
+              <div class="card" style="border:2px solid var(--primary);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                  <strong style="font-size:16px;">§ 4: Home Down Payment Recovery &amp; Equity Split (Active Turn)</strong>
+                  <span class="mono" id="ws-clause-turn-badge" style="font-size:11.5px; font-weight:700; color:var(--secondary);">YOUR TURN TO REVIEW</span>
+                </div>
+                <p id="ws-clause-body" style="font-size:14px; color:var(--text-main); background:var(--bg-soft); padding:12px; border-radius:8px;">
+                  "Alex's $120,000 pre-marital down payment is recorded on Schedule A as Protected Separate Capital. If the home is sold or the marriage dissolves, Alex receives the $120,000 principal first, and all net equity appreciation + mortgage paydown is divided 50% Alex / 50% Sam."
+                </p>
+                <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:12px;">
+                  <button type="button" class="btn-primary" style="padding:8px 14px; font-size:13px;" onclick="wsActionAccept()">✓ Accept &amp; Lock § 4</button>
+                  <button type="button" class="btn-outline" style="padding:8px 14px; font-size:13px;" onclick="wsActionCounter()">✎ Counter-Propose With AI Draft</button>
+                  <button type="button" class="btn-outline" style="padding:8px 14px; font-size:13px;" onclick="switchWorkspaceMode('handoff')">Preview Counsel Export &rarr;</button>
+                </div>
+              </div>
+
+              <div class="card-soft" style="padding:12px 16px; display:flex; justify-content:space-between; align-items:center;">
+                <span><strong>§ 5–8:</strong> Joint Household Checking, Sunset/Caregiver Cushion &amp; Independent Counsel Review</span>
+                <span class="pill-badge" style="font-size:11px;">✓ Mutually Locked</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Isolated Private AI Sounding Board -->
+          <div class="card" style="border-top:4px solid var(--primary);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+              <div>
+                <span class="mono" style="font-size:11px; font-weight:700; color:var(--primary);">🔒 ISOLATED <code class="mono">CRASHOVERRIDE</code> SANDBOX</span>
+                <h3 id="ws-ai-title" style="font-size:19px;">Alex's Private AI Sounding Board</h3>
+              </div>
+              <span class="pill-badge" style="font-size:11px;">Partner Cannot See</span>
+            </div>
+            <p id="ws-ai-privacy-note" style="font-size:12.5px; color:var(--text-muted); margin-top:0;">
+              Encrypted exclusively to <strong>Alex Rivera</strong>. Sam and Sam's attorney can never view or subpoena this private scratchpad.
+            </p>
+
+            <div id="ws-ai-chat-log" style="background:var(--bg-soft); padding:14px; border-radius:10px; font-size:13.5px; display:grid; gap:10px; margin-bottom:12px;">
+              <div style="background:var(--bg-elevated); padding:10px; border-radius:8px; border:1px solid var(--border);">
+                <strong>Alex (Private Prompt):</strong> "Does giving Sam 50% of the future appreciation still protect my original $120,000 down payment if home prices drop?"
+              </div>
+              <div style="background:var(--bg-accent-tint); padding:10px; border-radius:8px;">
+                <strong><code class="mono">crashoverride</code> Advisor:</strong> "Yes—because your $120,000 is structured as a first-priority return of capital before any appreciation is split. If you want extra clarity, click below to add a 1-sentence market-downturn protection clause."
+              </div>
+            </div>
+
+            <div style="display:grid; gap:6px;">
+              <button type="button" class="btn-outline" style="font-size:12.5px; justify-content:flex-start;" onclick="askLiveWorkspaceAi(1)">
+                💬 Ask AI: "Stress-test this clause under state fairness rules"
+              </button>
+              <button type="button" class="btn-outline" style="font-size:12.5px; justify-content:flex-start;" onclick="askLiveWorkspaceAi(2)">
+                💬 Ask AI: "Draft a warm message explaining why this split is fair"
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORKSPACE MODE 3: 3-PART ATTORNEY HANDOFF PACKAGE PREVIEW -->
+        <div id="ws-handoff-view" class="card" style="display:none; border:2px solid var(--primary);">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid var(--border);">
+            <div>
+              <span class="pill-badge">📦 Certified 3-Part Counsel Handoff Package • Ready for 2-Hour Attorney Review</span>
+              <h2 style="font-size:28px; margin-top:6px;">What You Hand Your Independent Lawyers at the Finish Line</h2>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <button type="button" class="btn-primary" onclick="alert('In production, this downloads your cryptographically signed 3-Part Attorney Handoff PDF & JSON Verification Bundle.')">⬇ Download Sample 3-Part Package (PDF + SHA-256 Receipt)</button>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <div class="card-soft">
+              <div class="mono" style="font-size:11.5px; font-weight:700; color:var(--primary); margin-bottom:6px;">PART I • CLEAN STATE-TAILORED MOU</div>
+              <h3 style="font-size:20px; margin-bottom:8px;">1. Plain-English + Statutory MOU</h3>
+              <p style="font-size:13.5px; color:var(--text-muted);">
+                All 8 mutually locked sections formatted cleanly for your state's family, real estate, or corporate counsel—saving 15+ hours of intake and first-draft billing.
+              </p>
+              <div class="mono" style="font-size:11.5px; background:var(--bg-elevated); padding:10px; border-radius:8px; margin-top:10px;">
+                Watermark: "Collaborative Pre-Counsel MOU Blueprint — Prepared Voluntarily by Both Parties"
+              </div>
+            </div>
+
+            <div class="card-soft">
+              <div class="mono" style="font-size:11.5px; font-weight:700; color:var(--primary); margin-bottom:6px;">PART II • SCHEDULE A &amp; B LEDGERS</div>
+              <h3 style="font-size:20px; margin-bottom:8px;">2. Full Financial &amp; Contribution Schedules</h3>
+              <p style="font-size:13.5px; color:var(--text-muted);">
+                Complete itemized Schedule A (Partner A) and Schedule B (Partner B) asset, debt, income, and capital contribution tables with pre-lock cryptographic timestamps.
+              </p>
+              <div class="mono" style="font-size:11.5px; background:var(--bg-elevated); padding:10px; border-radius:8px; margin-top:10px;">
+                 Schedule A Parity: Verified ✓<br>Schedule B Parity: Verified ✓
+              </div>
+            </div>
+
+            <div class="card-soft">
+              <div class="mono" style="font-size:11.5px; font-weight:700; color:var(--primary); margin-bottom:6px;">PART III • THE UNBREAKABLE RECEIPT</div>
+              <h3 style="font-size:20px; margin-bottom:8px;">3. SHA-256 Procedural Fairness Certificate</h3>
+              <p style="font-size:13.5px; color:var(--text-muted);">
+                Chronological audit log of all 14 bilateral turns, proving both partners had active input, adequate deliberation days, and zero last-minute coercion.
+              </p>
+              <div class="mono" style="font-size:11.5px; background:var(--bg-elevated); padding:10px; border-radius:8px; margin-top:10px;">
+                Locked Final Hash:<br>0x4e8c91d0...f73b29a4 (15-Yr Vault Active)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authentic Commercial Website Footer with Plain-English Non-Law-Firm Disclaimer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:32px; padding-bottom:32px; border-bottom:1px solid var(--border);">
+        <div style="max-width:440px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <span class="brand-logo-slot" id="footer-logo-slot"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-logo-svg">
+          <rect width="48" height="48" rx="11" fill="#F5F5F4"/>
+          <path d="M8 36V24C8 17 13 13 19 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <path d="M40 36V24C40 17 35 13 29 13" stroke="#0F172A" stroke-width="3.2" stroke-linecap="round"/>
+          <polygon points="19,10 29,10 26.5,22 21.5,22" fill="#A16207"/>
+          <line x1="7" y1="36" x2="41" y2="36" stroke="#0F172A" stroke-width="2.8" stroke-linecap="round"/>
+        </svg></span>
+            <strong style="font-family:var(--font-heading); font-size:22px; color:var(--text-main);">quic.legal</strong>
+          </div>
+          <p style="margin:0; font-size:13.5px;">
+            The Kitchen Table Agreement &amp; Proof Studio. Work out the hard parts of your prenup, co-buying agreement, amicable divorce, parenting plan, co-founder split, or shared family cabin together—before paying two lawyers $5,000 to argue.
+          </p>
+        </div>
+
+        <div style="display:flex; gap:48px; flex-wrap:wrap;">
+          <div>
+            <strong style="color:var(--text-main); display:block; margin-bottom:8px;">Explore This Experience</strong>
+            <div style="display:grid; gap:6px; font-size:13.5px;">
+              <a href="#home" onclick="switchPage('home'); return false;">1. Kitchen Table Homepage</a>
+              <a href="#vertical" onclick="switchPage('vertical'); return false;">2. Life-Moment Landing Page &amp; Calculator</a>
+              <a href="#how-it-works" onclick="switchPage('how-it-works'); return false;">3. How Technology Protects Both of You</a>
+              <a href="#workspace" onclick="switchPage('workspace'); return false;">4. Live Interactive Product Workspace</a>
+            </div>
+          </div>
+          <div>
+            <strong style="color:var(--text-main); display:block; margin-bottom:8px;">6 Life Agreements</strong>
+            <div style="display:grid; gap:6px; font-size:13.5px;">
+              <a href="#vertical" onclick="openVerticalMoment('prenup'); return false;">Prenup &amp; Postnup ($299)</a>
+              <a href="#vertical" onclick="openVerticalMoment('cobuy'); return false;">Co-Buying a House/Cabin ($299)</a>
+              <a href="#vertical" onclick="openVerticalMoment('divorce'); return false;">Amicable Divorce Settlement ($349)</a>
+              <a href="#vertical" onclick="openVerticalMoment('cofounder'); return false;">Startup Co-Founder MOU ($299)</a>
+              <a href="#vertical" onclick="openVerticalMoment('cabin'); return false;">Family Cabin &amp; Estate Plan ($299)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plain-English Non-Law-Firm / Zero-UPL Disclaimer -->
+      <div style="margin-top:24px; font-size:12.5px; line-height:1.6;">
+        <strong>Plain-English Legal &amp; Non-Law-Firm Disclaimer:</strong> <strong>quic.legal</strong> is a collaborative negotiation software platform and cryptographic audit ledger—<strong>we are not a law firm, and we do not provide legal advice or legal representation</strong>. Our software helps you and your partner organize financial disclosures, explore educational legal information privately on isolated self-hosted AI hardware (<code class="mono">crashoverride</code>), and build a structured Memorandum of Understanding (MOU) + Procedural Fairness Receipt to hand to your own independent attorneys (compliant with <em>Minn. Stat. § 519.11</em>, <em>§ 481.02</em>, and state UPMAA rules).
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       BOTTOM-RIGHT CORNER FLOATING INSPECTOR WIDGET (z-index: 9999)
+       ===================================================================== -->
+  <aside class="floating-inspector" id="floating-inspector" aria-label="Design Preview Inspector">
+    <div class="inspector-panel">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <div>
+          <span style="font-size:10.5px; font-weight:800; color:#38BDF8; text-transform:uppercase;">Kitchen Table Preview Studio</span>
+          <div style="font-weight:700; font-size:14px;">V09: Steady Hand</div>
+        </div>
+        <button type="button" onclick="toggleMode()" class="inspector-btn" style="width:auto;">🌗 <span id="inspector-mode-label">LIGHT</span></button>
+      </div>
+
+      <!-- 1. Switch Between the 4 Internal Pages -->
+      <div class="inspector-group">
+        <span class="inspector-label">1. Switch Internal Page View (4 Pages)</span>
+        <div class="inspector-page-btns">
+          <button type="button" class="inspector-btn active" data-insp-page="home" onclick="switchPage('home')">1. Homepage</button>
+          <button type="button" class="inspector-btn" data-insp-page="vertical" onclick="switchPage('vertical')">2. Life-Moment Page</button>
+          <button type="button" class="inspector-btn" data-insp-page="how-it-works" onclick="switchPage('how-it-works')">3. How Tech Works</button>
+          <button type="button" class="inspector-btn" data-insp-page="workspace" onclick="switchPage('workspace')">4. Live Workspace</button>
+        </div>
+      </div>
+
+      <!-- 2. Live SVG Logo Switcher (Logo 01 - Logo 10) -->
+      <div class="inspector-group">
+        <span class="inspector-label">2. Live Header &amp; Footer SVG Logo Switcher</span>
+        <select id="live-logo-select" onchange="switchLiveLogo(this.value)" style="width:100%; padding:7px 9px; border-radius:8px; background:#1E293B; color:#F8FAFC; border:1px solid #334155; font-size:11.5px;">
+          <option value="logo-01" >Logo 01: The Warm Cup & Ring (Sunday Morning Coffee)</option><option value="logo-02" >Logo 02: The Kitchen Table Dovetail (The Kitchen Table)</option><option value="logo-03" >Logo 03: The Rising Horizon Arc (Clear Horizon)</option><option value="logo-04" >Logo 04: The Interlocking Venn Bridge (Common Ground)</option><option value="logo-05" >Logo 05: The True Square & Check (Fair & Square)</option><option value="logo-06" >Logo 06: The Sheltering Cove (Quiet Harbor)</option><option value="logo-07" >Logo 07: Two Open Cards (Open Cards)</option><option value="logo-08" >Logo 08: The Welcoming Gables (Front Porch)</option><option value="logo-09" selected>Logo 09: The Balanced Keystone (Steady Hand)</option><option value="logo-10" >Logo 10: The Hearth & Ember (Fireside Evening)</option>
+        </select>
+        <div id="live-logo-trigger-note" style="font-size:11px; color:#94A3B8; margin-top:5px;">
+          Trigger: Institutional reliability, bridging the kitchen table and the attorney's office, the Unbreakable Receipt.
+        </div>
+      </div>
+
+      <!-- 3. Jump to Any of the 10 Mockup Versions, logos.html, or index.html -->
+      <div class="inspector-group">
+        <span class="inspector-label">3. Jump to All 10 Versions &amp; Hubs</span>
+        <div style="display:flex; gap:6px; margin-bottom:6px;">
+          <a href="index.html" class="inspector-btn" style="text-decoration:none; flex:1; text-align:center; background:#0284C7; color:#FFF;">★ Master Hub (index.html)</a>
+          <a href="logos.html" class="inspector-btn" style="text-decoration:none; flex:1; text-align:center; background:#7C3AED; color:#FFF;">✦ 10 Logos Studio</a>
+        </div>
+        <div class="inspector-ver-grid">
+          <a href="version-01-sunday-morning-coffee.html" class="inspector-ver-link ">V01: Sunday Morning Coffee</a><a href="version-02-the-kitchen-table.html" class="inspector-ver-link ">V02: The Kitchen Table</a><a href="version-03-clear-horizon.html" class="inspector-ver-link ">V03: Clear Horizon</a><a href="version-04-common-ground.html" class="inspector-ver-link ">V04: Common Ground</a><a href="version-05-fair-and-square.html" class="inspector-ver-link ">V05: Fair & Square</a><a href="version-06-quiet-harbor.html" class="inspector-ver-link ">V06: Quiet Harbor</a><a href="version-07-open-cards.html" class="inspector-ver-link ">V07: Open Cards</a><a href="version-08-front-porch.html" class="inspector-ver-link ">V08: Front Porch</a><a href="version-09-steady-hand.html" class="inspector-ver-link active">V09: Steady Hand</a><a href="version-10-fireside-evening.html" class="inspector-ver-link ">V10: Fireside Evening</a>
+        </div>
+      </div>
+
+      <!-- 4. Collapsible Psychology & Conversion Audit Notes -->
+      <details style="background:#1E293B; padding:8px 10px; border-radius:8px; border:1px solid #334155;">
+        <summary style="cursor:pointer; font-weight:700; font-size:11.5px; color:#FDE68A;">🧠 Psychology &amp; Conversion Audit Notes</summary>
+        <ul style="margin:8px 0 0; padding-left:16px; font-size:11px; color:#CBD5E1; line-height:1.45;">
+          <li style='margin-bottom:6px;'>Shape Psychology (Logo 09 — The Balanced Keystone): Two structural arches locked in equilibrium by a central bronze keystone symbolize bilateral parity and durable legal engineering.</li><li style='margin-bottom:6px;'>Color Psychology: Fiduciary Slate (#0F172A) + Burnished Bronze (#A16207) on Warm Stone (#F5F5F4) bridges domestic warmth and private-wealth institutional credibility.</li><li style='margin-bottom:6px;'>Conversion Architecture: Highlights the '90% Kitchen Table / 10% Attorney Finish Line' cost breakdown right in the hero, neutralizing both DIY skepticism and retainer fear.</li>
+        </ul>
+      </details>
+    </div>
+
+    <button type="button" class="inspector-toggle-pill" onclick="document.getElementById('floating-inspector').classList.toggle('open')">
+      <span>🧭 V09: Steady Hand</span>
+      <span style="opacity:0.75;">• 4 Pages • Logo Switcher ▴</span>
+    </button>
+  </aside>
+
+  <script>
+    const ALL_LOGOS = {"logo-01": {"name": "The Warm Cup & Ring", "paired_title": "Sunday Morning Coffee", "trigger": "Cortisol reduction, morning ritual safety, zero legal intimidation.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"14\" fill=\"#FFFBEB\"/>\n          <circle cx=\"20\" cy=\"25\" r=\"11\" stroke=\"#3E2723\" stroke-width=\"3\" fill=\"rgba(217,119,6,0.12)\"/>\n          <circle cx=\"28\" cy=\"25\" r=\"11\" stroke=\"#D97706\" stroke-width=\"3\" fill=\"rgba(62,39,35,0.06)\"/>\n          <path d=\"M21 11C21 9 23 8 23 6M27 11C27 9 29 8 29 6\" stroke=\"#D97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n          <circle cx=\"24\" cy=\"25\" r=\"3\" fill=\"#3E2723\"/>\n        </svg>"}, "logo-02": {"name": "The Kitchen Table Dovetail", "paired_title": "The Kitchen Table", "trigger": "Equal voice, grounded domestic candor, mutual construction.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"12\" fill=\"#FAF8F5\"/>\n          <path d=\"M8 14H22L26 20H20L18 28H26L22 34H8V14Z\" fill=\"#451A03\"/>\n          <path d=\"M40 14H26L30 20H22L20 28H28L26 34H40V14Z\" fill=\"#C2410C\" fill-opacity=\"0.9\"/>\n          <line x1=\"8\" y1=\"38\" x2=\"40\" y2=\"38\" stroke=\"#451A03\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n        </svg>"}, "logo-03": {"name": "The Rising Horizon Arc", "paired_title": "Clear Horizon", "trigger": "Shared future optimism, forward momentum for engaged couples & co-buyers.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"14\" fill=\"#F8FAFC\"/>\n          <path d=\"M8 31C13 21 25 18 38 26\" stroke=\"#0284C7\" stroke-width=\"3.2\" stroke-linecap=\"round\"/>\n          <path d=\"M10 26C18 15 30 15 40 24\" stroke=\"#0F172A\" stroke-width=\"3.2\" stroke-linecap=\"round\"/>\n          <line x1=\"7\" y1=\"34\" x2=\"41\" y2=\"34\" stroke=\"#0F172A\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n          <circle cx=\"25\" cy=\"22\" r=\"3.5\" fill=\"#0284C7\"/>\n        </svg>"}, "logo-04": {"name": "The Interlocking Venn Bridge", "paired_title": "Common Ground", "trigger": "Conflict de-escalation, autonomic calming, two autonomous people creating shared ground.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"14\" fill=\"#F0FDF4\"/>\n          <rect x=\"8\" y=\"13\" width=\"20\" height=\"22\" rx=\"7\" stroke=\"#14532D\" stroke-width=\"3\" fill=\"rgba(46,111,64,0.12)\"/>\n          <rect x=\"20\" y=\"13\" width=\"20\" height=\"22\" rx=\"7\" stroke=\"#2E6F40\" stroke-width=\"3\" fill=\"rgba(20,83,45,0.12)\"/>\n          <path d=\"M20 24H28\" stroke=\"#14532D\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n        </svg>"}, "logo-05": {"name": "The True Square & Check", "paired_title": "Fair & Square", "trigger": "Procedural fairness, plain-English transparency, zero hidden traps.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"10\" fill=\"#FFFFFF\" stroke=\"#E2E8F0\" stroke-width=\"1.5\"/>\n          <path d=\"M11 33V11H33\" stroke=\"#1E293B\" stroke-width=\"3.5\" stroke-linecap=\"square\"/>\n          <path d=\"M37 15V37H15\" stroke=\"#059669\" stroke-width=\"3.5\" stroke-linecap=\"square\"/>\n          <path d=\"M19 24.5L22.5 28L30 20.5\" stroke=\"#059669\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n        </svg>"}, "logo-06": {"name": "The Sheltering Cove", "paired_title": "Quiet Harbor", "trigger": "Psychological sanctuary, emotional protection during sensitive transitions.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"16\" fill=\"#F0FDFA\"/>\n          <path d=\"M9 28C9 17.5 16 10 25 10C33.5 10 39 16 39 24.5\" stroke=\"#134E4A\" stroke-width=\"3.5\" stroke-linecap=\"round\"/>\n          <path d=\"M14 29.5C17.5 26.5 21.5 26.5 25 29.5C28.5 32.5 32.5 32.5 36 29.5\" stroke=\"#0F766E\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n          <path d=\"M16 35.5C19.5 33 23.5 33 27 35.5C30.5 38 34.5 38 37 35.5\" stroke=\"#0F766E\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.75\"/>\n          <circle cx=\"24\" cy=\"20\" r=\"3.2\" fill=\"#0F766E\"/>\n        </svg>"}, "logo-07": {"name": "Two Open Cards", "paired_title": "Open Cards", "trigger": "Radical financial candor, Schedule A & B full disclosure without stuffiness.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"12\" fill=\"#FDFBF7\"/>\n          <rect x=\"9\" y=\"12\" width=\"19\" height=\"26\" rx=\"4\" transform=\"rotate(-8 9 12)\" fill=\"#FFFFFF\" stroke=\"#312E81\" stroke-width=\"2.8\"/>\n          <rect x=\"20\" y=\"10\" width=\"19\" height=\"26\" rx=\"4\" transform=\"rotate(8 20 10)\" fill=\"#FFFBEB\" fill-opacity=\"0.92\" stroke=\"#B45309\" stroke-width=\"2.8\"/>\n          <line x1=\"14\" y1=\"20\" x2=\"21\" y2=\"19\" stroke=\"#312E81\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n          <line x1=\"25\" y1=\"19\" x2=\"33\" y2=\"20\" stroke=\"#B45309\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n          <circle cx=\"24\" cy=\"26\" r=\"2.8\" fill=\"#312E81\"/>\n        </svg>"}, "logo-08": {"name": "The Welcoming Gables", "paired_title": "Front Porch", "trigger": "Neighborly hospitality, human-first conversation, domestic belonging.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"14\" fill=\"#FEFCE8\"/>\n          <path d=\"M7 22L24 10L41 22\" stroke=\"#9A3412\" stroke-width=\"3.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n          <path d=\"M13 22V35M35 22V35\" stroke=\"#3F6212\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n          <path d=\"M18 29H22M26 29H30\" stroke=\"#9A3412\" stroke-width=\"2.8\" stroke-linecap=\"round\"/>\n          <line x1=\"9\" y1=\"36\" x2=\"39\" y2=\"36\" stroke=\"#3F6212\" stroke-width=\"2.8\" stroke-linecap=\"round\"/>\n        </svg>"}, "logo-09": {"name": "The Balanced Keystone", "paired_title": "Steady Hand", "trigger": "Institutional reliability, bridging the kitchen table and the attorney's office, the Unbreakable Receipt.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"11\" fill=\"#F5F5F4\"/>\n          <path d=\"M8 36V24C8 17 13 13 19 13\" stroke=\"#0F172A\" stroke-width=\"3.2\" stroke-linecap=\"round\"/>\n          <path d=\"M40 36V24C40 17 35 13 29 13\" stroke=\"#0F172A\" stroke-width=\"3.2\" stroke-linecap=\"round\"/>\n          <polygon points=\"19,10 29,10 26.5,22 21.5,22\" fill=\"#A16207\"/>\n          <line x1=\"7\" y1=\"36\" x2=\"41\" y2=\"36\" stroke=\"#0F172A\" stroke-width=\"2.8\" stroke-linecap=\"round\"/>\n        </svg>"}, "logo-10": {"name": "The Hearth & Ember", "paired_title": "Fireside Evening", "trigger": "Low-eye-strain after-dinner calm, intimacy, working together peacefully at night.", "svg": "<svg viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"brand-logo-svg\">\n          <rect width=\"48\" height=\"48\" rx=\"14\" fill=\"#1C1917\" stroke=\"#44403C\" stroke-width=\"1.5\"/>\n          <rect x=\"8\" y=\"8\" width=\"32\" height=\"32\" rx=\"9\" stroke=\"#F59E0B\" stroke-width=\"1.8\" stroke-opacity=\"0.45\"/>\n          <path d=\"M21 34C16.5 31 15 25 19 19C21 22 23 23 23 27C23 30 22 32 21 34Z\" fill=\"#EA580C\"/>\n          <path d=\"M26 34C31 30.5 32.5 23.5 26.5 15C24.5 19.5 21.5 22 22.5 27.5C23 30.5 24.5 32.5 26 34Z\" fill=\"#F59E0B\" fill-opacity=\"0.9\"/>\n          <line x1=\"15\" y1=\"36\" x2=\"33\" y2=\"36\" stroke=\"#FDE68A\" stroke-width=\"2.4\" stroke-linecap=\"round\"/>\n        </svg>"}};
+
+    const VERTICAL_DATA = {
+      parenting: {
+        eyebrow: "INITIAL CUSTODY PLANS & POST-DECREE MODIFICATIONS • CHILD-FIRST DESIGN",
+        headline: "Build a Calm, Bulletproof Parenting Plan—So Your Kids Never Become the Middlemen.",
+        sub: "Co-parenting apps like OurFamilyWizard charge $300–$700/yr just to record your arguments after your schedule breaks down. quic.legal helps you and your co-parent take turns mapping out weekly custody rotations, holidays, school decisions, and kid expenses up front—with private AI coaching that turns tense moments into clear, child-centered agreements.",
+        cta: "Build Your Parenting Plan — $249 Flat per Pair",
+        price: 249,
+        photo: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"Our kids are 4 and 7. What's the difference in transition stress between a 2-2-3 schedule and a 5-2-2-5 schedule, and how do I propose switching to week-on/week-off when the youngest turns 9?\"",
+          "\"My co-parent keeps signing our daughter up for $800 travel sports without asking me first. Help me draft a fair clause requiring written mutual consent for any activity over $150.\""
+        ],
+        steps: [
+          "<strong>Map Out the Full Calendar &amp; Expense Rules:</strong> Choose proven custody matrices (2-2-3, 5-2-2-5, week-on/week-off), assign holidays, and set clear caps for extracurriculars and copays.",
+          "<strong>Use Your Private AI Coach to De-Escalate:</strong> Vent privately to your isolated <code>crashoverride</code> advisor and let it draft a respectful, child-focused counter-proposal.",
+          "<strong>Lock Your Plan &amp; Export for Court Stipulation:</strong> Freeze your agreed Parenting Plan MOU with a full turn-by-turn SHA-256 audit trail ready for your family lawyer or mediator."
+        ]
+      },
+      divorce: {
+        eyebrow: "FOR AMICABLE COUPLES PARTING WAYS • PRE-FILING SETTLEMENT STUDIO",
+        headline: "Split Your Assets, Not Your Sanity—Agree on Your Divorce Terms Before Paying $25,000 in Retainers.",
+        sub: "If you and your spouse agree you want a fair, peaceful split, don't fund two lawyers' billable quotas to negotiate what you can hash out calmly from home. Map out your house equity, retirement accounts, and debts turn by turn—with a 100% private AI sounding board in your corner.",
+        cta: "Start Your Settlement Workspace — $349 Flat",
+        photo: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"We have $140k in home equity and $110k in my 401(k). How can I propose keeping my full 401(k) while giving my spouse a fair buyout on the house?\"",
+          "\"Help me rewrite my counter-offer into calm, neutral language proposing 24 months of step-down transitional support.\""
+        ],
+        steps: [
+          "<strong>Build a Verified Balance Sheet:</strong> Log bank accounts, home equity, 401(k)s, and debts with cryptographic timestamps.",
+          "<strong>Model Trade-Offs Privately:</strong> Use your isolated <code>crashoverride</code> AI advisor to test fair equalization options and strip emotion out of counter-proposals.",
+          "<strong>Freeze &amp; Fast-Track Filing:</strong> Export your clean MOU, redline history, and fairness certificate so your attorney or mediator finishes in hours, not months."
+        ]
+      },
+      cobuy: {
+        eyebrow: "FOR UNMARRIED COUPLES, FRIENDS & FAMILY CO-BUYERS • HOUSE & CABIN PROTECTION",
+        headline: "Buying a Home Together Without a Marriage License? Protect Your Down Payment and Your Relationship.",
+        sub: "The bank locks you both onto a 30-year mortgage, but state law gives unmarried co-buyers zero automatic protection if one person puts down 80% of the cash or wants to sell in three years. Agree on down-payment credits, monthly splits, and buyout formulas before closing day.",
+        cta: "Start Your Co-Ownership MOU — $299 Flat",
+        photo: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"I'm putting down $90,000 and my partner is putting down $15,000, but we split the mortgage 50/50. What's the fairest formula so I get my $90k back first if we sell?\"",
+          "\"How do we fairly value my partner's sweat equity if they remodel the kitchen themselves while I pay for materials?\""
+        ],
+        steps: [
+          "<strong>Log Exact Capital &amp; Sweat-Equity Contributions:</strong> Record down payments, closing costs, and renovation labor in a time-stamped schedule.",
+          "<strong>Agree on Carrying Costs &amp; Exit Rules:</strong> Shape clauses for monthly mortgage splits, emergency repairs, refinancing deadlines, and buyout appraisals.",
+          "<strong>Hand Off to Real Estate Counsel:</strong> Export your frozen Co-Ownership MOU and Audit Certificate to attach to your Tenants-in-Common deed."
+        ]
+      },
+      prenup: {
+        eyebrow: "FOR ENGAGED & MARRIED COUPLES • STATE-AWARE PRENUP & POSTNUP STUDIO",
+        headline: "Protect Your Marriage and Your Future—Without Turning Wedding Planning Into a Lawyer Fight.",
+        sub: "Don't pay two divorce attorneys $10,000 to argue for you, and don't gamble your assets on a $599 fill-in-the-blank quiz that a court can toss out. Disclose your finances transparently, ask your private AI advisor the hard questions safely, and hand your lawyers a 90%-done prenup.",
+        cta: "Start Your Prenup Workspace — $299 Flat",
+        photo: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"I have $180k in pre-marital home equity and my fiancé has $65k in student loans. How do I protect my down payment without making them feel insecure?\"",
+          "\"Our wedding is in 6 weeks—help me check our state's statutory signing timeline so no lawyer can ever claim this was an eleventh-hour ambush.\""
+        ],
+        steps: [
+          "<strong>Put All Cards on the Table (Schedule A &amp; B):</strong> Follow guided checklists for savings, real estate, business equity, and student loans.",
+          "<strong>Take Turns Shaping Every Clause:</strong> Review 9 plain-English sections with your own isolated <code>crashoverride</code> AI sounding board.",
+          "<strong>Lock for Independent Counsel:</strong> Export your Clean MOU, Redline History, and SHA-256 Fairness Receipt so final legal review takes 2 hours."
+        ]
+      },
+      cabin: {
+        eyebrow: "FOR BLENDED FAMILIES & ADULT SIBLINGS • SHARED CABINS, HEIRLOOMS & INHERITANCE",
+        headline: "Protect Your Kids' Inheritance and the Family Cabin—So Thanksgiving Dinner Survives.",
+        sub: "Wills rarely spell out how siblings will share repairs and July 4th weekends at the lake cabin, how a second marriage protects children's inheritance, or how to compensate the sibling caring for Mom. Give everyone an equal turn and a private AI sounding board.",
+        cta: "Start Your Family Agreement — $299 Flat",
+        photo: "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"The three of us are inheriting the lake cabin in northern Minnesota, but my sister can't afford 1/3 of a new $18,000 roof. How do we structure a fair buyout or reserve fund?\"",
+          "\"I spend 20 hours a week caring for Mom while my brothers live out of state. How do I propose a fair caregiver agreement without sounding greedy?\""
+        ],
+        steps: [
+          "<strong>Inventory Shared Property &amp; Care Contributions:</strong> Log cabin carrying costs, heirlooms, or weekly parent caregiving hours transparently.",
+          "<strong>Translate Sensitive Feelings Into Fair Rules:</strong> Let your private AI coach help you propose seasonal calendars, escrow funds, and buyout discounts gently.",
+          "<strong>Lock for Your Estate Attorney:</strong> Freeze your Family Cabin LLC Blueprint or Estate MOU with permanent proof of voluntary family consent."
+        ]
+      },
+      cofounder: {
+        eyebrow: "FOR 2–4 STARTUP CO-FOUNDERS • PRE-INCORPORATION EQUITY, VESTING & IP",
+        headline: "Don't Incorporate on a Handshake—Lock In Equity, Vesting, and IP Before Anyone Walks Away With Half the Company.",
+        sub: "Stripe Atlas files day-one paperwork, but it doesn't help co-founders agree on what happens if someone quits in month five or brings pre-existing code. Negotiate your Founder MOU turn by turn—with private AI advisors for every founder—before paying $5,000 to corporate counsel.",
+        cta: "Start Your Co-Founder Workspace — $299 Flat",
+        photo: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80",
+        prompts: [
+          "\"I'm quitting my job to build full-time on Day 1, while my co-founder keeps their day job for 6 months. How do I propose milestone vesting without blowing up our friendship?\"",
+          "\"How do I license my pre-existing open-source library to our startup without losing my IP if we shut down in year one?\""
+        ],
+        steps: [
+          "<strong>Declare IP, Cash &amp; Time Commitments:</strong> Log pre-existing code/patents, initial capital, and full-time transition dates.",
+          "<strong>Negotiate Equity, Cliffs &amp; Leaver Rules:</strong> Stress-test dilution and 4-year vesting with 1-year cliffs privately before counter-proposing.",
+          "<strong>Freeze for Corporate Counsel &amp; VC Diligence:</strong> Export a cryptographically verified Founder MOU proving clean IP assignment from Day 1."
+        ]
+      }
+    };
+
+    function switchPage(pageId) {
+      document.querySelectorAll('.page-view').forEach(el => {
+        el.classList.toggle('active', el.getAttribute('data-page') === pageId);
+      });
+      document.querySelectorAll('.nav-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-nav-target') === pageId);
+      });
+      document.querySelectorAll('[data-insp-page]').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-insp-page') === pageId);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openVerticalMoment(momentKey) {
+      switchPage('vertical');
+      selectLifeMoment(momentKey);
+    }
+
+    window.currentMomentPrice = 299;
+    function selectLifeMoment(momentKey) {
+      const d = VERTICAL_DATA[momentKey] || VERTICAL_DATA.prenup;
+      window.currentMomentPrice = (momentKey === 'divorce') ? 349 : (momentKey === 'parenting' ? 249 : 299);
+      document.querySelectorAll('.moment-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-moment') === momentKey);
+      });
+      document.getElementById('vm-eyebrow').textContent = d.eyebrow;
+      document.getElementById('vm-headline').textContent = d.headline;
+      document.getElementById('vm-sub').textContent = d.sub;
+      document.getElementById('vm-cta').textContent = d.cta;
+      document.getElementById('vm-photo').src = d.photo;
+      document.getElementById('vm-prompts').innerHTML = d.prompts.map(p => `<li>${p}</li>`).join('');
+      document.getElementById('vm-steps').innerHTML = d.steps.map(s => `<li>${s}</li>`).join('');
+      if (typeof updateCalculator === 'function') updateCalculator();
+    }
+
+    function updateCalculator() {
+      const state = document.getElementById('calc-state').value;
+      const days = parseInt(document.getElementById('calc-days').value, 10);
+      const assetsK = parseInt(document.getElementById('calc-assets').value, 10);
+
+      document.getElementById('calc-days-val').textContent = days + ' Days';
+      document.getElementById('calc-assets-val').textContent = '$' + assetsK.toLocaleString() + ',000';
+
+      const alertEl = document.getElementById('calc-timing-alert');
+      if (days < 14) {
+        alertEl.innerHTML = '⚠️ <strong>Urgent Statutory Buffer Alert (' + days + ' days):</strong> States like MN (§ 519.11) and CA (§ 1615) scrutinize agreements signed within 7 days of a wedding. Start disclosures today or consider a Postnup / Co-Ownership MOU if under 7 days.';
+      } else if (days < 30) {
+        alertEl.innerHTML = '⏱️ <strong>Recommended Action Window (' + days + ' days):</strong> Complete Schedule A &amp; B disclosures this week so both partners have 7+ calm days with independent counsel before signing.';
+      } else {
+        alertEl.innerHTML = '✅ <strong>Gold-Standard Statutory Window (' + days + ' days):</strong> Ideal runway for unhurried turn-by-turn negotiation and ironclad procedural fairness proof.';
+      }
+
+      const tradCost = Math.round(5500 + (assetsK * 5.8));
+      const passPrice = window.currentMomentPrice || 299;
+      const quicCost = passPrice + 1200;
+      const saved = tradCost - quicCost;
+      const pct = Math.round((saved / tradCost) * 100);
+
+      document.getElementById('calc-trad-cost').textContent = '$' + tradCost.toLocaleString();
+      document.getElementById('calc-quic-cost').textContent = '$' + quicCost.toLocaleString();
+      document.getElementById('calc-net-savings').textContent = '$' + saved.toLocaleString() + ' Saved (' + pct + '% Less)';
+    }
+
+    function runRedlineStep(step) {
+      const turnEl = document.getElementById('sim-turn-indicator');
+      const statusEl = document.getElementById('sim-status-pill');
+      const textEl = document.getElementById('sim-clause-text');
+      const auditEl = document.getElementById('sim-audit-line');
+
+      if (step === 'propose') {
+        turnEl.textContent = 'Current Turn: Partner B (Sam) to Review Proposal';
+        statusEl.textContent = 'STATUS: PROPOSED BY PARTNER A (AWAITING PARTNER B)';
+        textEl.innerHTML = '"Upon sale or dissolution, Partner A shall first recover their verified $120,000 down-payment contribution from net proceeds before remaining equity is divided."';
+        auditEl.textContent = 'Audit Event #103 • Proposed by Partner A • Master Text Unchanged Until Partner B Responds';
+      } else if (step === 'counter') {
+        turnEl.textContent = 'Current Turn: Partner A (Alex) to Review Counter-Proposal';
+        statusEl.textContent = 'STATUS: COUNTER-PROPOSED BY PARTNER B';
+        textEl.innerHTML = '"Upon sale or dissolution, Partner A shall first recover their verified $120,000 down-payment contribution. <ins style=\"background:rgba(16,185,129,0.22); padding:2px 5px; border-radius:4px;\">Remaining net appreciation shall be split 50/50, including a $15,000 renovation sweat-equity credit for Partner B.</ins>"';
+        auditEl.textContent = 'Audit Event #104 • Counter-Proposal Logged in SHA-256 Chain • Zero Secret Overwrites';
+      } else if (step === 'reject') {
+        turnEl.textContent = 'Current Turn: Shared Table Discussion';
+        statusEl.textContent = 'STATUS: PAUSED WITH CONSTRUCTIVE AI SUGGESTION';
+        textEl.innerHTML = '"Clause paused for refinement. Suggested compromise from private AI: Verify renovation receipts over $2,500 on Schedule B so both partners have exact documentation."';
+        auditEl.textContent = 'Audit Event #105 • Constructive Hold Recorded • Both Parties Protected';
+      } else {
+        turnEl.textContent = '✓ Clause Mutually Locked by Both Partners';
+        statusEl.textContent = 'STATUS: ✓ MUTUALLY ALIGNED & CRYPTOGRAPHICALLY SEALED';
+        textEl.innerHTML = '<strong>LOCKED MASTER CLAUSE:</strong> "Upon sale or dissolution, Partner A recovers their verified $120,000 down payment first, Partner B recovers verified renovation credits up to $15,000, and all remaining appreciation is divided 50% / 50%."';
+        auditEl.textContent = 'Audit Event #106 • Bilateral Signature Hash: 0x8f3a...e912 • Ready for Independent Counsel';
+      }
+    }
+
+    function switchAiScenario(scen) {
+      const aRaw = document.getElementById('ai-a-raw');
+      const aReply = document.getElementById('ai-a-reply');
+      const bRaw = document.getElementById('ai-b-raw');
+      const bReply = document.getElementById('ai-b-reply');
+
+      if (scen === 'spousal') {
+        aRaw.textContent = '"I earn 3x what Sam makes. If I ask for a 100% permanent waiver of spousal support even if we have kids, will that hold up or am I creating a trap?"';
+        aReply.innerHTML = '⚠️ <strong>Statutory Risk (<code>Minn. Stat. § 519.11</code>):</strong> A total waiver when one spouse pauses their career for children risks court invalidation for unconscionability. Propose a fair tiered durational cushion instead.';
+        bRaw.textContent = '"I\'m terrified that if I step back from my career when we have kids, a support waiver leaves me vulnerable. How do I push back warmly?"';
+        bReply.innerHTML = 'Draft counter-proposal: <em>"If neither of us pauses our career for caregiving, we waive support. If either partner steps back for children, we include a transitional cushion capped at 24 months."</em>';
+      } else if (scen === 'house') {
+        aRaw.textContent = '"I\'m putting $95k into our house down payment and Sam is putting $10k. How do I protect my $95k without sounding like a landlord?"';
+        aReply.innerHTML = 'Propose a <strong>Return-of-Principal First + 50/50 Appreciation Split</strong>: your $95k is returned first at sale, and all growth we build together is shared equally.';
+        bRaw.textContent = '"Alex has way more cash for the down payment, but I\'m paying half the monthly mortgage and remodeling the kitchen myself. How is my contribution protected?"';
+        bReply.innerHTML = 'Add a <strong>Schedule B Sweat-Equity &amp; Mortgage Paydown Credit</strong> so your monthly principal reduction and renovation labor are legally recognized.';
+      } else {
+        aRaw.textContent = '"My two siblings want to keep the lake cabin forever, but I want to be bought out in 3 years without forcing a nasty family lawsuit."';
+        aReply.innerHTML = 'Include a <strong>Scheduled Appraisal &amp; 36-Month Family Installment Buyout Clause</strong> at 85% of appraised value so siblings can afford to buy out your share peacefully.';
+        bRaw.textContent = '"If my brother demands cash for his 1/3 of the cabin all at once, we\'ll be forced to sell Mom\'s cabin to strangers. How do we prevent a forced sale?"';
+        bReply.innerHTML = 'Counter-propose a <strong>Right of First Refusal + 5-Year Promissory Note Option</strong> so no sibling can trigger a surprise partition sale.';
+      }
+    }
+
+    let tamperActive = false;
+    function toggleTamperTest() {
+      tamperActive = !tamperActive;
+      const hashBox = document.getElementById('tamper-hash-display');
+      if (tamperActive) {
+        hashBox.innerHTML = `
+          <div style="color:#DC2626; font-weight:700;">🚨 TAMPER ATTEMPT DETECTED ON CLAUSE 4.2!</div>
+          <div>Expected Hash: 0x71d2b9...88a1</div>
+          <div>Modified PDF:  0x009f4c...12e0 (MISMATCH)</div>
+          <div style="color:#DC2626; margin-top:4px;">Result: Unilateral edit blocked. Original verified kitchen-table timeline preserved in 15-Year Vault.</div>
+        `;
+      } else {
+        hashBox.innerHTML = `
+          <div>GENESIS DISCLOSURE HASH: 0x94a8f1...c03e</div>
+          <div>TURN 01–14 MERKLE ROOT:  0x71d2b9...88a1</div>
+          <div style="color:#059669; font-weight:700; margin-top:4px;">✓ STATUS: AUTHENTIC &amp; UNALTERED (COURT-VERIFIABLE)</div>
+        `;
+      }
+    }
+
+    function switchWorkspaceMode(mode) {
+      document.querySelectorAll('.ws-tab').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-ws') === mode);
+      });
+      const negView = document.getElementById('ws-negotiation-view');
+      const handoffView = document.getElementById('ws-handoff-view');
+
+      if (mode === 'handoff') {
+        negView.style.display = 'none';
+        handoffView.style.display = 'block';
+      } else {
+        negView.style.display = 'grid';
+        handoffView.style.display = 'none';
+        const isA = (mode === 'partner-a');
+        document.getElementById('ws-role-badge').textContent = isA
+          ? 'VIEWING AS: PARTNER A (ALEX RIVERA)'
+          : 'VIEWING AS: PARTNER B (SAM CHEN)';
+        document.getElementById('ws-ai-title').textContent = isA
+          ? "Alex's Private AI Sounding Board"
+          : "Sam's Private AI Sounding Board";
+        document.getElementById('ws-ai-privacy-note').innerHTML = isA
+          ? "Encrypted exclusively to <strong>Alex Rivera</strong>. Sam and Sam's attorney can never view or subpoena this private scratchpad."
+          : "Encrypted exclusively to <strong>Sam Chen</strong>. Alex and Alex's attorney can never view or subpoena this private scratchpad.";
+        document.getElementById('ws-ai-chat-log').innerHTML = isA
+          ? `<div style="background:var(--bg-elevated); padding:10px; border-radius:8px; border:1px solid var(--border);"><strong>Alex (Private Prompt):</strong> "Does giving Sam 50% of the future appreciation still protect my original $120,000 down payment if home prices drop?"</div>
+             <div style="background:var(--bg-accent-tint); padding:10px; border-radius:8px;"><strong><code>crashoverride</code> Advisor:</strong> "Yes—because your $120,000 is structured as a first-priority return of capital before any appreciation is split."</div>`
+          : `<div style="background:var(--bg-elevated); padding:10px; border-radius:8px; border:1px solid var(--border);"><strong>Sam (Private Prompt):</strong> "I'm contributing $15,000 in kitchen renovation labor and paying 50% of the monthly mortgage. Is my equity protected here?"</div>
+             <div style="background:var(--bg-accent-tint); padding:10px; border-radius:8px;"><strong><code>crashoverride</code> Advisor:</strong> "Yes! You can click Counter-Propose to explicitly attach your $15,000 Schedule B renovation credit right alongside Alex's down payment."</div>`;
+      }
+    }
+
+    function wsActionAccept() {
+      document.getElementById('ws-clause-turn-badge').textContent = '✓ LOCKED BY BOTH PARTNERS';
+      document.getElementById('ws-clause-body').innerHTML = '<strong>✓ MUTUALLY LOCKED (§ 4):</strong> "Alex recovers the verified $120,000 Schedule A down payment first, Sam recovers verified Schedule B renovation credits, and all net equity appreciation + mortgage paydown is divided 50% / 50%."';
+    }
+
+    function wsActionCounter() {
+      document.getElementById('ws-clause-turn-badge').textContent = 'COUNTER-PROPOSAL SENT • AWAITING PARTNER';
+      document.getElementById('ws-clause-body').innerHTML = '<strong>COUNTER-PROPOSAL DRAFTED:</strong> "Alex recovers the $120,000 down payment first, Sam recovers up to $15,000 in documented kitchen renovation sweat equity second, and all remaining appreciation is split 50% / 50%."';
+    }
+
+    function askLiveWorkspaceAi(num) {
+      const log = document.getElementById('ws-ai-chat-log');
+      if (num === 1) {
+        log.innerHTML += `<div style="background:var(--bg-accent-tint); padding:10px; border-radius:8px;"><strong>✓ Statutory Fairness Check:</strong> Both Schedule A and Schedule B are time-stamped, and bilateral turn history shows balanced consideration—exceeding Minn. Stat. § 519.11 procedural fairness standards.</div>`;
+      } else {
+        log.innerHTML += `<div style="background:var(--bg-accent-tint); padding:10px; border-radius:8px;"><strong>💬 Suggested Warm Note to Partner:</strong> "I love how this protects both what we each bring in on Day 1 and everything we build together 50/50 going forward."</div>`;
+      }
+    }
+
+    function switchLiveLogo(logoId) {
+      const l = ALL_LOGOS[logoId];
+      if (!l) return;
+      document.documentElement.setAttribute('data-logo', logoId);
+      document.getElementById('header-logo-slot').innerHTML = l.svg;
+      document.getElementById('footer-logo-slot').innerHTML = l.svg;
+      document.getElementById('live-logo-trigger-note').textContent = 'Trigger: ' + l.trigger;
+    }
+
+    function toggleMode() {
+      const html = document.documentElement;
+      const next = html.getAttribute('data-mode') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-mode', next);
+      document.getElementById('inspector-mode-label').textContent = next.toUpperCase();
+    }
+
+    function copyInviteScript(btn) {
+      const txt = "Hey love — right now the state has a one-size-fits-all default contract written for us by politicians. Instead of paying lawyers $5,000 to argue, want to grab coffee this weekend and map out our own fair rules together on quic.legal?";
+      if (navigator.clipboard) navigator.clipboard.writeText(txt);
+      btn.textContent = "✓ Copied Warm Invite Script!";
+      setTimeout(() => { btn.textContent = "📋 Copy Warm Text Script"; }, 2500);
+    }
+
+    // Initialize default vertical & calculator
+    selectLifeMoment("prenup");
+    updateCalculator();
+  </script>
+</body>
+</html>

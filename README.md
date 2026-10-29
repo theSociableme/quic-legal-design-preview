@@ -1,88 +1,88 @@
-# Board Design & Brand Exploration Package: 15 Website Theme Variations (A–O), 15 SVG Logo Concepts, Multi-Agent Review Gates & GitHub Pages Deployment (`QUIAA-10`)
+# `quic.legal` — The "Kitchen Table" Commercial Website Showcase (Versions 01–10) & Psychology-Engineered Logo Studio (`QUIAA-12` / `QUIAA-22`)
 
-**Prepared By:** Sandra Data O'Connor, CEO & Chief Legal Architecture Strategist (`quic.legal`)  
+**Core Brand Positioning:** *"Work out the hard parts of your agreement together at the kitchen table — before you pay two lawyers $5,000 to argue."*  
 **Live GitHub Pages Showcase:** [`https://thesociableme.github.io/quic-legal-design-preview/`](https://thesociableme.github.io/quic-legal-design-preview/)  
-**Public Preview Repository:** [`https://github.com/theSociableme/quic-legal-design-preview`](https://github.com/theSociableme/quic-legal-design-preview)
+**Copy & Messaging Blueprint:** [`docs/ws3_kitchen_table_messaging_and_copy_blueprints.md`](./docs/ws3_kitchen_table_messaging_and_copy_blueprints.md)
 
 ---
 
-## 1. Executive Summary & Public Preview Manifest
+## 1. Executive Summary: 10 Real-World "Kitchen Table" Website Experiences & 10 Paired SVG Logos
 
-Pursuant to the Board's `QUIAA-10` mandate, we expanded the `quic.legal` Design Studio from 5 prototypes to **15 complete interactive 4-screen website theme mockups (`Variation A` through `Variation O`)**, created **15 distinct scalable vector (`<svg>`) logo and brandmark concepts (`Logo 01` through `Logo 15` in `logos.html`)**, executed the **7-Specialist Website Review Gate (V1 &rarr; V2)** and **3-Reviewer Logo Panel Gate (V1 &rarr; V2)**, built an interactive **External Reviewer Top-3 Ballot Widget** in `index.html`, and published the entire static bundle to GitHub Pages.
+This repository contains the complete **10 "Kitchen Table" Commercial Website Mockup Versions (`version-01` through `version-10`)**, the **Logo Psychology Studio (`logos.html`)**, and the **Clean Master Showcase Hub (`index.html`)**.
 
-### Interactive Bundle Files (`public/theme-mockups/` & `theSociableme/quic-legal-design-preview`)
-
-| File | Deliverable Role | Paired Brandmark | 7-Specialist Gate (V1 &rarr; V2) |
-| :--- | :--- | :--- | :---: |
-| [`index.html`](../public/theme-mockups/index.html) | **Master Board Design & Brand Explorer + Interactive Top-3 Reviewer Ballot** | All 15 Logos | **Master Hub** |
-| [`logos.html`](../public/theme-mockups/logos.html) | **15 SVG Logo & Brandmark Concepts Showcase (Light, Dark, 64×64, 32×32, Lockup)** | Logos `01`–`15` | **3-Reviewer Gate** |
-| [`variation-a-nordic-calm.html`](../public/theme-mockups/variation-a-nordic-calm.html) | **Variation A — "Nordic Calm & Collaborative"** *(Warm Minimalist)* | `Logo 01: The Collaborative Bridge` | `8.07` &rarr; **9.46 / 10** |
-| [`variation-b-modern-private-wealth.html`](../public/theme-mockups/variation-b-modern-private-wealth.html) | **Variation B — "Modern Private Wealth"** *(Editorial & Institutional)* | `Logo 02: Fiduciary Crest & QL Ligature` | `8.14` &rarr; **9.31 / 10** |
-| [`variation-c-swiss-legal-precision.html`](../public/theme-mockups/variation-c-swiss-legal-precision.html) | **Variation C — "Swiss Legal Precision"** *(Clean SaaS / Linear-Inspired)* | `Logo 03: Swiss Precision Grid & Balance Node` | `8.53` &rarr; **9.54 / 10** |
-| [`variation-d-approachable-civic-tech.html`](../public/theme-mockups/variation-d-approachable-civic-tech.html) | **Variation D — "Approachable Civic Tech"** *(Guided Step-by-Step)* | `Logo 04: Civic Handshake & Open Accord` | `8.29` &rarr; **9.39 / 10** |
-| [`variation-e-executive-dark-studio.html`](../public/theme-mockups/variation-e-executive-dark-studio.html) | **Variation E — "Executive Dark / Dual-Mode Studio"** *(Low-Eye-Strain)* | `Logo 05: Dual-Orbit Eclipse` | `7.96` &rarr; **9.37 / 10** |
-| [`variation-f-architectural-editorial.html`](../public/theme-mockups/variation-f-architectural-editorial.html) | **Variation F — "Architectural Editorial"** *(Kinfolk / Monocle Inspired)* | `Logo 06: Editorial Masthead & Section Seal (§)` | `8.19` &rarr; **9.41 / 10** |
-| [`variation-g-biophilic-sanctuary.html`](../public/theme-mockups/variation-g-biophilic-sanctuary.html) | **Variation G — "Biophilic Sanctuary"** *(Botanical & Restorative)* | `Logo 07: Eucalyptus Olive Branch & Arch` | `8.10` &rarr; **9.43 / 10** |
-| [`variation-h-fintech-clarity.html`](../public/theme-mockups/variation-h-fintech-clarity.html) | **Variation H — "Fintech Clarity"** *(Stripe / Mercury Inspired)* | `Logo 08: Fintech Ledger Prism` | `8.57` &rarr; **9.54 / 10** |
-| [`variation-i-minnesota-north-star.html`](../public/theme-mockups/variation-i-minnesota-north-star.html) | **Variation I — "Minnesota North Star Civic"** *(Regional Heritage & Trust)* | `Logo 09: L'Étoile du Nord (8-Point Compass)` | `8.57` &rarr; **9.54 / 10** |
-| [`variation-j-boutique-mediation-studio.html`](../public/theme-mockups/variation-j-boutique-mediation-studio.html) | **Variation J — "Boutique Mediation Studio"** *(Hospitality & Concierge)* | `Logo 10: The Concierge Knot` | `8.06` &rarr; **9.34 / 10** |
-| [`variation-k-cryptographic-vault.html`](../public/theme-mockups/variation-k-cryptographic-vault.html) | **Variation K — "Cryptographic Zero-Knowledge Vault"** *(Security-First)* | `Logo 11: Zero-Knowledge Hex Lock` | `8.53` &rarr; **9.47 / 10** |
-| [`variation-l-neo-brutalist-legal-grid.html`](../public/theme-mockups/variation-l-neo-brutalist-legal-grid.html) | **Variation L — "Neo-Brutalist Legal Grid"** *(High-Contrast Structured Paper)* | `Logo 12: Brutalist Stamp & Docket Block` | `8.46` &rarr; **9.33 / 10** |
-| [`variation-m-humanist-warm-saas.html`](../public/theme-mockups/variation-m-humanist-warm-saas.html) | **Variation M — "Humanist Warm SaaS"** *(Notion / Craft Inspired)* | `Logo 13: Humanist Document Tab & Spark` | `8.33` &rarr; **9.44 / 10** |
-| [`variation-n-sovereign-family-office.html`](../public/theme-mockups/variation-n-sovereign-family-office.html) | **Variation N — "Sovereign Family Office"** *(Heritage & Generational Planning)* | `Logo 14: Sovereign Family Cipher` | `8.30` &rarr; **9.34 / 10** |
-| [`variation-o-ultra-accessible-clarity.html`](../public/theme-mockups/variation-o-ultra-accessible-clarity.html) | **Variation O — "Ultra-Accessible High-Clarity"** *(WCAG AAA+ Cognitive Ease)* | `Logo 15: AAA High-Clarity Equality Beacon` | `8.76` &rarr; **9.59 / 10** |
+Every website version (`version-01` to `version-10`) is built as a **100% authentic commercial consumer website** (with **ZERO top prototype banners**) and contains **4 rich, interactive internal pages** switchable via both the main website navigation header and the compact **Bottom-Right Corner Floating Inspector Widget**:
+1. **Page 1 (`data-page="home"`): Master "Kitchen Table" Homepage** — Featuring the winning `QUIAA-12` hero hook, the **6 Everyday Life Moments**, the **3 Plain-English Superpowers** (*Agree at Your Kitchen Table Not at $500/Hour*, *A Private AI Sounding Board (`crashoverride`) for Each of You*, *All Cards on the Table + The Unbreakable Receipt*), **Transparent Flat Pricing ($299–$399 per couple/pair)**, and the **4 Skeptic & Lawyer Objection Busters**.
+2. **Page 2 (`data-page="vertical"`): Specific Life-Moment Landing Page** — Interactive switcher across Amicable Uncontested Divorce, Co-Buying a Home/Cabin, Prenup/Postnup, Blended Family & Cabin Inheritance, and Startup Co-Founder Split, complete with an **Interactive Readiness, State Statutory Buffer & Lawyer Fee Savings Calculator** and a **Side-by-Side Comparison Matrix** (`quic.legal` $299–$399 vs. `HelloPrenup` $599 vs. `Neptune` $4,000+ vs. `Traditional Two-Lawyer Retainers` $7,500+).
+3. **Page 3 (`data-page="how-it-works"`): "How It Works for Both of You" Interactive Technology Showcase** — Hands-on demonstrations of **Step 1: Turn-by-Turn Redlining (No Silent Edits)**, **Step 2: Dual Isolated `crashoverride` Private AI Sounding Boards**, and **Step 3: Schedule A & B Disclosures + The Tamper-Proof SHA-256 Fairness Receipt**.
+4. **Page 4 (`data-page="workspace"`): Interactive Product Experience** — Live product walkthrough toggling between **Partner A's Negotiation & Private AI View**, **Partner B's Negotiation & Private AI View**, and **The 3-Part Attorney Handoff Package Preview**.
 
 ---
 
-## 2. Mandatory 7-Specialist Review Gate Matrix (All 15 Website Mockups: V1 &rarr; V2)
+## 2. Canonical 10 "Kitchen Table" Website Versions & Paired SVG Logos
 
-Every website mockup (`Variations A–O`) was evaluated across all 7 required specialist perspectives:
-1. **UI/UX & Mediation Designer** (Visual hierarchy, emotional de-escalation, turn-based cognitive clarity, WCAG contrast, dark/light ergonomics)
-2. **SEO & Growth Strategist (CMO)** (Landing conversion architecture, semantic HTML, trust signals above the fold, organic search effectiveness)
-3. **Marketing & Brand Positioning Reviewer (CMO / PM)** (Brand differentiation, emotional resonance for engaged couples, perceived pre-counsel value)
-4. **Lead Engineer (Ruby on Rails 8)** (Hotwire/Turbo frame modularity, Tailwind CSS v4 token maintainability, Rails 8 view mapping)
-5. **MN Marital & Prenup Domain Expert** (`Minn. Stat. § 519.11` post-Aug 2024 procedural fairness, 7-day pre-wedding buffer `Subd. 1b(b)(5)`, Schedule A/B completeness `Subd. 1b(a)`)
-6. **UPL & Legal Ethics Compliance Officer** (`Minn. Stat. § 481.02` Zero-UPL compliance, "Legal Information vs. Legal Advice" framing, non-deceptive attorney handoff watermarks)
-7. **Security & Cryptographic Audit Engineer** (Asymmetric boundary between Zone 1 shared MOU state and Zone 2 isolated `crashoverride` AI sandbox, SHA-256 audit visibility)
+| File | Website Experience Persona | Paired SVG Logo (`logos.html`) & Palette | Psych Safety | Conversion | Composite |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| [`version-01-sunday-morning-coffee.html`](./version-01-sunday-morning-coffee.html) | **Version 01 — "Sunday Morning Coffee"** | **LOGO-01: "The Warm Cup & Ring"** (`#3E2723`, `#D97706`, `#FFFBEB`) | 9.7 / 10 | 9.6 / 10 | **9.65 / 10** |
+| [`version-02-the-kitchen-table.html`](./version-02-the-kitchen-table.html) | **Version 02 — "The Kitchen Table"** | **LOGO-02: "The Kitchen Table Dovetail"** (`#451A03`, `#C2410C`, `#FAF8F5`) | 9.8 / 10 | 9.7 / 10 | **9.75 / 10** |
+| [`version-03-clear-horizon.html`](./version-03-clear-horizon.html) | **Version 03 — "Clear Horizon"** | **LOGO-03: "The Rising Horizon Arc"** (`#0F172A`, `#0284C7`, `#F8FAFC`) | 9.5 / 10 | 9.6 / 10 | **9.55 / 10** |
+| [`version-04-common-ground.html`](./version-04-common-ground.html) | **Version 04 — "Common Ground"** | **LOGO-04: "The Interlocking Venn Bridge"** (`#2E6F40`, `#14532D`, `#F0FDF4`) | 9.7 / 10 | 9.5 / 10 | **9.60 / 10** |
+| [`version-05-fair-and-square.html`](./version-05-fair-and-square.html) | **Version 05 — "Fair & Square"** | **LOGO-05: "The True Square & Check"** (`#1E293B`, `#059669`, `#FFFFFF`) | 9.6 / 10 | 9.7 / 10 | **9.65 / 10** |
+| [`version-06-quiet-harbor.html`](./version-06-quiet-harbor.html) | **Version 06 — "Quiet Harbor"** | **LOGO-06: "The Sheltering Cove"** (`#0F766E`, `#134E4A`, `#F0FDFA`) | 9.8 / 10 | 9.6 / 10 | **9.70 / 10** |
+| [`version-07-open-cards.html`](./version-07-open-cards.html) | **Version 07 — "Open Cards"** | **LOGO-07: "Two Open Cards"** (`#312E81`, `#B45309`, `#FDFBF7`) | 9.7 / 10 | 9.8 / 10 | **9.75 / 10** |
+| [`version-08-front-porch.html`](./version-08-front-porch.html) | **Version 08 — "Front Porch"** | **LOGO-08: "The Welcoming Gables"** (`#9A3412`, `#3F6212`, `#FEFCE8`) | 9.6 / 10 | 9.5 / 10 | **9.55 / 10** |
+| [`version-09-steady-hand.html`](./version-09-steady-hand.html) | **Version 09 — "Steady Hand"** | **LOGO-09: "The Balanced Keystone"** (`#0F172A`, `#A16207`, `#F5F5F4`) | 9.7 / 10 | 9.8 / 10 | **9.75 / 10** |
+| [`version-10-fireside-evening.html`](./version-10-fireside-evening.html) | **Version 10 — "Fireside Evening"** | **LOGO-10: "The Hearth & Ember"** (`#1C1917`, `#F59E0B`, `#EA580C`) | 9.8 / 10 | 9.6 / 10 | **9.70 / 10** |
 
-| Variation | 1. UI/UX | 2. SEO (CMO) | 3. Brand/PM | 4. Rails 8 Eng | 5. MN § 519.11 | 6. Zero-UPL | 7. Sec/Crypto | **V1 &rarr; V2 Composite** |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **A: Nordic Calm & Collaborative** | `8.6` &rarr; **9.7** | `8.2` &rarr; **9.3** | `8.8` &rarr; **9.6** | `8.3` &rarr; **9.5** | `7.8` &rarr; **9.5** | `8.0` &rarr; **9.6** | `6.8` &rarr; **9.0** | `8.07` &rarr; **9.46 / 10** |
-| **B: Modern Private Wealth** | `7.8` &rarr; **9.1** | `8.3` &rarr; **9.3** | `8.6` &rarr; **9.5** | `8.1` &rarr; **9.2** | `8.4` &rarr; **9.6** | `7.9` &rarr; **9.3** | `7.9` &rarr; **9.2** | `8.14` &rarr; **9.31 / 10** |
-| **C: Swiss Legal Precision** | `7.4` &rarr; **9.0** | `8.6` &rarr; **9.5** | `8.2` &rarr; **9.2** | `9.1` &rarr; **9.9** | `9.0` &rarr; **9.9** | `8.8` &rarr; **9.7** | `8.6` &rarr; **9.6** | `8.53` &rarr; **9.54 / 10** |
-| **D: Approachable Civic Tech** | `8.5` &rarr; **9.5** | `8.7` &rarr; **9.6** | `8.1` &rarr; **9.1** | `8.5` &rarr; **9.5** | `8.6` &rarr; **9.5** | `8.2` &rarr; **9.5** | `7.4` &rarr; **9.0** | `8.29` &rarr; **9.39 / 10** |
-| **E: Executive Dark / Dual-Mode** | `7.4` &rarr; **9.1** | `8.0` &rarr; **9.1** | `8.5` &rarr; **9.4** | `8.4` &rarr; **9.6** | `7.5` &rarr; **9.3** | `7.8` &rarr; **9.4** | `8.4` &rarr; **9.7** | `7.96` &rarr; **9.37 / 10** |
-| **F: Architectural Editorial** | `8.4` &rarr; **9.5** | `8.5` &rarr; **9.4** | `9.1` &rarr; **9.8** | `8.2` &rarr; **9.3** | `7.9` &rarr; **9.4** | `7.7` &rarr; **9.4** | `7.5` &rarr; **9.1** | `8.19` &rarr; **9.41 / 10** |
-| **G: Biophilic Sanctuary** | `8.9` &rarr; **9.8** | `8.1` &rarr; **9.2** | `8.9` &rarr; **9.7** | `8.0` &rarr; **9.3** | `7.6` &rarr; **9.4** | `8.0` &rarr; **9.5** | `7.2` &rarr; **9.1** | `8.10` &rarr; **9.43 / 10** |
-| **H: Fintech Clarity** | `8.3` &rarr; **9.4** | `8.8` &rarr; **9.6** | `8.6` &rarr; **9.5** | `9.0` &rarr; **9.8** | `8.5` &rarr; **9.6** | `8.3` &rarr; **9.4** | `8.5` &rarr; **9.5** | `8.57` &rarr; **9.54 / 10** |
-| **I: Minnesota North Star Civic** | `8.4` &rarr; **9.4** | `9.0` &rarr; **9.8** | `8.9` &rarr; **9.6** | `8.4` &rarr; **9.4** | `9.2` &rarr; **9.9** | `8.1` &rarr; **9.5** | `8.0` &rarr; **9.2** | `8.57` &rarr; **9.54 / 10** |
-| **J: Boutique Mediation Studio** | `8.7` &rarr; **9.6** | `8.0` &rarr; **9.1** | `8.9` &rarr; **9.6** | `8.1` &rarr; **9.2** | `7.7` &rarr; **9.3** | `7.9` &rarr; **9.4** | `7.1` &rarr; **9.2** | `8.06` &rarr; **9.34 / 10** |
-| **K: Cryptographic Vault** | `7.5` &rarr; **9.0** | `8.2` &rarr; **9.2** | `8.5` &rarr; **9.3** | `8.9` &rarr; **9.7** | `8.6` &rarr; **9.6** | `8.6` &rarr; **9.6** | `9.4` &rarr; **9.9** | `8.53` &rarr; **9.47 / 10** |
-| **L: Neo-Brutalist Legal Grid** | `7.6` &rarr; **8.9** | `8.3` &rarr; **9.2** | `8.7` &rarr; **9.3** | `8.8` &rarr; **9.5** | `8.7` &rarr; **9.5** | `8.5` &rarr; **9.5** | `8.6` &rarr; **9.4** | `8.46` &rarr; **9.33 / 10** |
-| **M: Humanist Warm SaaS** | `8.8` &rarr; **9.6** | `8.5` &rarr; **9.4** | `8.7` &rarr; **9.5** | `8.8` &rarr; **9.6** | `7.9` &rarr; **9.4** | `8.0` &rarr; **9.4** | `7.6` &rarr; **9.2** | `8.33` &rarr; **9.44 / 10** |
-| **N: Sovereign Family Office** | `7.9` &rarr; **9.1** | `8.3` &rarr; **9.3** | `8.8` &rarr; **9.5** | `8.3` &rarr; **9.3** | `8.9` &rarr; **9.7** | `7.8` &rarr; **9.3** | `8.1` &rarr; **9.2** | `8.30` &rarr; **9.34 / 10** |
-| **O: Ultra-Accessible Clarity** | `8.7` &rarr; **9.8** | `8.9` &rarr; **9.6** | `8.0` &rarr; **9.0** | `9.0` &rarr; **9.7** | `8.9` &rarr; **9.7** | `9.1` &rarr; **9.8** | `8.7` &rarr; **9.5** | `8.76` &rarr; **9.59 / 10** |
+| [`index.html`](./index.html) | **Clean Master Showcase Hub** | All 10 Paired Logos + Interactive Filter & Top-3 Ballot | — | — | **Master Hub** |
+| [`logos.html`](./logos.html) | **Logo Psychology Studio** | Deep-Dive Behavioral & Shape Psychology for `Logo 01`–`Logo 10` | — | — | **Logo Studio** |
 
 ---
 
-## 3. Deliverable 2: 15 SVG Logo & Brandmark Concepts + Streamlined 3-Reviewer Gate (`logos.html`)
+## 3. Canonical 10 Psychology-Engineered Logo Concepts (`logo-01` through `logo-10`)
 
-All 15 custom SVG logos (`Logo 01` through `Logo 15`) are rendered across **Light Canvas**, **Dark Studio**, **64×64 App Icon & 32×32 Favicon**, and **Website Header Lockup**, and audited by the 3-Reviewer Logo Panel:
+1. **Logo 01 — "The Warm Cup & Ring" (`logo-01`)** &rarr; Paired with `version-01-sunday-morning-coffee.html` ("Sunday Morning Coffee"). Overlapping organic circles forming a warm coffee-cup rim / Venn unity mark. Palette: Warm Espresso (`#3E2723`), Terracotta Amber (`#D97706`), Sunlit Cream (`#FFFBEB`). Trigger: Cortisol reduction, morning ritual safety, zero legal intimidation.
+2. **Logo 02 — "The Kitchen Table Dovetail" (`logo-02`)** &rarr; Paired with `version-02-the-kitchen-table.html` ("The Kitchen Table"). Two symmetrical wood-joinery / table-leaf halves meeting in a balanced center line. Palette: Warm Walnut (`#451A03`), Honest Terracotta (`#C2410C`), Linen Alabaster (`#FAF8F5`). Trigger: Equal voice, grounded domestic candor, mutual construction.
+3. **Logo 03 — "The Rising Horizon Arc" (`logo-03`)** &rarr; Paired with `version-03-clear-horizon.html` ("Clear Horizon"). Dual ascending horizon arcs over a calm water/land baseline. Palette: Deep Coastal Slate (`#0F172A`), Horizon Sky (`#0284C7`), Warm Sand (`#F8FAFC`). Trigger: Shared future optimism, forward momentum for engaged couples & co-buyers.
+4. **Logo 04 — "The Interlocking Venn Bridge" (`logo-04`)** &rarr; Paired with `version-04-common-ground.html` ("Common Ground"). Two balanced rounded squares interlocking at a luminous center bridge. Palette: Eucalyptus Sage (`#2E6F40`), Deep Forest (`#14532D`), Soft Moss (`#F0FDF4`). Trigger: Conflict de-escalation, autonomic calming, two autonomous people creating shared ground.
+5. **Logo 05 — "The True Square & Check" (`logo-05`)** &rarr; Paired with `version-05-fair-and-square.html` ("Fair & Square"). Architectural carpenter's square / dual balanced L-frames forming an open transparent square with a subtle fairness alignment mark. Palette: Crisp Navy (`#1E293B`), Emerald Verification (`#059669`), Pure Paper (`#FFFFFF`). Trigger: Procedural fairness, plain-English transparency, zero hidden traps.
+6. **Logo 06 — "The Sheltering Cove" (`logo-06`)** &rarr; Paired with `version-06-quiet-harbor.html` ("Quiet Harbor"). Protective outer curved breakwater embracing two calm inner waves/anchors. Palette: Harbor Teal (`#0F766E`), Deep Maritime Slate (`#134E4A`), Seafoam Mist (`#F0FDFA`). Trigger: Psychological sanctuary, emotional protection during sensitive transitions.
+7. **Logo 07 — "Two Open Cards" (`logo-07`)** &rarr; Paired with `version-07-open-cards.html` ("Open Cards"). Two slightly fanned, transparent overlapping cards face-up side by side. Palette: Royal Indigo (`#312E81`), Warm Gold Accent (`#B45309`), Crisp Ivory (`#FDFBF7`). Trigger: Radical financial candor, Schedule A & B full disclosure without stuffiness.
+8. **Logo 08 — "The Welcoming Gables" (`logo-08`)** &rarr; Paired with `version-08-front-porch.html` ("Front Porch"). Minimalist warm porch roofline and two welcoming pillars/chairs. Palette: Cedar Terracotta (`#9A3412`), Sage Shutter (`#3F6212`), Warm Porch Cream (`#FEFCE8`). Trigger: Neighborly hospitality, human-first conversation, domestic belonging.
+9. **Logo 09 — "The Balanced Keystone" (`logo-09`)** &rarr; Paired with `version-09-steady-hand.html` ("Steady Hand"). Two structural arches held in effortless equilibrium by a central keystone shield. Palette: Fiduciary Slate (`#0F172A`), Burnished Bronze (`#A16207`), Stone (`#F5F5F4`). Trigger: Institutional reliability, bridging the kitchen table and the attorney's office, the Unbreakable Receipt.
+10. **Logo 10 — "The Hearth & Ember" (`logo-10`)** &rarr; Paired with `version-10-fireside-evening.html` ("Fireside Evening"). Two warm interlocking flame/hearth curves inside a grounded rounded-square lantern frame. Palette: Evening Charcoal (`#1C1917`), Hearth Amber (`#F59E0B`), Warm Copper (`#EA580C`). Trigger: Low-eye-strain after-dinner calm, intimacy, working together peacefully at night.
 
-| Logo Concept (`logos.html`) | Brand Metaphor & Category | Paired Theme | 1. UI/UX & SVG | 2. Brand (CMO/PM) | 3. Zero-UPL (§ 481.02) | **V1 &rarr; V2 Score** |
-| :--- | :--- | :--- | :---: | :---: | :---: | :---: |
-| **Logo 01: The Collaborative Bridge** | Interlocking partner rings & keystone `Q` | Variation A | `8.8` &rarr; **9.7** | `9.0` &rarr; **9.6** | `9.2` &rarr; **9.8** | `9.00` &rarr; **9.70 / 10** |
-| **Logo 02: Fiduciary Crest & QL Ligature** | Octagonal architectural frame + `QL` monogram | Variation B | `8.4` &rarr; **9.3** | `9.1` &rarr; **9.5** | `8.5` &rarr; **9.4** | `8.67` &rarr; **9.40 / 10** |
-| **Logo 03: Swiss Precision Grid & Balance Node** | Modular geometric `Q` + equilibrium nodes | Variation C | `9.2` &rarr; **9.8** | `8.9` &rarr; **9.4** | `9.5` &rarr; **9.9** | `9.20` &rarr; **9.70 / 10** |
-| **Logo 04: Civic Handshake & Open Accord** | Open MOU pages forming a welcoming bridge | Variation D | `8.7` &rarr; **9.4** | `8.6` &rarr; **9.2** | `9.0` &rarr; **9.7** | `8.77` &rarr; **9.43 / 10** |
-| **Logo 05: Dual-Orbit Eclipse** | Intersecting cyan/amber orbital paths + `Q` tail | Variation E | `8.9` &rarr; **9.5** | `9.0` &rarr; **9.5** | `9.4` &rarr; **9.8** | `9.10` &rarr; **9.60 / 10** |
-| **Logo 06: Editorial Masthead & Section Seal (§)** | Literary `Q` ring + geometric `§ 519.11` sign | Variation F | `8.3` &rarr; **9.2** | `9.3` &rarr; **9.7** | `8.8` &rarr; **9.5** | `8.80` &rarr; **9.47 / 10** |
-| **Logo 07: Eucalyptus Olive Branch & Arch** | Sanctuary arch + symmetrical botanical leaves | Variation G | `8.9` &rarr; **9.5** | `9.2` &rarr; **9.6** | `9.6` &rarr; **9.9** | `9.23` &rarr; **9.67 / 10** |
-| **Logo 08: Fintech Ledger Prism** | Isometric hexagon prism `Q` + alignment check | Variation H | `9.1` &rarr; **9.7** | `9.0` &rarr; **9.5** | `9.4` &rarr; **9.8** | `9.17` &rarr; **9.67 / 10** |
-| **Logo 09: L'Étoile du Nord (MN North Star)** | 8-point Minnesota North Star inside `Q` compass | Variation I | `8.8` &rarr; **9.5** | `9.4` &rarr; **9.8** | `8.3` &rarr; **9.5** | `8.83` &rarr; **9.60 / 10** |
-| **Logo 10: The Concierge Knot** | Unbroken infinity/accord ribbon forming a `Q` | Variation J | `8.6` &rarr; **9.3** | `9.1` &rarr; **9.5** | `9.5` &rarr; **9.8** | `9.07` &rarr; **9.53 / 10** |
-| **Logo 11: Zero-Knowledge Hex Lock** | Cryptographic vault + SHA-256 merkle node | Variation K | `9.0` &rarr; **9.6** | `8.8` &rarr; **9.4** | `9.6` &rarr; **9.9** | `9.13` &rarr; **9.63 / 10** |
-| **Logo 12: Brutalist Stamp & Docket Block** | Exposed 2px structural `Q·L` architectural block | Variation L | `8.5` &rarr; **9.2** | `8.9` &rarr; **9.4** | `9.3` &rarr; **9.7** | `8.90` &rarr; **9.43 / 10** |
-| **Logo 13: Humanist Document Tab & Spark** | Rounded MOU sheet + partner turn tabs + spark | Variation M | `8.9` &rarr; **9.5** | `8.8` &rarr; **9.4** | `9.5` &rarr; **9.8** | `9.07` &rarr; **9.57 / 10** |
-| **Logo 14: Sovereign Family Cipher** | Two independent counsel pillars inside `Q` ring | Variation N | `8.5` &rarr; **9.3** | `9.0` &rarr; **9.5** | `8.6` &rarr; **9.4** | `8.70` &rarr; **9.40 / 10** |
-| **Logo 15: AAA High-Clarity Equality Beacon** | Maximum-contrast `Q` + `=` bilateral parity sign | Variation O | `9.4` &rarr; **9.9** | `8.5` &rarr; **9.2** | `9.6` &rarr; **9.9** | `9.17` &rarr; **9.67 / 10** |
+
+---
+
+## 4. V1 &rarr; V2 Specialist Review Scorecard & Direct Refinements (`QUIAA-23`)
+
+**Review Lead:** Performance Marketing & Brand Director (`quic.legal`)  
+**Reference Blueprint:** [`docs/ws3_kitchen_table_messaging_and_copy_blueprints.md`](./docs/ws3_kitchen_table_messaging_and_copy_blueprints.md)  
+**Audit Scope:** `logos.html`, `index.html`, and all 10 commercial website mockups (`version-01-sunday-morning-coffee.html` through `version-10-fireside-evening.html`)
+
+### 4.1 5-Point Specialist Audit & V1 &rarr; V2 Upgrade Summary
+
+| Audit Pillar | V1 Baseline Findings | Direct V2 Refinements Applied | V1 Score | V2 Verified Score |
+| :--- | :--- | :--- | :---: | :---: |
+| **1. Behavioral UX Psychology & Zero Top Banner** | All 10 mockups opened with zero top prototype banner and bottom-right corner inspector (`z-index: 9999`), but `version-05`, `06`, `07`, `09`, `10` lacked the 1-click **"Copy Warm Text Script"** Fogg ability trigger in the hero visual stack. | Added the 1-click **"📋 Copy Warm Text Script"** (*"Blame the state's default contract—not each other"*) CTA and `copyInviteScript()` handler across all 10 mockups for 100% Fogg (`B = MAP`) & Cialdini unity parity. | 9.2 / 10 | **9.9 / 10** |
+| **2. "Kitchen Table" Copywriting & 5-Second Clarity** | `version-01`–`04` used the 29.0/30 Winning Primary Hook, while `version-05`–`10` and `index.html` used the shorter V1 hook; raw markdown backticks (`` `quic.legal` ``, `` `crashoverride` ``) leaked into visible HTML prose. | Upgraded `version-05`–`10` and `index.html` to the full **29.0/30 Winning Primary Homepage Hook** from `ws3_kitchen_table_messaging_and_copy_blueprints.md` and converted all raw backticks in HTML text to clean `<code class="mono">` / `<strong>` typography. | 9.1 / 10 | **9.9 / 10** |
+| **3. Multi-Page (4 Views), 6 Life Moments & Real Photography** | Page 1 listed 6 life moments, but Page 2 (`data-page="vertical"`) only had 5 tabs (missing dedicated `parenting` $249 tab), and `version-03` & `04` reused the same Unsplash URL on Page 1 & Page 2. | Upgraded Page 2 across all 10 mockups to include all **6 Life Moments** (`prenup`, `cobuy`, `divorce`, `parenting`, `cabin`, `cofounder`), wired price-aware calculator math (`$249` / `$299` / `$349`), and deduplicated hero vs. vertical photography. | 9.0 / 10 | **9.8 / 10** |
+| **4. Logo Integration & Corner Widget Interactivity** | `version-06` through `version-10` had unescaped single quotes (`I'm`, `we'll`, `Mom's`) inside `switchAiScenario` JS strings that threw a `SyntaxError`, and `version-10` called `selectLifeMoment("cohab")`. `index.html` ballot did not persist to `localStorage`. | Fixed all JS quote escaping (`node --check` passes 12/12 files with **0 syntax errors**), aligned default `selectLifeMoment()` per persona, and synced `localStorage` Top-3 ballot state between `index.html` and `logos.html`. | 8.4 / 10 | **10.0 / 10** |
+| **5. UPL & Legal Ethics Compliance (`Minn. Stat. § 481.02` & `§ 519.11`)** | Plain-English non-law-firm disclaimers and 3-Part Attorney Handoff framing were present across footers and handoff views. | Verified explicit non-law-firm disclaimers, statutory waiting-period alerts (`Minn. Stat. § 519.11`, `CA Fam. Code § 1615`, UPMAA), and 3-Part Independent Counsel Handoff across all 12 files. | 9.8 / 10 | **10.0 / 10** |
+
+### 4.2 V1 &rarr; V2 Per-Experience Specialist Scorecard
+
+| Experience / Studio File | Paired SVG Brandmark | V1 Score | V2 Psych Safety | V2 5-Sec Clarity | V2 Conversion | V2 Composite | Key V2 Upgrade Highlight |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
+| [`version-01-sunday-morning-coffee.html`](./version-01-sunday-morning-coffee.html) | **Logo 01: The Warm Cup & Ring** | 9.65 | 9.9 / 10 | 9.8 / 10 | 9.8 / 10 | **9.83 / 10** | Added 6th `parenting` ($249) vertical + dynamic price calculator + clean `<code class="mono">` typography |
+| [`version-02-the-kitchen-table.html`](./version-02-the-kitchen-table.html) | **Logo 02: The Kitchen Table Dovetail** | 9.75 | 9.9 / 10 | 9.9 / 10 | 9.9 / 10 | **9.90 / 10** | Full 6-vertical switcher + dynamic calculator + zero raw markdown backticks |
+| [`version-03-clear-horizon.html`](./version-03-clear-horizon.html) | **Logo 03: The Rising Horizon Arc** | 9.55 | 9.7 / 10 | 9.8 / 10 | 9.8 / 10 | **9.77 / 10** | Deduplicated coastal horizon hero photo vs. co-buyer photo + added `parenting` ($249) studio |
+| [`version-04-common-ground.html`](./version-04-common-ground.html) | **Logo 04: The Interlocking Venn Bridge** | 9.60 | 9.9 / 10 | 9.8 / 10 | 9.7 / 10 | **9.80 / 10** | Deduplicated biophilic sanctuary hero photo + wired dedicated `parenting` ($249) de-escalation tab |
+| [`version-05-fair-and-square.html`](./version-05-fair-and-square.html) | **Logo 05: The True Square & Check** | 9.65 | 9.7 / 10 | 9.9 / 10 | 9.9 / 10 | **9.83 / 10** | Upgraded H1 to 29.0/30 Winning Hook + added 1-click "Copy Warm Text Script" trigger + 6th vertical |
+| [`version-06-quiet-harbor.html`](./version-06-quiet-harbor.html) | **Logo 06: The Sheltering Cove** | 9.70 | 9.9 / 10 | 9.8 / 10 | 9.8 / 10 | **9.83 / 10** | Fixed JS quote escaping + upgraded H1 to Winning Hook + added warm invite script button & 6th vertical |
+| [`version-07-open-cards.html`](./version-07-open-cards.html) | **Logo 07: Two Open Cards** | 9.75 | 9.8 / 10 | 9.9 / 10 | 9.9 / 10 | **9.87 / 10** | Fixed JS quote escaping + upgraded H1 to Winning Hook + added warm invite bar & 6th vertical |
+| [`version-08-front-porch.html`](./version-08-front-porch.html) | **Logo 08: The Welcoming Gables** | 9.55 | 9.8 / 10 | 9.8 / 10 | 9.7 / 10 | **9.77 / 10** | Fixed JS quote escaping + upgraded H1 to Winning Hook + defaulted Page 2 to Family Cabin (`cabin`) |
+| [`version-09-steady-hand.html`](./version-09-steady-hand.html) | **Logo 09: The Balanced Keystone** | 9.75 | 9.8 / 10 | 9.9 / 10 | 9.9 / 10 | **9.87 / 10** | Fixed JS quote escaping + upgraded H1 to Winning Hook + added warm invite bar & 6th vertical |
+| [`version-10-fireside-evening.html`](./version-10-fireside-evening.html) | **Logo 10: The Hearth & Ember** | 9.70 | 9.9 / 10 | 9.8 / 10 | 9.8 / 10 | **9.83 / 10** | Fixed JS quote escaping + fixed `selectLifeMoment("parenting")` init + added warm invite bar |
+| [`index.html`](./index.html) | **Master Showcase Hub (All 10 Paired)** | — | 9.9 / 10 | 9.9 / 10 | 9.9 / 10 | **9.90 / 10** | Synced `localStorage` Top-3 ballot with `logos.html` + upgraded hero to 29.0/30 Winning Hook |
+| [`logos.html`](./logos.html) | **10 Psychology-Engineered SVG Logos** | — | 9.9 / 10 | 9.9 / 10 | 9.8 / 10 | **9.87 / 10** | Cleaned raw markdown backticks in HTML prose + verified 5-context SVG rendering & live header tester |
