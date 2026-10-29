@@ -1492,6 +1492,8 @@
       document.querySelectorAll('[data-insp-page]').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-insp-page') === pageId);
       });
+      const hdr = document.querySelector('.site-header');
+      if (hdr) hdr.classList.remove('header-hidden');
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
